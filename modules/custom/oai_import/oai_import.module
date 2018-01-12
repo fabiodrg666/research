@@ -1,0 +1,14 @@
+<?php
+
+
+/**
+ * Implements hook_theme()
+ * @return mixed
+ */
+function oai_import_theme() {
+  $theme['index'] = [
+    'variables' => [],
+    'template'  => 'index',
+  ];
+  return $theme;
+}

@@ -1,0 +1,49 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Ascendente
+          sort_desc_label: Descendente
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            offset_label: Deslocamento
+      fields:
+        bibcite_reference_bulk_form:
+          label: 'Atualização em massa'
+          action_title: Ação
+        title:
+          label: Título
+          separator: ', '
+        type:
+          label: Tipo
+          separator: ', '
+        uid:
+          label: 'Criado por'
+          separator: ', '
+        changed:
+          label: Atualizado
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        title:
+          expose:
+            label: Título
+        type:
+          expose:
+            label: Tipo
+      title: Referência
+  page_1:
+    display_title: Página

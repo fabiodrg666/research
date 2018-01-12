@@ -1,0 +1,13 @@
+uuid: 86634f11-f89b-44b0-85e2-19d77ba5a3a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.external_organization
+_core:
+  default_config_hash: cv59rmM5VBNyb36KvmjHImJ3qRU70FsULfApCQO1CK8
+id: node.external_organization
+target_entity_type_id: node
+target_bundle: external_organization
+default_langcode: site_default
+language_alterable: false

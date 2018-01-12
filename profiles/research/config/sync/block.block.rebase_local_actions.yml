@@ -1,0 +1,20 @@
+uuid: 5ef06c67-82a2-466e-9624-11444f3ff327
+langcode: en
+status: true
+dependencies:
+  theme:
+    - rebase
+_core:
+  default_config_hash: nVgpDV2DdILwflQYQt0ifn6EksbAD5iPTs64zJBpHtU
+id: rebase_local_actions
+theme: rebase
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

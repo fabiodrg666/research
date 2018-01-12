@@ -1,0 +1,48 @@
+uuid: 5847aae7-685b-4aef-9695-c3460c473a7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.file.body
+    - field.field.node.file.field_file_file
+    - node.type.file
+  module:
+    - field_layout
+    - file
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: vznN_Hp1-vCkvqEa5vM68d_dFqhhz69LavR3qvisjEw
+id: node.file.default
+targetEntityType: node
+bundle: file
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+  field_file_file:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

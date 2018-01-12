@@ -1,0 +1,20 @@
+uuid: 38b0d737-df61-44f0-a6dc-01426ac523bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 6YE80lPbh-fBWvZva592vRbqoXlkLZ1u0PC_DlsX2L8
+name: File
+type: file
+description: 'Use file to upload files to share with other users'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

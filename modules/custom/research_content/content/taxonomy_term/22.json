@@ -1,0 +1,62 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/22?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/member_level"
+        }
+    },
+    "tid": [
+        {
+            "value": 22
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f8451f57-001d-4b35-9557-443714832550"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "member_level"
+        }
+    ],
+    "name": [
+        {
+            "value": "Temporary member - PhD student",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1514376943,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Temporary member - PhD student | InED",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/22"
+            }
+        }
+    ]
+}

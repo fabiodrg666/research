@@ -1,0 +1,24 @@
+// Bootstrap Framework.
+@import '../bootstrap/assets/stylesheets/bootstrap';
+
+// Variables and mixins.
+@import "variables";
+@import "mixins";
+
+// Generic Styling
+@import "generic";
+
+// Base-theme overrides.
+@import 'overrides';
+
+//Specific regions.
+@import 'header';
+@import 'footer';
+
+//Specific sections and pages.
+@import 'homepage';
+@import 'user';
+@import 'publications';
+@import 'news';
+@import 'researchGroup';
+@import 'people';

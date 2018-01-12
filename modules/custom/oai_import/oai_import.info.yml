@@ -1,0 +1,7 @@
+name: OAI Import
+description: Import Bibliography citations from OAI
+core: 8.x
+type: module
+package: Omibee
+dependencies:
+  - bibcite

@@ -1,0 +1,30 @@
+uuid: 03346fec-802f-4c77-b6ff-01d29ed8fff7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_internal_group_member
+    - node.type.research_group
+_core:
+  default_config_hash: nFGl3-rDa-x_pgSao9-etQpEfWQHdz_7jB2IO8xKl8E
+id: node.research_group.field_internal_group_member
+field_name: field_internal_group_member
+entity_type: node
+bundle: research_group
+label: 'Internal Group Member'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

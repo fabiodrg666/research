@@ -1,0 +1,5 @@
+fields:
+  bibcite_edition:
+    label: Sessão
+  bibcite_original_publication:
+    label: Histórico

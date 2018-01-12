@@ -1,0 +1,20 @@
+uuid: 689b55c4-6566-4371-96ec-143b0e4df05b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.external_organization
+_core:
+  default_config_hash: lFj_Hx-welU5tvQO-f9R4UU7r-KdxoyiD5kNuh63WVc
+id: node.external_organization.title
+field_name: title
+entity_type: node
+bundle: external_organization
+label: 'Organization name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

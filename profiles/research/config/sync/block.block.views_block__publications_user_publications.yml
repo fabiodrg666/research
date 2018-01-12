@@ -1,0 +1,35 @@
+uuid: bdda863d-a965-43da-940b-9775fb2b1b6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.publications
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__publications_user_publications
+theme: rebase
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:publications-user_publications'
+settings:
+  id: 'views_block:publications-user_publications'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }

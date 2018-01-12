@@ -1,0 +1,39 @@
+uuid: 4a7786fb-7e62-4cb5-98c4-aec0d32d9f2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.thumbnail
+    - field.field.media.images.field_image
+    - image.style.scale_and_crop_100x100
+    - media.type.images
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: L34d3nR8jQLShv9jKyV-ogUilhOnMfdgSxDzeTFuB3Y
+id: media.images.thumbnail
+targetEntityType: media
+bundle: images
+mode: thumbnail
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: scale_and_crop_100x100
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: 0e10f5a3-ec1c-48d6-96c4-34ac81e8574a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - rebase
+_core:
+  default_config_hash: eH7rIYzvpnzBx2BA_0Q0f-h-jDTRMCVtQMzezl_5IhU
+id: rebase_help
+theme: rebase
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: 5f5ef9ed-af68-4809-a577-685c432a52c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.finantial_support.field_funding_entity
+    - field.field.node.finantial_support.field_value
+    - node.type.finantial_support
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: 2QtZMgZ1Z7X5q67xKXCy2v04Z9Ptc0ldP0eJ7NpdNKo
+id: node.finantial_support.teaser
+targetEntityType: node
+bundle: finantial_support
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_funding_entity: true
+  field_value: true
+  langcode: true

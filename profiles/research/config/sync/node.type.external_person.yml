@@ -1,0 +1,20 @@
+uuid: 80df205e-6c11-4bf7-9c31-103ac3233a1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: tKFXC6SK9ilTvmTV3d12bsNU57k4A8HxUkR_FyL_D28
+name: 'External Person'
+type: external_person
+description: 'Use external person to reference people outside the institution'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

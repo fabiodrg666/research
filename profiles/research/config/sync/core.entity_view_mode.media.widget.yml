@@ -1,0 +1,10 @@
+uuid: 75d40930-b9c0-4b1d-9e45-27655aead0f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.widget
+label: Widget
+targetEntityType: media
+cache: true

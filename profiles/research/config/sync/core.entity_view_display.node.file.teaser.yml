@@ -1,0 +1,43 @@
+uuid: e22dc6e8-2659-4edb-bbc6-a4d7e4703bbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.file.body
+    - field.field.node.file.field_file_file
+    - node.type.file
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: WjGZa7ZpUM-dN3UgUrDqtIXZFJ2tROBY-CzV0Ci7UK8
+id: node.file.teaser
+targetEntityType: node
+bundle: file
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_file_file: true
+  langcode: true

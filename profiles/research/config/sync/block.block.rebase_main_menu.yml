@@ -1,0 +1,26 @@
+uuid: eeca5eb8-a4f6-4cb9-80fe-04b72098f873
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - rebase
+_core:
+  default_config_hash: zxENheLKQJlPogE_X9JguLYjaVD08-Ij_NBmUuMNd9w
+id: rebase_main_menu
+theme: rebase
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

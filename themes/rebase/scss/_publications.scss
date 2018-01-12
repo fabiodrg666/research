@@ -1,0 +1,59 @@
+//View publications
+
+.view-publications{
+  .views-row{
+    padding-bottom: 20px;
+    .views-field-author-target-id{
+      ul{
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        li{
+          padding: 0 5px 5px 5px;
+          background-color: $light;
+          border-radius: 10px;
+          display: inline-block;
+          margin: 6px 6px 0 0;
+
+          a{
+            font-size: 12px;
+          }
+        }
+      }
+    } // End authors
+    .views-field-title{
+      a{
+        font-size: 18px;
+        color: $darkest;
+      }
+    } // End title
+    .views-field-bibcite-secondary-title {
+    color: $graytext;
+    padding: 10px;
+    }
+  }// End row
+}
+
+
+// Publications details
+body.path-bibcite{
+  h1{
+    @include center600;
+    color: $darkest;
+    font-size: 20px;
+  }
+  .bibcite-reference-table{
+    @include center600;
+
+    tr{
+      &.odd{
+      background-color: white;
+      }
+      td:first-child {
+      text-align: right;
+      color: $graytext;
+      }
+    }
+  } // End table
+}

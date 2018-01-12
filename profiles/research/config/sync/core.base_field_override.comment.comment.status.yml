@@ -1,0 +1,24 @@
+uuid: 4a88b830-4469-49d3-9b5c-e3812606506b
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+_core:
+  default_config_hash: EsmYR5XA4orIZVMlfMOL_1Co7tf6h7PpG-zqFSNkCZw
+id: comment.comment.status
+field_name: status
+entity_type: comment
+bundle: comment
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: 'Drupal\comment\Entity\Comment::getDefaultStatus'
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: ca2d2948-5031-413f-b523-cd9d6bbcdc96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_orcid
+  module:
+    - user
+_core:
+  default_config_hash: lOg9ak3hTcsNAMK_cKcnBsu09umuJijYKzd47-VjzWQ
+id: user.user.field_orcid
+field_name: field_orcid
+entity_type: user
+bundle: user
+label: ORCID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

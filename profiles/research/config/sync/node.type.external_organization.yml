@@ -1,0 +1,20 @@
+uuid: 4c72af76-3407-4f86-b762-a118f095776f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 4wItpwt-HpP4vlctKdeD37HejS5mj-50vP2rGfiSdjs
+name: 'External organization'
+type: external_organization
+description: 'Use external organization to insert other relate institutions'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

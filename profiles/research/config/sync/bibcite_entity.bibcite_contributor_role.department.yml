@@ -1,0 +1,9 @@
+uuid: 198b6034-35a4-46e7-aba7-0f36c187feff
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4g-4wugJsX3SY3ZZwc0G3aqmTfPBcvHqhtOHM113rYw
+id: department
+label: Department
+weight: 3

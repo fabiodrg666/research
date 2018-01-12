@@ -1,0 +1,25 @@
+uuid: 0b1064e8-7e7b-4757-8437-eda6a4e60343
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_institution_url
+    - node.type.external_person
+  module:
+    - link
+_core:
+  default_config_hash: lZJiA9C4lnqDppbJglGzZP_dnzQN5FE4EFPvd07UNRc
+id: node.external_person.field_institution_url
+field_name: field_institution_url
+entity_type: node
+bundle: external_person
+label: 'Institution URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

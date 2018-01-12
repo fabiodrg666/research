@@ -1,0 +1,30 @@
+uuid: 9e919f60-4ddb-4d2f-bbbb-3d24906bf058
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_media
+    - media.type.images
+    - node.type.news
+_core:
+  default_config_hash: axTmsq1dixvlEfH3bYoZNXI7BTo_pQa7Hvm3ouQVzYk
+id: node.news.field_image_media
+field_name: field_image_media
+entity_type: node
+bundle: news
+label: 'Image Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images: images
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

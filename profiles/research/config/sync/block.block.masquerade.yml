@@ -1,0 +1,24 @@
+uuid: c8d8ed12-426b-4b71-8314-22ea545f4032
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - masquerade
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: masquerade
+theme: rebase
+region: content
+weight: 0
+provider: null
+plugin: masquerade
+settings:
+  id: masquerade
+  label: Masquerade
+  provider: masquerade
+  label_display: '0'
+visibility: {  }

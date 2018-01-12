@@ -1,0 +1,9 @@
+uuid: c487e0ab-93e1-4afd-9909-b0e35bdd6069
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: o6c1uhIYqmIwMbgHc5Lk7htfPlUSL9jUaRDfe_67KTg
+id: recipient
+label: Recipient
+weight: 6

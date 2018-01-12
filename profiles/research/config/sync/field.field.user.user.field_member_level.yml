@@ -1,0 +1,31 @@
+uuid: a8da6a9f-3e98-4b6e-a55b-fa4ceef4b636
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_member_level
+    - taxonomy.vocabulary.member_level
+  module:
+    - user
+_core:
+  default_config_hash: NiTj5RvS8fmkaoa8CrIlXEBqUB8y1VXR_1NdgwOPHyk
+id: user.user.field_member_level
+field_name: field_member_level
+entity_type: user
+bundle: user
+label: 'Member Level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      member_level: member_level
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 126d120a-6d10-4d6f-9605-ba5a67525152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_name
+    - node.type.project
+_core:
+  default_config_hash: _fh-oL2bEOhjPCXjTMBsjihXZhc_mrouEtaMamk-K_Q
+id: node.project.field_partner_name
+field_name: field_partner_name
+entity_type: node
+bundle: project
+label: 'Partner Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

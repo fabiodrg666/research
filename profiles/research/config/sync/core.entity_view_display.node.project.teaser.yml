@@ -1,0 +1,63 @@
+uuid: 8fbba199-8f18-4a96-b882-6573edc97c98
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.body
+    - field.field.node.project.field_end_date
+    - field.field.node.project.field_external_coordinator
+    - field.field.node.project.field_external_member
+    - field.field.node.project.field_file
+    - field.field.node.project.field_internal_coordinator
+    - field.field.node.project.field_member
+    - field.field.node.project.field_partner_name
+    - field.field.node.project.field_project_funding_entity
+    - field.field.node.project.field_project_url
+    - field.field.node.project.field_research_group
+    - field.field.node.project.field_start_date
+    - field.field.node.project.field_status
+    - node.type.project
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: O_ngOFMdUEQOibgG2T10ueOpnDNjnCzPmUJ6n-TmFsY
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_end_date: true
+  field_external_coordinator: true
+  field_external_member: true
+  field_file: true
+  field_image_media: true
+  field_internal_coordinator: true
+  field_member: true
+  field_partner_name: true
+  field_project_funding_entity: true
+  field_project_url: true
+  field_research_group: true
+  field_start_date: true
+  field_status: true
+  langcode: true

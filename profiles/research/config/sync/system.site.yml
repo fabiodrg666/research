@@ -1,0 +1,14 @@
+name: InED
+mail: devops@omibee.com
+slogan: 'Centro de Investigação e Inovação em Educação'
+page:
+  403: /user
+  404: ''
+  front: /welcome
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: fg2e9HNVeL7ZUmn8zo6M1oPEGrNQ9ScD_tLtSS1TH64
+uuid: f45d98c6-98fb-40a6-af0d-65e4357ed8a7

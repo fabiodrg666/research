@@ -1,0 +1,167 @@
+//** Global styles:
+
+
+// Global font
+body{font-family: $font}
+
+// Generic structure.
+
+html{
+	min-height: 100%;
+}
+body {
+margin: 0;
+padding: 0;
+}
+body {
+	font-size: 16px;
+	color:$darkgray;
+	margin-top: 0;
+	border: none;
+	border-radius: 0;
+	position: relative;
+	padding: 0;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	font-weight: 300;
+}
+
+.main-container {
+    width: 100%;
+}
+
+section.col-sm-12.col-xs-12.col-md-12.col-lg-12 {
+   padding: 0;
+}
+
+.toolbar-horizontal #toolbar-administration {
+    z-index: 1001;
+}
+
+h1{
+  font-family: $font2;
+  font-size: $h1;
+  color: $darkest;
+  font-weight: 300;
+  text-align: center;
+  padding: 30px;
+}
+
+h2{
+  color: $dark;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 300;
+  font-family: $font2;
+  a{
+    color: $normal;
+    &:visited{
+      color:$dark;
+    }
+  }
+}
+h3{
+  font-weight: 400;
+  font-size: 23px;
+  color: $normal;
+}
+h4{
+  color: $normal;
+}
+a{
+  text-decoration: none;
+  color: $normal;
+  &:hover{
+    text-decoration: none;
+    color: $dark;
+  }
+  &:visited{
+    color: $normal;
+  }
+}
+.read-more a{
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+select{
+  appearance: none;
+  -webkit-appearance: none;
+-webkit-border-radius: 0px;
+border-radius: 0;
+}
+
+.col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+//Alert
+.alert {
+    position: fixed;
+    top: 30vh;
+    left: 40vw;
+    @include shadow;
+    padding: 30px 45px;
+}
+
+
+//Regions
+
+.main-container {
+    padding-bottom:  400px;
+
+  //Views Titles
+  .views-element-container, .block{
+    h2.block-title{
+      color: $darkest;
+      font-size: $h1;
+      text-align: center;
+      padding-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+} // End main container
+
+.region.region-content{
+  @include wide;
+
+  h1.page-header {
+    text-align: center;
+    padding-top: 50px;
+    border: 0;
+  }
+}
+
+//Layouts
+.center600{
+  @include center600;
+}
+
+
+//Admin bar
+#toolbar-administration a{
+  color:gray;
+}
+
+
+// Tabs
+
+.nav-tabs {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    z-index: 100;
+    @include shadow;
+    li.active a, li.active a:hover, li.active>a:focus{border:0;}
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .nav>li>a:hover, .nav>li>a:focus{
+ background-color: initial;
+ color: $normal;
+}

@@ -1,0 +1,10 @@
+uuid: b09ff9db-c884-42e4-9149-6c06ff9ce80f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: 'Stay in touch'
+description: 'Site information links'
+locked: true

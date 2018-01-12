@@ -1,0 +1,22 @@
+uuid: 786e321e-53ba-4ccf-ac71-37756b57a4a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_research_gate_id
+  module:
+    - user
+_core:
+  default_config_hash: OPPNGCrh7pdsdM3F9eW2zcaXhFQ9kkHWSKgL6TivMFs
+id: user.user.field_research_gate_id
+field_name: field_research_gate_id
+entity_type: user
+bundle: user
+label: 'ResearchGate ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

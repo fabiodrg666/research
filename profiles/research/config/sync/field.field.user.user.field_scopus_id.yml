@@ -1,0 +1,22 @@
+uuid: 46571b00-d1ce-42db-b630-5851a9f11784
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_scopus_id
+  module:
+    - user
+_core:
+  default_config_hash: zRdtnAUX4o72K_sHy3Qimclj8IqgmGULrqn4wq7dMaY
+id: user.user.field_scopus_id
+field_name: field_scopus_id
+entity_type: user
+bundle: user
+label: 'Scopus ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

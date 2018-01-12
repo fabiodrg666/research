@@ -1,0 +1,13 @@
+uuid: 4c57daac-c8ac-43ee-931a-718a39a9ff9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.images
+_core:
+  default_config_hash: a_Q8a8H6e24onndxrc54gVu7vELoCh5XM54evIW8iDU
+id: media.images
+target_entity_type_id: media
+target_bundle: images
+default_langcode: site_default
+language_alterable: false

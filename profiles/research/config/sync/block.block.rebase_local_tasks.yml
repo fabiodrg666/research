@@ -1,0 +1,22 @@
+uuid: 373d1ea0-34b1-44db-9d9a-e731eb7c4636
+langcode: en
+status: true
+dependencies:
+  theme:
+    - rebase
+_core:
+  default_config_hash: Jx4zXJs5wOANxh0bU60J6WHo-ilPI6snGiZrThURibA
+id: rebase_local_tasks
+theme: rebase
+region: content
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

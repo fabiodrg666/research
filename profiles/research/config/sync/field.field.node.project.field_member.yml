@@ -1,0 +1,30 @@
+uuid: 056ada21-b216-4618-bd6b-efd01276db5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member
+    - node.type.project
+_core:
+  default_config_hash: hUe3BiYYYsiDnMtcnE4YssgyfH2P1zUPaDTCvvbJfcg
+id: node.project.field_member
+field_name: field_member
+entity_type: node
+bundle: project
+label: Member
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

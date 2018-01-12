@@ -1,0 +1,30 @@
+uuid: 464c93de-dfc0-4b12-8555-7e64a292b3e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.external_organization.field_url
+    - node.type.external_organization
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: HF_Wv-1PJy2-8D9fVAd2nTrhscZ8ad2C1d6X20YST2M
+id: node.external_organization.teaser
+targetEntityType: node
+bundle: external_organization
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_url: true
+  langcode: true

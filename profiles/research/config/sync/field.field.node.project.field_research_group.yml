@@ -1,0 +1,30 @@
+uuid: 7af1e153-0c7d-44be-bbfd-751aeba18070
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_research_group
+    - node.type.project
+    - node.type.research_group
+_core:
+  default_config_hash: dgaatbjHqBaVuBPqUsrmPePm14ZmIUUJaiF0_khyg14
+id: node.project.field_research_group
+field_name: field_research_group
+entity_type: node
+bundle: project
+label: 'Research Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      research_group: research_group
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,30 @@
+uuid: 87c45f48-85d0-4bfc-90ad-441a63f95088
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_leader
+    - node.type.research_group
+_core:
+  default_config_hash: e2FIUxcSn06xELs7HjHpe5ZD5bHurPqdqZX1Y2SEyic
+id: node.research_group.field_group_leader
+field_name: field_group_leader
+entity_type: node
+bundle: research_group
+label: 'Group Leader'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

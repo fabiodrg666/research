@@ -1,0 +1,30 @@
+uuid: 6cbc173e-8431-456d-95a1-6e57afd4e4fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_class
+    - system
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+_core:
+  default_config_hash: gJX20ADohH63ngAvyei8oPuL1yxMa35xRx1xaVmXcf8
+id: rebase_footer
+theme: rebase
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Stay in touch'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

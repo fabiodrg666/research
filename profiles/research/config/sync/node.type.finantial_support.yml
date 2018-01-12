@@ -1,0 +1,20 @@
+uuid: 4156ac5c-4e6d-4efc-8eb8-bb3b06f90cd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 3gFVwx7woUolNy8DVS17AFmGWu-FcdbWveCJJO-t4Qs
+name: 'Finantial Support'
+type: finantial_support
+description: 'Use financial support to insert received funds or grants '
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

@@ -1,0 +1,24 @@
+uuid: 8fc7fd55-26d9-4f32-b618-24e891df85b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.external_person
+  module:
+    - text
+_core:
+  default_config_hash: kTaaPnHwzpDKy88VEUXN2GKRzmnsV9-xM6TI-xPEIng
+id: node.external_person.body
+field_name: body
+entity_type: node
+bundle: external_person
+label: Bio
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

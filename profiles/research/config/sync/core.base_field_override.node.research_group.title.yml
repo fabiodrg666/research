@@ -1,0 +1,20 @@
+uuid: 7dde0fcd-17f6-45b7-a6e1-37a9eaa943f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.research_group
+_core:
+  default_config_hash: R9oXXg3iI2nPfeH1vFr12oMNLqypXyAZ122iqtsCg_Y
+id: node.research_group.title
+field_name: title
+entity_type: node
+bundle: research_group
+label: 'Research group name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

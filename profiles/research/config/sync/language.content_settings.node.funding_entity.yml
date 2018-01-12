@@ -1,0 +1,13 @@
+uuid: 5a217b62-01f4-4e0a-a864-183d2c3c37b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.funding_entity
+_core:
+  default_config_hash: Jhl2X14CK8jK2kiU7ghPdK4oEfDO6bfUUn-AXJtYo3s
+id: node.funding_entity
+target_entity_type_id: node
+target_bundle: funding_entity
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: b9fbacab-a8a0-4aac-a798-ab6c4a71d877
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hLB-YVShXiDFrddGKB-4vG671V0BwDCSTX1KMTRtxzk
+name: 'Project Status'
+vid: project_status
+description: ''
+hierarchy: 0
+weight: 0

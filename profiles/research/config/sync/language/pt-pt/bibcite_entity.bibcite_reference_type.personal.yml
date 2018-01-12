@@ -1,0 +1,7 @@
+fields:
+  bibcite_edition:
+    label: Descrição
+  bibcite_type_of_work:
+    label: Tipo
+  bibcite_alternate_title:
+    label: Abreviação

@@ -1,0 +1,22 @@
+uuid: e557b0b4-4559-48ac-9de2-0136307cf3ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_google_scholar_user
+  module:
+    - user
+_core:
+  default_config_hash: vqSXKce75M3gjtrJBDx4aazapuCESlaoa9HEhdWCeW0
+id: user.user.field_google_scholar_user
+field_name: field_google_scholar_user
+entity_type: user
+bundle: user
+label: 'Google Scholar user'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

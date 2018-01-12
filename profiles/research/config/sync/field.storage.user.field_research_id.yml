@@ -1,0 +1,23 @@
+uuid: 77ee8b8d-7121-4d0a-8e74-a85f6b48df2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: XnxOUIAwGpbibsehr_FQDLbqgzYMbHAkqULz0T6sdyw
+id: user.field_research_id
+field_name: field_research_id
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

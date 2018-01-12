@@ -1,0 +1,39 @@
+uuid: cc1ed548-644c-4e4d-9d86-594fef4f9ef3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.embed
+    - field.field.media.images.field_image
+    - media.type.images
+    - responsive_image.styles.hero_responsive
+  module:
+    - field_layout
+    - layout_discovery
+    - responsive_image
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: zK0M6IGhbgHbYjm-BztXj8k2zQF1MlHywlPIxoqnhXc
+id: media.images.embed
+targetEntityType: media
+bundle: images
+mode: embed
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: hero_responsive
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

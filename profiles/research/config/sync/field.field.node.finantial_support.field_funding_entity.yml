@@ -1,0 +1,30 @@
+uuid: fe1df2c8-3bd5-4bf3-9dc5-018354653322
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_funding_entity
+    - node.type.finantial_support
+    - node.type.funding_entity
+_core:
+  default_config_hash: CYeLC-4B_Zl8qNsdMhRFp7CeMdVzOmOmnnAkj6jYZAI
+id: node.finantial_support.field_funding_entity
+field_name: field_funding_entity
+entity_type: node
+bundle: finantial_support
+label: 'Funding Entity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      funding_entity: funding_entity
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

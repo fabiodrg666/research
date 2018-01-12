@@ -1,0 +1,41 @@
+uuid: 29b43396-aa01-43be-b9ba-8ad6cf1b78a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.external_organization.field_url
+    - node.type.external_organization
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: OG_Jn5aODaxNzpnbQsA-VGzO70Okn1WZNg-UTDZ1HQQ
+id: node.external_organization.default
+targetEntityType: node
+bundle: external_organization
+mode: default
+content:
+  field_url:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

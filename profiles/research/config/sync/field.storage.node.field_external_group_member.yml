@@ -1,0 +1,21 @@
+uuid: f3f8a8a2-2bc7-40b8-aadc-ff2fe790dc31
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: gjO-sJvIrcIjxjC0RfiJGdCzhBPu9v5LY5mj4xxCD9s
+id: node.field_external_group_member
+field_name: field_external_group_member
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

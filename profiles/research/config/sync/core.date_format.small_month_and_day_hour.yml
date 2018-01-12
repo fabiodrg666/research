@@ -1,0 +1,10 @@
+uuid: bea18b63-6f61-479d-adbd-ffe3363c26b5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DvDjrSWMTOZmOzECegSW0KF01NezvYa5sYrQExXIiJc
+id: small_month_and_day_hour
+label: 'Small month and day + hour'
+locked: false
+pattern: 'M d | G:i'

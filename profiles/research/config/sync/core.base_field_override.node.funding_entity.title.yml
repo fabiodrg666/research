@@ -1,0 +1,20 @@
+uuid: 5c44c627-bd90-42ac-8205-832f72e1661d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.funding_entity
+_core:
+  default_config_hash: 9hm8QXufwikH2DxgARK5eqHf3vL6tcFuFuJ9WsOp2Ug
+id: node.funding_entity.title
+field_name: title
+entity_type: node
+bundle: funding_entity
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

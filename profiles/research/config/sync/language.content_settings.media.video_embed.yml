@@ -1,0 +1,13 @@
+uuid: c6a71b82-f438-4808-b1e0-86fbd45abaca
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.video_embed
+_core:
+  default_config_hash: qk3nES1gwfQUyR2Qn9VmYNjmk5laAh3kEnvRSWyrcn4
+id: media.video_embed
+target_entity_type_id: media
+target_bundle: video_embed
+default_langcode: site_default
+language_alterable: false

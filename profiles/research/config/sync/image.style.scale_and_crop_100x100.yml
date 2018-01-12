@@ -1,0 +1,16 @@
+uuid: cacc1af0-f54a-4baa-b1c1-bd547f98e09f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YkBYAhKX1zUWndF49Pa0Bkr86C5LKds3Zq0eF0C2taQ
+name: scale_and_crop_100x100
+label: 'Scale and crop 100x100'
+effects:
+  ee901e39-3640-45df-b884-53a202d383fc:
+    uuid: ''
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 100

@@ -1,0 +1,54 @@
+uuid: 31f0afd5-326b-4282-a87c-733ac9812810
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_author
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_degois_id
+    - field.field.user.user.field_google_scholar_user
+    - field.field.user.user.field_institu
+    - field.field.user.user.field_member_level
+    - field.field.user.user.field_name
+    - field.field.user.user.field_orcid
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_position
+    - field.field.user.user.field_research_gate_id
+    - field.field.user.user.field_research_id
+    - field.field.user.user.field_scopus_id
+    - field.field.user.user.field_website
+    - field.field.user.user.user_picture
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: vIdLCX9fAc9gNdF2Z0m9hcifOUMbugR2NI7g5NOoOFg
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content: {  }
+hidden:
+  field_author: true
+  field_bio: true
+  field_degois_id: true
+  field_google_scholar_user: true
+  field_institu: true
+  field_member_level: true
+  field_name: true
+  field_orcid: true
+  field_phone: true
+  field_position: true
+  field_research_gate_id: true
+  field_research_id: true
+  field_scopus_id: true
+  field_website: true
+  langcode: true
+  masquerade: true
+  member_for: true
+  user_picture: true

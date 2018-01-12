@@ -1,0 +1,29 @@
+uuid: 45b5a5d7-058b-47ad-b74b-c3fafd6221d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: pagetitle
+theme: rebase
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/user\r\n/user/*"
+    negate: true
+    context_mapping: {  }

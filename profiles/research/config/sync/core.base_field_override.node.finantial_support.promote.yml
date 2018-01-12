@@ -1,0 +1,24 @@
+uuid: d03772cf-2b2c-4bc0-b6ce-89df05737f07
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.finantial_support
+_core:
+  default_config_hash: yPq8lyn2EXLCE-AxgiHlCdQUb8Cx_jNHja_CXy2f9IQ
+id: node.finantial_support.promote
+field_name: promote
+entity_type: node
+bundle: finantial_support
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

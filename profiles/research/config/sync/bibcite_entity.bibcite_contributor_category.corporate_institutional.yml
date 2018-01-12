@@ -1,0 +1,9 @@
+uuid: 5ded6f71-d9be-4593-b4fb-ddb328bde538
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YvLgVRZW9LLNZe5FMIuYYDn_5SlEMOR9pGBiZbO2zjA
+id: corporate_institutional
+label: Corporate/Institutional
+weight: -6

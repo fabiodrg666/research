@@ -1,0 +1,13 @@
+uuid: 033e3125-b5e6-48d1-8672-91263c92c665
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.external_person
+_core:
+  default_config_hash: gBEOcR0pMgijw_gPBymEXWN6u1gznaRFIixjWEXlSRk
+id: node.external_person
+target_entity_type_id: node
+target_bundle: external_person
+default_langcode: site_default
+language_alterable: false

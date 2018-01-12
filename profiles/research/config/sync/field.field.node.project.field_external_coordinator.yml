@@ -1,0 +1,30 @@
+uuid: bf2bb385-5620-4bc6-95e6-74ad98599066
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_coordinator
+    - node.type.external_person
+    - node.type.project
+_core:
+  default_config_hash: Fin7zwr2sr-lt8cemee3u__lvcr9xpF29lfA4m_Qq0M
+id: node.project.field_external_coordinator
+field_name: field_external_coordinator
+entity_type: node
+bundle: project
+label: 'External Coordinator'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      external_person: external_person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,25 @@
+uuid: 175c7f23-338b-4ce2-a4b8-ad61a6717214
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_url
+    - node.type.project
+  module:
+    - link
+_core:
+  default_config_hash: T3eJeoC4q7Tb2q8TWnSGn8OJz46uHuo2gVftSML1Mm0
+id: node.project.field_project_url
+field_name: field_project_url
+entity_type: node
+bundle: project
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

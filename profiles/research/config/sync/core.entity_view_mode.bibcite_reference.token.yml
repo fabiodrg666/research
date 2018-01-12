@@ -1,0 +1,10 @@
+uuid: f15c3e80-de70-4fd0-ae66-e344b66b97e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - bibcite_entity
+id: bibcite_reference.token
+label: Token
+targetEntityType: bibcite_reference
+cache: true

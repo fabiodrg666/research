@@ -1,0 +1,110 @@
+uuid: ca5ffcea-4ff3-4329-b901-4c16b6ae1600
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - views.view.author
+  module:
+    - addtoany
+    - ctools
+    - ctools_block
+    - panels
+    - views
+id: node_view-panels_variant-0
+label: News
+variant: panels_variant
+variant_settings:
+  blocks:
+    84dfbd3a-cc8e-423c-a43a-2823f2ddff82:
+      id: 'entity_field:node:title'
+      label: Title
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: string
+        settings:
+          link_to_entity: false
+        third_party_settings: {  }
+        weight: 0
+      region: top
+      weight: -1
+      uuid: 84dfbd3a-cc8e-423c-a43a-2823f2ddff82
+      context_mapping:
+        entity: node
+    a3f221f1-f5df-4636-93cd-769faddb5f47:
+      id: 'entity_field:node:field_image_media'
+      label: 'Image Media'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: entity_reference_entity_view
+        settings:
+          view_mode: embed
+        third_party_settings: {  }
+        weight: 0
+      region: top
+      weight: -2
+      uuid: a3f221f1-f5df-4636-93cd-769faddb5f47
+      context_mapping:
+        entity: node
+    223ec9cc-e8c1-4d3e-b065-c03804d145f7:
+      id: 'entity_field:node:body'
+      label: Description
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: text_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: middle
+      weight: -1
+      uuid: 223ec9cc-e8c1-4d3e-b065-c03804d145f7
+      context_mapping:
+        entity: node
+    ec08848a-2047-4cf0-b507-f0045693ca02:
+      id: 'views_block:author-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: first_above
+      weight: -1
+      uuid: ec08848a-2047-4cf0-b507-f0045693ca02
+      context_mapping: {  }
+    d1bcb647-a508-4026-a4c9-93956865233c:
+      id: addtoany_block
+      label: 'AddToAny buttons'
+      provider: addtoany
+      label_display: '0'
+      region: second_above
+      weight: 0
+      uuid: d1bcb647-a508-4026-a4c9-93956865233c
+      context_mapping: {  }
+  id: panels_variant
+  uuid: e22c04ed-9847-4b4c-8ba4-3398a53736ff
+  label: null
+  weight: 0
+  layout: layout_twocol_bricks
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-0
+  builder: ipe
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

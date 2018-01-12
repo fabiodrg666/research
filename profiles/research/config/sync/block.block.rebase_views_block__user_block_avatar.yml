@@ -1,0 +1,31 @@
+uuid: d9d89ffe-f7a1-4cda-83ef-c15d091e8283
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.user
+  module:
+    - block_class
+    - views
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: avatar
+_core:
+  default_config_hash: A8enoX8YKu4RvwQzEXOXivc0_jd5aKkPAmOVc9z7LgY
+id: rebase_views_block__user_block_avatar
+theme: rebase
+region: navigation_collapsible
+weight: -4
+provider: null
+plugin: 'views_block:user-block_avatar'
+settings:
+  id: 'views_block:user-block_avatar'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

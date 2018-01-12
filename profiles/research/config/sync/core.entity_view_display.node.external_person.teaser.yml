@@ -1,0 +1,46 @@
+uuid: 3cfefefe-c5b9-441c-b1d9-3a01dc97be79
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.external_person.body
+    - field.field.node.external_person.field_function
+    - field.field.node.external_person.field_institution
+    - field.field.node.external_person.field_institution_url
+    - field.field.node.external_person.field_photo
+    - node.type.external_person
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: vMWcPUw2k8g86s7h4ZODQjWI_4kuMdtS6ujZuQ6rB_k
+id: node.external_person.teaser
+targetEntityType: node
+bundle: external_person
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_function: true
+  field_institution: true
+  field_institution_url: true
+  field_photo: true
+  langcode: true

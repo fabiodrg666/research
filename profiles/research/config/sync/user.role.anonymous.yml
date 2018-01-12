@@ -1,0 +1,19 @@
+uuid: f7c6b99a-cde6-4e5d-8146-6d8cc0711433
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XelFGqLLD5vCtLwVyHfeOBbDtTdAhXSraZPMYD_xgQc
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view contributor entities'
+  - 'view media'

@@ -1,0 +1,11 @@
+settings:
+  library_url: 'https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.js'
+  css_url: 'https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css'
+  crop_preview_image_style: thumbnail
+  crop_list:
+    focal_point: focal_point
+  warn_multiple_usages: false
+  show_default_crop: true
+  show_crop_area: true
+_core:
+  default_config_hash: OzXnWpq8agvu3gIWGb4AdeGXgCQLugS_FZEeMoTAN7Q

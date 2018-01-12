@@ -1,0 +1,22 @@
+uuid: cb3129d6-d4ae-4e27-877c-1f6279fc7a80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_research_id
+  module:
+    - user
+_core:
+  default_config_hash: 8MRSSUJ5rDU7NeuZWX6y6wUIltPvzS7CUnMOUvLc3Us
+id: user.user.field_research_id
+field_name: field_research_id
+entity_type: user
+bundle: user
+label: ResearcherID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 6df211a8-c9aa-41ac-b31c-9c34e59c8f76
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+_core:
+  default_config_hash: JTc9VwjkvyQCyZ6t6wCBLXWTGTJkWOsdYc84ZXdrpfQ
+id: node.field_internal_group_member
+field_name: field_internal_group_member
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: af2abc1a-d6f0-4b9e-96cb-b05225021dc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.project
+  module:
+    - file
+_core:
+  default_config_hash: P3-WKlDx_sbCoATkxxPAi6_a5cXl9mEqKrHFti0r0wo
+id: node.project.field_file
+field_name: field_file
+entity_type: node
+bundle: project
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

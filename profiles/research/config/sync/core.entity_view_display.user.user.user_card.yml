@@ -1,0 +1,85 @@
+uuid: ff4b4f17-a6ed-44c7-b411-f8e7966a86e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.user_card
+    - field.field.user.user.field_author
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_google_scholar_user
+    - field.field.user.user.field_institu
+    - field.field.user.user.field_member_level
+    - field.field.user.user.field_name
+    - field.field.user.user.field_orcid
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_position
+    - field.field.user.user.field_research_gate_id
+    - field.field.user.user.field_research_id
+    - field.field.user.user.field_scopus_id
+    - field.field.user.user.field_website
+    - field.field.user.user.user_picture
+    - image.style.scale_and_crop_100x100
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: vIdLCX9fAc9gNdF2Z0m9hcifOUMbugR2NI7g5NOoOFg
+id: user.user.user_card
+targetEntityType: user
+bundle: user
+mode: user_card
+content:
+  field_member_level:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+  field_position:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: scale_and_crop_100x100
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_author: true
+  field_bio: true
+  field_degois_id: true
+  field_google_scholar_user: true
+  field_institu: true
+  field_orcid: true
+  field_phone: true
+  field_research_gate_id: true
+  field_research_id: true
+  field_scopus_id: true
+  field_website: true
+  langcode: true
+  masquerade: true
+  member_for: true

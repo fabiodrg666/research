@@ -1,0 +1,50 @@
+uuid: c46807b7-50a3-4c03-ab83-462dfdbc2a98
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.field_event_end_date
+    - field.field.node.event.field_event_start_date
+    - field.field.node.event.field_fundin
+    - field.field.node.event.field_venue
+    - node.type.event
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: AEiFBo9goGdWHdQF683MdHXcW-oAKRwazDfre-L7ozs
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_event_end_date: true
+  field_event_start_date: true
+  field_fundin: true
+  field_image_media: true
+  field_venue: true
+  langcode: true

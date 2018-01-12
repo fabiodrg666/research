@@ -1,0 +1,14 @@
+uuid: 2a1f159d-51ba-46c1-a24c-f1fef8cc3c50
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UnRSZvcoKCbzfPDENddHy20qrOQH0AKsA-VdGq9Z4fU
+label: Large
+id: large
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

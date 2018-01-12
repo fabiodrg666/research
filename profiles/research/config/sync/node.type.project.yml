@@ -1,0 +1,20 @@
+uuid: 95ed8154-decd-4251-9d9b-948d2871cdaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: BZ3BFtF0nsjdm86tSabBORskPFW9fFkzPPirw18yOlk
+name: Project
+type: project
+description: 'Use project to create a project page'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

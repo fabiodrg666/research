@@ -1,0 +1,22 @@
+uuid: ec02620c-9251-4695-af23-03d1aec9d140
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_name
+  module:
+    - user
+_core:
+  default_config_hash: y1VBAV4eD6Zmi9P9xHk0ARYsT0hobQlJrMIki643kyg
+id: user.user.field_name
+field_name: field_name
+entity_type: user
+bundle: user
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 0e25f57a-1a18-41ba-8655-f1d3500aaf54
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.finantial_support
+_core:
+  default_config_hash: cbd17-cciXOcHzcd7G7pNBHnrQav7zHybinjYbzbFhw
+id: node.finantial_support.title
+field_name: title
+entity_type: node
+bundle: finantial_support
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

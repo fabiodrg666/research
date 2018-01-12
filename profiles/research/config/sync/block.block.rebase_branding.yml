@@ -1,0 +1,25 @@
+uuid: ee5360aa-6e3c-4c24-866a-046b1efe0202
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rebase
+_core:
+  default_config_hash: eIpTXU7LjrpGaaUPe8r25VD37H9DVC6GoqqwgkCpKbo
+id: rebase_branding
+theme: rebase
+region: navigation
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

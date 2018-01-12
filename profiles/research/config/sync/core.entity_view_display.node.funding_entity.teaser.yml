@@ -1,0 +1,42 @@
+uuid: f4a6389b-9472-481e-9782-3da88f152bbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.funding_entity.body
+    - field.field.node.funding_entity.field_entity_logo
+    - field.field.node.funding_entity.field_url
+    - node.type.funding_entity
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: Mh9smgA9OS7vi7xXRM_1Ar_ZR31tjmuqGyhUo48lk6M
+id: node.funding_entity.teaser
+targetEntityType: node
+bundle: funding_entity
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_entity_logo: true
+  field_url: true
+  langcode: true

@@ -1,0 +1,32 @@
+uuid: dd4d9416-1609-4b82-84ee-162d489d9d62
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.hero_1440x460
+    - image.style.hero_md_1200x420
+    - image.style.hero_sm_748x420
+  theme:
+    - bootstrap
+_core:
+  default_config_hash: qW7eSG2-8pYpNK3MoFtiQFwCb7syvYKUk3VKk0K9PCY
+id: hero_responsive
+label: 'Hero responsive'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_1440x460
+  -
+    breakpoint_id: bootstrap.screen-sm-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_md_1200x420
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_sm_748x420
+breakpoint_group: bootstrap
+fallback_image_style: hero_sm_748x420

@@ -1,0 +1,9 @@
+fields:
+  bibcite_edition:
+    label: Sessão
+  bibcite_place_published:
+    label: País
+  bibcite_alternate_title:
+    label: Abreviação
+  bibcite_original_publication:
+    label: Histórico

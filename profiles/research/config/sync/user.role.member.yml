@@ -1,0 +1,23 @@
+uuid: 1cf13295-5177-45ae-a4c0-36f7445b8cf7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YeC3v2v46f4RNpZCQA_C2e8cY9RuNPlDxlvpjEw7PmI
+id: member
+label: Member
+weight: 4
+is_admin: null
+permissions:
+  - 'create event content'
+  - 'create file content'
+  - 'create news content'
+  - 'delete own event content'
+  - 'delete own file content'
+  - 'delete own news content'
+  - 'edit own event content'
+  - 'edit own file content'
+  - 'edit own news content'
+  - 'view event revisions'
+  - 'view file revisions'
+  - 'view news revisions'

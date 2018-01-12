@@ -1,0 +1,39 @@
+uuid: 96b34e56-acb7-4621-a039-450d81c853cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entity_logo
+    - node.type.funding_entity
+  module:
+    - image
+_core:
+  default_config_hash: SrPfmZGA6MxDsXSIf1QHkZRgER3XcyOXuNNo5TkG99A
+id: node.funding_entity.field_entity_logo
+field_name: field_entity_logo
+entity_type: node
+bundle: funding_entity
+label: 'Entity Logo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

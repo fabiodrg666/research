@@ -1,0 +1,17 @@
+uuid: a4eb4f2c-625e-4de6-802a-78f50f08322d
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_1440x460
+label: 'Hero LG 1440x460'
+effects:
+  da3a9bc8-0752-465f-8805-a84b9fa77af9:
+    uuid: da3a9bc8-0752-465f-8805-a84b9fa77af9
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 460
+      crop_type: focal_point

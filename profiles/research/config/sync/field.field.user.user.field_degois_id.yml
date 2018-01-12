@@ -1,0 +1,20 @@
+uuid: 44df66bf-d9c0-465e-bb54-9bdf596d42d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_degois_id
+  module:
+    - user
+id: user.user.field_degois_id
+field_name: field_degois_id
+entity_type: user
+bundle: user
+label: 'DeGóis ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

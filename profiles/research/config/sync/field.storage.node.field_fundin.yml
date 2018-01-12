@@ -1,0 +1,21 @@
+uuid: 5d2927d6-e737-469b-95d9-f7b180c0ba88
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: mnhoQYzMkvirAPahr4q6zbt5tc87gNoGKWZWSd0OXJQ
+id: node.field_fundin
+field_name: field_fundin
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

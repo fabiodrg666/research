@@ -1,0 +1,4 @@
+label: Livro
+fields:
+  bibcite_alternate_title:
+    label: Abreviação

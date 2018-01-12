@@ -1,0 +1,23 @@
+uuid: cd3d0d67-175e-4199-995d-e8f73d2ada35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.project
+  module:
+    - datetime
+_core:
+  default_config_hash: bbclklNYWfipRkAbvNDNjoeakMDo3p61sC2gCd2Kf8E
+id: node.project.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: project
+label: 'End Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

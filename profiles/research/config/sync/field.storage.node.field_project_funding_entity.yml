@@ -1,0 +1,21 @@
+uuid: fc9c8cb7-de3f-42c2-acda-c65271db7dbc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: TLx4ZCjMIlqlvkET5v5238ehzAlXRvjDSOUYJHIMpX4
+id: node.field_project_funding_entity
+field_name: field_project_funding_entity
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

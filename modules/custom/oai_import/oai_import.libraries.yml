@@ -1,0 +1,7 @@
+custom.oai_import:
+  version: VERSION
+  js:
+    assets/js/oai_import.js: {}
+  css:
+    research:
+      assets/css/oai_import.css: {}

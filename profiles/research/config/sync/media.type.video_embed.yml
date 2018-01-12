@@ -1,0 +1,17 @@
+uuid: 0c75e499-d54b-4a45-8757-db7277a46f06
+langcode: en
+status: true
+dependencies:
+  module:
+    - video_embed_media
+_core:
+  default_config_hash: hZdvAlQ5ThiOk--4e5PkkEhIRkk6bQNhOzxdK2kSNVI
+id: video_embed
+label: 'Video embed'
+description: 'Allows to embed videos'
+source: video_embed_field
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_video_embed_field
+field_map: {  }

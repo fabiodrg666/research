@@ -1,0 +1,17 @@
+oai_import.index:
+  path: '/admin/oai-import'
+  defaults:
+    _controller: '\Drupal\oai_import\Controller\ImportController::index'
+    _title: 'OAI Import'
+  requirements:
+    _permission: 'Import from OAI to Bibcite'
+    _method: 'GET'
+
+oai_import.import:
+  path: '/admin/import'
+  defaults:
+    _controller: '\Drupal\oai_import\Controller\ImportController::import'
+    _title: 'OAI Import'
+  requirements:
+    _permission: 'Import from OAI to Bibcite'
+    _method: 'POST'

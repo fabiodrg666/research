@@ -1,0 +1,30 @@
+uuid: 8afa3112-8b4a-4cb3-b4f9-0ddce7bfe49b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_group_member
+    - node.type.external_person
+    - node.type.research_group
+_core:
+  default_config_hash: 97oPWo4qBk9fDLBhMwUPUjwFe-t2SfngzSLa9V0rZvY
+id: node.research_group.field_external_group_member
+field_name: field_external_group_member
+entity_type: node
+bundle: research_group
+label: 'External Group Member'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      external_person: external_person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

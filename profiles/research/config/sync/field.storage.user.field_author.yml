@@ -1,0 +1,22 @@
+uuid: 0ce1628c-7dad-4ec2-8b21-0939e571d33d
+langcode: en
+status: true
+dependencies:
+  module:
+    - bibcite_entity
+    - user
+_core:
+  default_config_hash: nfzkVla3WfPJZd_N5vXOmsYvsYSsqtPQVr9Qg1Lb0uo
+id: user.field_author
+field_name: field_author
+entity_type: user
+type: entity_reference
+settings:
+  target_type: bibcite_contributor
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

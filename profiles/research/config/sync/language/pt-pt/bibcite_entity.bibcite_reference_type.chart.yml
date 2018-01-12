@@ -1,0 +1,5 @@
+fields:
+  bibcite_edition:
+    label: Versão
+  bibcite_pages:
+    label: Descrição

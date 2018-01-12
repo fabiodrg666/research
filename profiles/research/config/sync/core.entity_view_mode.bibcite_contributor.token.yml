@@ -1,0 +1,10 @@
+uuid: af9778da-3338-499a-931b-e77808974957
+langcode: en
+status: true
+dependencies:
+  module:
+    - bibcite_entity
+id: bibcite_contributor.token
+label: Token
+targetEntityType: bibcite_contributor
+cache: true

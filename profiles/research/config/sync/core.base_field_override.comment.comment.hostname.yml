@@ -1,0 +1,20 @@
+uuid: 7f4efc5a-6b34-429a-a7d4-7fbf35ca4d2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+_core:
+  default_config_hash: ZzJNBv6istSxVDLcXU5bqAwJPUvIZPVuTKeqX_jJNVk
+id: comment.comment.hostname
+field_name: hostname
+entity_type: comment
+bundle: comment
+label: Hostname
+description: 'The comment author''s hostname.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

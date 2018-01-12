@@ -1,0 +1,20 @@
+uuid: c5b30bab-e92c-4bb9-9467-aec7c8e9c48c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.external_person
+_core:
+  default_config_hash: SyG4nq-u4t1ZNCv0C1S008XyvJHXsEcWA67fxiv9Djs
+id: node.external_person.title
+field_name: title
+entity_type: node
+bundle: external_person
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

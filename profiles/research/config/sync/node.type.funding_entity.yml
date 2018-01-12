@@ -1,0 +1,20 @@
+uuid: 7592fa00-05fe-45cf-abca-f131fce09bae
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 3umkvlyhWztcu6cGfVPuuW0YLUXUz9QfwuxS0zNZDB4
+name: 'Funding Entity'
+type: funding_entity
+description: 'Use funding entity to insert institutions that provided support'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

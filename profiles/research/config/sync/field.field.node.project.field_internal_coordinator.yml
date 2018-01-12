@@ -1,0 +1,30 @@
+uuid: 7ebc685e-edbf-4426-8836-f9c694b489d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_internal_coordinator
+    - node.type.project
+_core:
+  default_config_hash: h-v6a3lNgDdZ-xaY8T8aJer6gpiWt9p5luaJW2gSt48
+id: node.project.field_internal_coordinator
+field_name: field_internal_coordinator
+entity_type: node
+bundle: project
+label: 'Internal Coordinator'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

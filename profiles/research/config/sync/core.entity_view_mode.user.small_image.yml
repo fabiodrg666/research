@@ -1,0 +1,12 @@
+uuid: a6fc754a-ec9b-4005-b3d0-20397f9f3135
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: dnVLd96nH_s7yQ9c9IunZbCYQpxc0Q_XEPk9w9GAXMM
+id: user.small_image
+label: 'Small image'
+targetEntityType: user
+cache: true

@@ -1,0 +1,21 @@
+uuid: ca6f9fdd-b870-498a-9cb1-e3f7b3d2578d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_institution
+    - node.type.external_person
+_core:
+  default_config_hash: ZBmdHU7lk-Wj9uFhLQcUruTp2rtzp0et6anoyV4m1FE
+id: node.external_person.field_institution
+field_name: field_institution
+entity_type: node
+bundle: external_person
+label: Institution
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

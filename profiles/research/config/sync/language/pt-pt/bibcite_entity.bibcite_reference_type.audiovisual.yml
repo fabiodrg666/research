@@ -1,0 +1,5 @@
+fields:
+  bibcite_custom5:
+    label: Formato
+  bibcite_type_of_work:
+    label: Tipo

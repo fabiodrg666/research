@@ -1,0 +1,26 @@
+uuid: 36be18b2-2730-4a85-ad38-86f4363b9a2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content
+label: Content
+description: 'Link to other content'
+attributes: {  }
+matchers:
+  3bf9b53e-4d4a-4f00-8b9f-7f30d5027bca:
+    uuid: 3bf9b53e-4d4a-4f00-8b9f-7f30d5027bca
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: 'Results from Event, News, Funding Entity, Project, Basic Page and Research group'
+      bundles:
+        event: event
+        funding_entity: funding_entity
+        news: news
+        page: page
+        project: project
+        research_group: research_group
+      group_by_bundle: false
+      include_unpublished: false

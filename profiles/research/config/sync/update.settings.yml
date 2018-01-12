@@ -1,0 +1,13 @@
+check:
+  disabled_extensions: false
+  interval_days: 1
+fetch:
+  url: ''
+  max_attempts: 2
+  timeout: 30
+notification:
+  emails:
+    - devops@omibee.com
+  threshold: all
+_core:
+  default_config_hash: MFqhqAIxPr6gBi6_NWcEEUXkesJhq0GVH-9XLZBjOpc

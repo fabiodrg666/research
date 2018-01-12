@@ -1,0 +1,29 @@
+uuid: 0f90aeff-07a4-4a1e-96c0-7611f7985724
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c3f34ed4-2f18-4303-b6a1-93bbe903216f'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: contacts
+theme: rebase
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:c3f34ed4-2f18-4303-b6a1-93bbe903216f'
+settings:
+  id: 'block_content:c3f34ed4-2f18-4303-b6a1-93bbe903216f'
+  label: Contacts
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

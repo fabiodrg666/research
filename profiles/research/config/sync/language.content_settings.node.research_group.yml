@@ -1,0 +1,13 @@
+uuid: 68506e49-7ec3-484b-bf76-f9ea29f9fbe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.research_group
+_core:
+  default_config_hash: eJxLLp4c_itEu_OpUZlf4PrFfdQZA2AT9qA4kPXaBYo
+id: node.research_group
+target_entity_type_id: node
+target_bundle: research_group
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,13 @@
+uuid: 53db2aeb-2112-468c-8b2e-4e2202724cb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project
+_core:
+  default_config_hash: GdXV-YDkzZx06dtVlczutds8dupSXFMfVfV4NXKjl7M
+id: node.project
+target_entity_type_id: node
+target_bundle: project
+default_langcode: site_default
+language_alterable: false

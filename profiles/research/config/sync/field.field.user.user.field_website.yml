@@ -1,0 +1,25 @@
+uuid: b74fd5c7-4bdf-47e5-93af-a2aaa09c686f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_website
+  module:
+    - link
+    - user
+_core:
+  default_config_hash: zOry-GYU2cH0prPsRCpi2GhJz31lKEx2R-umbPo7Vo4
+id: user.user.field_website
+field_name: field_website
+entity_type: user
+bundle: user
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

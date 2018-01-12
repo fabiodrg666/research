@@ -1,0 +1,23 @@
+uuid: fea6f13e-954e-4446-aa29-b224de3bb8bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_bio
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: S31bOCYI71mIKuuSSRtD-70sYc8a6MNs_ylFxGwNnPc
+id: user.user.field_bio
+field_name: field_bio
+entity_type: user
+bundle: user
+label: Bio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

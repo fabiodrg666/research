@@ -1,0 +1,16 @@
+uuid: 20ef3ea0-259a-456a-b110-641d41be4d83
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.group_leader
+  module:
+    - user
+_core:
+  default_config_hash: NKr6_fUajCVUDv82LcPO1Y6XRLOVAIsWIs8F4KUMBwY
+id: user_remove_role_action.group_leader
+label: 'Remove the Group Leader role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: group_leader

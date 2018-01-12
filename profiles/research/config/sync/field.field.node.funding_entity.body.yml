@@ -1,0 +1,24 @@
+uuid: 099776d7-b0c5-4fe3-9ffd-a791ad79677c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.funding_entity
+  module:
+    - text
+_core:
+  default_config_hash: VXpYUZnboAY9awAthKO3NbxeZpSwcUzPyx1nI4ULiuc
+id: node.funding_entity.body
+field_name: body
+entity_type: node
+bundle: funding_entity
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

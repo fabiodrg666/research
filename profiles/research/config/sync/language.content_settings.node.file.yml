@@ -1,0 +1,13 @@
+uuid: de360641-50f6-4e68-88c3-d25b7c5a363c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.file
+_core:
+  default_config_hash: igXsmJ78S8zQESXQ9m6SC8IUw5FvUYT1R6hy0IGXKLo
+id: node.file
+target_entity_type_id: node
+target_bundle: file
+default_langcode: site_default
+language_alterable: false

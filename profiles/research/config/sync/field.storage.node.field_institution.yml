@@ -1,0 +1,23 @@
+uuid: d6df0eed-f8dd-4e1b-ad3d-25e6e0c74f6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: L7V2tIoyZwbz5_6F2nRiJeJi5fcztejJ-V_ze0be76k
+id: node.field_institution
+field_name: field_institution
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

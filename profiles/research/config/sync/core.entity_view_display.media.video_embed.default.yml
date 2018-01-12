@@ -1,0 +1,62 @@
+uuid: 0613c207-87f2-4f05-a41e-afab996eecad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video_embed.field_media_video_embed_field
+    - media.type.video_embed
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+    - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: MwD1_7Cx115aQGPlrPMfW6GpVRKVPXBXIY7dPkiYxOc
+id: media.video_embed.default
+targetEntityType: media
+bundle: video_embed
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 3
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_media_video_embed_field:
+    type: video_embed_field_video
+    weight: 1
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  thumbnail: true

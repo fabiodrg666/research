@@ -1,0 +1,31 @@
+uuid: 400794c0-81c9-4dd5-b3ce-544f63dacb2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_position
+    - taxonomy.vocabulary.position
+  module:
+    - user
+_core:
+  default_config_hash: El6HGiWV_f_XMwK5gJtSeku4bJuXk-eWOxjM-cESCRw
+id: user.user.field_position
+field_name: field_position
+entity_type: user
+bundle: user
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      position: position
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

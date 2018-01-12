@@ -1,0 +1,23 @@
+uuid: 91e0002f-fb4a-4142-b946-9d3eb084a92c
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: 9sjq_BVfO6LR62wFfsdhJjRit1-gF2KTEQEhszZQgxk
+id: user.field_google_scholar_user
+field_name: field_google_scholar_user
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+.page-node-type-research-group{
+
+  .region-content{
+    text-align: center;
+
+      .block-entity-fieldnodefield-group-leader{
+        max-width:  300px;
+        margin: 0 auto;
+      }
+
+      .field--name-field-group-leader, .field--name-field-internal-group-member {
+        max-width:  300px;
+
+        .field--name-user-picture {
+          width:  80px;
+          border-radius: 40px;
+          overflow:  hidden;
+          margin:  10px auto;
+        }
+
+        .field--name-field-name {
+          font-size: 20px;
+        }
+      }
+  }
+}

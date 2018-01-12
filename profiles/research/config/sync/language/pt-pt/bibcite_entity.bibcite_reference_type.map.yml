@@ -1,0 +1,8 @@
+label: Mapa
+fields:
+  bibcite_custom1:
+    label: Escala
+  bibcite_pages:
+    label: Descrição
+  bibcite_type_of_work:
+    label: Tipo

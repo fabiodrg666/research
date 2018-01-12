@@ -1,0 +1,24 @@
+uuid: 7507ce5d-43b3-4d0a-9387-cf8c2bbc5581
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.research_group
+_core:
+  default_config_hash: BKlpc0-GpHtQP8LzfURPmCoP5Uf8uwvYqkP742TYAM4
+id: node.research_group.promote
+field_name: promote
+entity_type: node
+bundle: research_group
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

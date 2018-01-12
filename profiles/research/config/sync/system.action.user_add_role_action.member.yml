@@ -1,0 +1,16 @@
+uuid: 9159c92b-e3f0-45d5-8eca-9ab2466338ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.member
+  module:
+    - user
+_core:
+  default_config_hash: VFFVdHFtiFTDHOtID8FAXu4Cv5b03kApK0RF5fd7jUs
+id: user_add_role_action.member
+label: 'Add the Member role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: member

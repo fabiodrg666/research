@@ -1,0 +1,11 @@
+uuid: 900e37cd-1cf8-4c9d-8027-9a0557124803
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yWuX4KLSIgiNrd8WWJYLBq7hXC24oB-SiaoQb81UoO0
+name: 'Member Level'
+vid: member_level
+description: ''
+hierarchy: 0
+weight: 0

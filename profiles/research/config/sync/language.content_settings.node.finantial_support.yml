@@ -1,0 +1,13 @@
+uuid: 008d6ad6-b5b0-4376-8b1c-d82c42e6668a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.finantial_support
+_core:
+  default_config_hash: OHHSIo_QBoIZm2miGi6jdV6RfWlJfXEUKO9BnlL169A
+id: node.finantial_support
+target_entity_type_id: node
+target_bundle: finantial_support
+default_langcode: site_default
+language_alterable: false

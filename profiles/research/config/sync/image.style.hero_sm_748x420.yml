@@ -1,0 +1,17 @@
+uuid: 638b5e92-4eda-4bf8-95ce-468bc7872d31
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_sm_748x420
+label: 'Hero SM 748x420'
+effects:
+  91c4f095-b6f5-4cef-868e-0c082ff3a45b:
+    uuid: 91c4f095-b6f5-4cef-868e-0c082ff3a45b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 748
+      height: 420
+      crop_type: focal_point

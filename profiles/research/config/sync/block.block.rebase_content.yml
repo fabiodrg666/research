@@ -1,0 +1,22 @@
+uuid: 71e77519-ad7b-46e2-a004-15ab17843582
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rebase
+_core:
+  default_config_hash: '-8vusviTL8aLiHiDA1YL4yySCf1R8B-0gkXRKFNXc08'
+id: rebase_content
+theme: rebase
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,3 @@
+services:
+  oai_import.importer:
+    class: Drupal\oai_import\Model\Import

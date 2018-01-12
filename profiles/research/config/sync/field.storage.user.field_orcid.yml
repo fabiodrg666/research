@@ -1,0 +1,23 @@
+uuid: fd0770e9-08e8-4d50-9199-536a61c85a39
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: pH5aVDh5xAcgIMOIMwtCACA2c_W4x2wpxgHGGKLWrXY
+id: user.field_orcid
+field_name: field_orcid
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

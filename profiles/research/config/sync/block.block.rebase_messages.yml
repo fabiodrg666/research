@@ -1,0 +1,22 @@
+uuid: d45ecdf5-4bb1-43d8-8887-14fed3a08d2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rebase
+_core:
+  default_config_hash: nsVLxFz2aq1CH6AWgjko-7BzPHLF9Rg6f4NIvyfy9xk
+id: rebase_messages
+theme: rebase
+region: content
+weight: -1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,121 @@
+uuid: 83fde2f5-ebac-46ed-b590-0f215eaa95ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - ctools
+    - ctools_block
+    - panels
+id: node_view-panels_variant-2
+label: 'Research Group'
+variant: panels_variant
+variant_settings:
+  blocks:
+    3fd28aea-df01-497a-aa29-9e747408e480:
+      id: 'entity_field:node:field_image_media'
+      label: 'Image Media'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: entity_reference_entity_view
+        settings:
+          view_mode: embed
+        third_party_settings: {  }
+        weight: 0
+      region: content
+      weight: -2
+      uuid: 3fd28aea-df01-497a-aa29-9e747408e480
+      context_mapping:
+        entity: node
+    7a00339d-8176-493c-9866-4536083b6d7d:
+      id: 'entity_field:node:title'
+      label: Title
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: string
+        settings:
+          link_to_entity: false
+        third_party_settings: {  }
+        weight: 0
+      region: content
+      weight: -1
+      uuid: 7a00339d-8176-493c-9866-4536083b6d7d
+      context_mapping:
+        entity: node
+    322ecf9d-1cfc-46f7-aef7-a7b4ab44e814:
+      id: 'entity_field:node:body'
+      label: Description
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: text_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: content
+      weight: 0
+      uuid: 322ecf9d-1cfc-46f7-aef7-a7b4ab44e814
+      context_mapping:
+        entity: node
+    10db466f-5df8-4e88-bb39-20650933eebb:
+      id: 'entity_field:node:field_group_leader'
+      label: 'Group Leader'
+      provider: ctools_block
+      label_display: visible
+      formatter:
+        label: hidden
+        type: entity_reference_entity_view
+        settings:
+          view_mode: user_card
+        third_party_settings: {  }
+        weight: 0
+      region: content
+      weight: 1
+      uuid: 10db466f-5df8-4e88-bb39-20650933eebb
+      context_mapping:
+        entity: node
+    44b835ee-0f4b-4a78-b471-7f3eaea4d506:
+      id: 'entity_field:node:field_internal_group_member'
+      label: 'Internal Group Members'
+      provider: ctools_block
+      label_display: visible
+      formatter:
+        label: hidden
+        type: entity_reference_entity_view
+        settings:
+          view_mode: user_card
+        third_party_settings: {  }
+        weight: 0
+      region: content
+      weight: 2
+      uuid: 44b835ee-0f4b-4a78-b471-7f3eaea4d506
+      context_mapping:
+        entity: node
+  id: panels_variant
+  uuid: e53c242f-66c8-4a36-947c-6e9551688e3f
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-2
+  builder: ipe
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      research_group: research_group
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,123 @@
+body.path-frontpage{
+  .region-content{
+    width: 100%;
+      #slick-views-slideshow-block-1-1{
+        position: relative;
+        .slick__slide{
+          position: relative;
+          .views-field-title{
+            position: absolute;
+            right: 100px;
+            bottom: 30px;
+            background: rgba(255,255,255,0.8);
+            width: 40%;
+            padding: 20px;
+          }
+          .views-field-title{
+            h2{
+              a{
+                color: $darkest;
+              }
+            }
+          }
+          .views-field-view-node{
+            position: absolute;
+            right: 0px;
+            bottom: 30px;
+            width: 100px;
+            background: $darkest;
+            height: 40px;
+            a{
+              color: white;
+              font-size: 12px;
+              line-height: 40px;
+              padding-left: 10px;
+              &:visited{
+                color: white;
+              }
+            }
+          }
+        } // End slick__slide
+        ul.slick-dots{
+          position: absolute;
+          bottom: 30px;
+          left: 100px;
+
+          list-style: none;
+          li{
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-right: 30px;
+            display: inline-block;
+            border: 2px solid $darkest;
+
+              button{
+                background: white;
+                border:0;
+                padding: 12px;
+              }
+
+            &.slick-active{
+              border: 2px solid white;
+
+              button{
+                background: $darkest;
+              }
+            }
+          }
+        }
+      } // End slick-views-slideshow-block-1-1-slider
+      .view-id-research_groups, .view-id-events, .view-id-projects{
+        .view-content {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content:center;
+        }
+        .views-row{
+          width: 100%;
+          max-width: 520px;
+          text-align: center;
+          padding: 30px;
+          margin-bottom: 40px;
+        }
+
+      }
+      .view-id-research_groups{
+
+      }
+      .view-id-events{
+        padding: 40px 0;
+
+       .view-content {
+         justify-content: inherit;
+
+        .views-row{
+          text-align: left;
+          max-width: 340px;
+          padding: 0 30px;
+          border-right: 1px solid $normal;
+
+          h3{
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+    .view-id-projects{
+      padding-top: 20px;
+        .views-row{
+          text-align: left;
+          padding: 20px;
+
+          h2{
+            }
+
+          .views-field.views-field-field-image-media img {
+
+          }
+        }
+    }   //End view-id-research_groups, .view-id-events
+  }
+}
