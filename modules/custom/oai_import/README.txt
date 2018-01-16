@@ -5,14 +5,17 @@ How to use?
 -----------
 
 Use drush:
-drush oai-import "url"
+drush oai-import:import --url="url"
 
 An alias 'oai' is available. Example:
 
-drush oai https://repositorium.sdum.uminho.pt/oai/openaire?verb=ListRecords&metadataPrefix=oai_dc&set=com_1822_428
+drush oai:import --url="https://repositorium.sdum.uminho.pt/oai/openaire?verb=ListRecords&metadataPrefix=oai_dc&set=com_1822_428"
 
 
 Extras
 ------
 
-The module also contains a way to import a csv file
+The module also contains a way to import a tsv file. You can find the template here:
+https://docs.google.com/spreadsheets/d/1m328sm-JPJfgM4TqPLAS2DiB2Z0s0FbVTEaujyeNp0w/edit?usp=sharing
+
+drush oai:users --url=~/users.tsv
