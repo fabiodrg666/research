@@ -16,6 +16,6 @@ Extras
 ------
 
 The module also contains a way to import a tsv file. You can find the template here:
-https://docs.google.com/spreadsheets/d/1m328sm-JPJfgM4TqPLAS2DiB2Z0s0FbVTEaujyeNp0w/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1SKV9xTHPZK-KJrGUr8wHlfySheTB67csyMYMMYciJXs
 
 drush oai:users --url=~/users.tsv
