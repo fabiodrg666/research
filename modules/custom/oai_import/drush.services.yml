@@ -1,0 +1,5 @@
+services:
+  oai_import.commands:
+    class: \Drupal\oai_import\Commands\OaiImportCommands
+    tags:
+      - { name: drush.command }
