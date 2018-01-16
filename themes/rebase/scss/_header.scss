@@ -25,22 +25,22 @@ position: relative;
           background: none;
         }
       }
-      .region-navigation {
+    }
+    .region-navigation {
+      width: 100%;
+      display: table;
+
+      .logo{
+        background-color: $darkest;
+        margin: 0;
+        height: 100%;
         width: 100%;
-        display: table;
+        padding: 15px;
+        text-align: center;
+        margin-right: 20px;
 
-        .logo{
-          background-color: $darkest;
-          margin: 0;
-          height: 100%;
-          width: 100%;
-          padding: 15px;
-          text-align: center;
-
-          img{
-            width: 70%;
-            min-width: 250px;
-          }
+        img{
+          width: 160px;
         }
       }
     }
@@ -48,7 +48,7 @@ position: relative;
       .region-navigation-collapsible{
         display: table-cell;
         vertical-align: middle;
-        height: 105px;
+        height: 90px;
       }
       nav {
         display: table-cell;
@@ -92,9 +92,9 @@ position: relative;
   body {
       margin-top: 0;
 
-      #navbar #navbar-in{
+      header#navbar #navbar-in{
         background-color: white;
-          .navbar-header .region-navigation {
+          .region-navigation {
             width: auto;
             .logo {
               width: 280px;
@@ -103,4 +103,5 @@ position: relative;
       }
   }
 }
+
 
