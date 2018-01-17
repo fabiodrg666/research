@@ -1,13 +1,11 @@
-uuid: 5b7891b3-81ea-4736-908b-fc568bbfbeb2
+uuid: 0d1d519e-b5e4-4e22-9e88-b3761c7cc72d
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: O1mq4I5VoSX3nStMJhfnafwWQmgNyF1muhYe3UJpqEE
-id: node.field_value
-field_name: field_value
+id: node.field_amount
+field_name: field_amount
 entity_type: node
 type: decimal
 settings:

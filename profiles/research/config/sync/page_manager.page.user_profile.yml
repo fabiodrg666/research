@@ -1,0 +1,12 @@
+uuid: 84b189b7-5173-45ff-9900-eb8600a1d324
+langcode: en
+status: true
+dependencies: {  }
+id: user_profile
+label: 'User profile'
+description: ''
+use_admin_theme: false
+path: /user/%
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.finantial_support.field_funding_entity
-    - field.field.node.finantial_support.field_value
     - node.type.finantial_support
   module:
     - field_layout
@@ -28,5 +27,4 @@ content:
 hidden:
   addtoany: true
   field_funding_entity: true
-  field_value: true
   langcode: true

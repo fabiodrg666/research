@@ -432,6 +432,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

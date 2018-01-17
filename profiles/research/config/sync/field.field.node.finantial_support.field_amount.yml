@@ -1,17 +1,15 @@
-uuid: b62604f2-e0a7-4a19-a769-ae2430591290
+uuid: 6ed06b76-0398-4133-917b-9654688c3867
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_value
+    - field.storage.node.field_amount
     - node.type.finantial_support
-_core:
-  default_config_hash: '-2zzjqJHubmLQ9o7TG9-R1lee2l5bYJ85gZcbtdJ0QI'
-id: node.finantial_support.field_value
-field_name: field_value
+id: node.finantial_support.field_amount
+field_name: field_amount
 entity_type: node
 bundle: finantial_support
-label: Value
+label: Amount
 description: ''
 required: false
 translatable: false

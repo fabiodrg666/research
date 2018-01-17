@@ -1,0 +1,70 @@
+uuid: de0d5c31-d4ec-4f08-8b58-0d093477b3d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.user_profile
+    - views.view.publications
+    - views.view.user
+  module:
+    - ctools_block
+    - panels
+    - views
+id: user_profile-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    e234ca82-d897-4983-a4a5-1e4a1d6ba718:
+      id: 'views_block:user-block_profile'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: -1
+      uuid: e234ca82-d897-4983-a4a5-1e4a1d6ba718
+      context_mapping: {  }
+    ada01d2a-b8e9-4d9a-9a66-c6664dbd8ec7:
+      id: 'views_block:publications-user_publications'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 1
+      uuid: ada01d2a-b8e9-4d9a-9a66-c6664dbd8ec7
+      context_mapping: {  }
+    10111245-c3b6-4afb-8981-10eea86639aa:
+      id: 'entity_field:user:field_bio'
+      label: Bio
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: text_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: content
+      weight: 0
+      uuid: 10111245-c3b6-4afb-8981-10eea86639aa
+      context_mapping:
+        entity: user
+  id: panels_variant
+  uuid: 6812a972-c260-4e63-990d-7e6f237408e2
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: 'User Profle'
+  storage_type: page_manager
+  storage_id: user_profile-panels_variant-0
+  builder: ipe
+page: user_profile
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

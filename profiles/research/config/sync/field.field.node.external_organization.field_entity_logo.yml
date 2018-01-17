@@ -1,32 +1,37 @@
-uuid: fc4f4019-6248-44ab-aa53-7912c4a4d1c8
+uuid: 708cf038-4b6a-414c-9acd-481cf35c5cde
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.media.field_image
-    - media.type.images
+    - field.storage.node.field_entity_logo
+    - node.type.external_organization
   module:
+    - content_translation
     - image
-_core:
-  default_config_hash: Rd6HeaueEAxeMFrvGgXwMO0UZEYeP7SIj8RtjPhHhzo
-id: media.images.field_image
-field_name: field_image
-entity_type: media
-bundle: images
-label: Image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.external_organization.field_entity_logo
+field_name: field_entity_logo
+entity_type: node
+bundle: external_organization
+label: 'Entity Logo'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '16 MB'
+  max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true
-  alt_field_required: false
+  alt_field_required: true
   title_field: false
   title_field_required: false
   default_image:

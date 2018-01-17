@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.external_organization.field_entity_logo
     - field.field.node.external_organization.field_url
     - node.type.external_organization
   module:
     - field_layout
+    - image
     - layout_discovery
     - link
     - user
@@ -21,6 +23,15 @@ targetEntityType: node
 bundle: external_organization
 mode: default
 content:
+  field_entity_logo:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_url:
     weight: 102
     label: above

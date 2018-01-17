@@ -14,7 +14,9 @@ dependencies:
   module:
     - datetime
     - entity_browser
+    - entity_browser_entity_form
     - field_layout
+    - inline_entity_form
     - layout_discovery
     - path
     - text
@@ -31,7 +33,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 11
     settings:
       rows: 9
       summary_rows: 3
@@ -45,13 +47,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_event_end_date:
-    weight: 11
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_event_start_date:
-    weight: 10
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -59,11 +61,17 @@ content:
   field_fundin:
     weight: 12
     settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'funding entity'
+      label_plural: 'funding entities'
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
     region: content
   field_image_media:
     weight: 1
@@ -79,7 +87,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_venue:
-    weight: 9
+    weight: 8
     settings:
       size: 60
       placeholder: ''

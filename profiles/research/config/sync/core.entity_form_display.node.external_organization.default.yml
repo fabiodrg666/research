@@ -3,10 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.external_organization.field_entity_logo
     - field.field.node.external_organization.field_url
+    - image.style.thumbnail
     - node.type.external_organization
   module:
     - field_layout
+    - image
     - layout_discovery
     - link
     - path
@@ -27,6 +30,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_entity_logo:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_url:
     weight: 2
     settings:
@@ -67,7 +78,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 9
     third_party_settings: {  }
     region: content
   sticky:
