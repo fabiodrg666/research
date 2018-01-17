@@ -69,7 +69,9 @@
                 "2877383 - Add action support to Media module":
                 "https://www.drupal.org/files/issues/2877383-23.patch",
                 "2815221 - Add quickedit to the latest-revision route":
-                "https://www.drupal.org/files/issues/2815221-69-8.4.x.patch"
+                "https://www.drupal.org/files/issues/2815221-69-8.4.x.patch",
+                "2868294 - Call to a member function getThirdPartySetting() on null in ContentTranslationManager":
+               "https://www.drupal.org/files/issues/2868294-12.patch"
             },
             "drupal/entity_block": {
                 "2844068 - Create derivatives for any viewable entity.":
