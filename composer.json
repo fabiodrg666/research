@@ -109,6 +109,10 @@
                 "2868216 - Page variants cannot be selected": "https://www.drupal.org/files/issues/page_manager-page_variants_selection-2868216-7.patch",
                 "2870261 - UI Page Variants JS does not fire with BigPipe enabled": "https://www.drupal.org/files/issues/page_manager-ui-variant-js-big-pipe-2870261-2.patch"
             },
+            "drupal/slick": {
+                "2855190 - Using bower or composer to download the slick library":
+                "https://www.drupal.org/files/issues/2855190-13_0.patch"
+            },
             "drupal/bibcite": {
                 "2934158 - Add 'Published' and 'Promoted' to the Reference entity": "https://www.drupal.org/files/issues/2934158-promoted_published.patch"
             }
