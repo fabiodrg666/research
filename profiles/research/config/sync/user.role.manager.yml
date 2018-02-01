@@ -9,13 +9,10 @@ label: Manager
 weight: 3
 is_admin: null
 permissions:
-  - 'access administration pages'
   - 'access bibcite export'
   - 'access content overview'
   - 'access in-place editing'
   - 'access panels in-place editing'
-  - 'access site in maintenance mode'
-  - 'access site reports'
   - 'access toolbar'
   - 'access user profiles'
   - 'add bibcite_reference entities'
@@ -32,9 +29,7 @@ permissions:
   - 'administer pane access'
   - 'administer panels layouts'
   - 'administer panels styles'
-  - 'administer permissions'
   - 'administer taxonomy'
-  - 'administer themes'
   - 'administer users'
   - 'administer workflows'
   - 'cancel account'
@@ -113,7 +108,6 @@ permissions:
   - 'revert news revisions'
   - 'revert project revisions'
   - 'revert research_group revisions'
-  - 'select account cancellation method'
   - 'use editorial transition archive'
   - 'use editorial transition archived_draft'
   - 'use editorial transition archived_published'

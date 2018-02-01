@@ -20,16 +20,10 @@ dependencies:
     - node.type.project
   module:
     - datetime
-    - field_layout
     - file
-    - layout_discovery
     - link
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: PJfDdZ32-HEtb7qngw4sLxugK04KfrY97b4kTO1pIcA
 id: node.project.default

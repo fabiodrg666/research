@@ -1,0 +1,19 @@
+uuid: 6d320602-78b2-48f7-b9e6-7f9ffea6a067
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_mission
+field_name: field_mission
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

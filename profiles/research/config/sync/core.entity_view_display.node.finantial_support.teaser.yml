@@ -4,16 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.finantial_support.field_amount
+    - field.field.node.finantial_support.field_financial_support_date
     - field.field.node.finantial_support.field_funding_entity
     - node.type.finantial_support
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: 2QtZMgZ1Z7X5q67xKXCy2v04Z9Ptc0ldP0eJ7NpdNKo
 id: node.finantial_support.teaser
@@ -26,5 +22,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_amount: true
+  field_financial_support_date: true
   field_funding_entity: true
   langcode: true

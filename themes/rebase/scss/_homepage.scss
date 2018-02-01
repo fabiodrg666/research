@@ -98,7 +98,9 @@ body.path-frontpage{
           max-width: 340px;
           padding: 0 30px;
           border-right: 1px solid $normal;
-
+          .views-field-field-venue{
+            color: $normal;
+          }
           h3{
             margin-top: 8px;
           }

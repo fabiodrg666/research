@@ -55,5 +55,42 @@ footer.container{
         color: $normal;
       }
     }
+    .social{
+      ul.menu {
+        display: flex;
+
+        li{
+          width:40px;
+          height:40px;
+          margin-right:15px;
+          overflow:hidden;
+          &:nth-child(1){
+            background: url(/themes/rebase/images/social.png) no-repeat -124px -72px;
+            background-size: auto 110px;
+            &:hover{
+            background: url(/themes/rebase/images/social.png) no-repeat -124px 2px;
+            background-size: auto 110px;
+            }
+          }
+          &:nth-child(2){
+            background: url(/themes/rebase/images/social.png) no-repeat 0 -72px;
+            background-size: auto 110px;
+            &:hover{
+            background: url(/themes/rebase/images/social.png) no-repeat 0 2px;
+            background-size: auto 110px;
+            }
+          }
+          &:nth-child(3){
+            background: url(/themes/rebase/images/social.png) no-repeat -246px -70px;
+            background-size: auto 110px;
+            &:hover{
+            background: url(/themes/rebase/images/social.png) no-repeat -246px 4px;
+            background-size: auto 110px;
+            }
+          }
+          a{padding: 40px;}
+        }
+      }
+    }
   }// End region footer
 } // End footer container

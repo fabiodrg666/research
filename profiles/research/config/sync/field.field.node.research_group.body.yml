@@ -14,7 +14,7 @@ field_name: body
 entity_type: node
 bundle: research_group
 label: Description
-description: ''
+description: 'Add more information about the Research Group.'
 required: false
 translatable: true
 default_value: {  }

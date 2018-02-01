@@ -14,7 +14,7 @@ field_name: field_url
 entity_type: node
 bundle: external_organization
 label: URL
-description: ''
+description: 'Add a link to the Organization''s website page.'
 required: false
 translatable: true
 default_value: {  }

@@ -8,15 +8,36 @@ dependencies:
     - image.style.thumbnail
     - node.type.external_organization
   module:
-    - field_layout
+    - field_group
     - image
-    - layout_discovery
     - link
     - path
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
+  field_group:
+    group_logo:
+      children:
+        - field_entity_logo
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Logo
+    group_website:
+      children:
+        - field_url
+      parent_name: ''
+      weight: 7
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Website
 _core:
   default_config_hash: b2tM5DNNgYfGhJdF8qx3UCQKGWeGbIKdKQBZ-qTVZXk
 id: node.external_organization.default
@@ -63,7 +84,7 @@ content:
     region: content
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -78,14 +99,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 10
     third_party_settings: {  }
     region: content
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -95,6 +116,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 11
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

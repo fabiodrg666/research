@@ -1,0 +1,56 @@
+uuid: a2a14bf0-b67e-4ed0-bd67-afdc5cfc36ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.projects
+    - views.view.projects
+  content:
+    - 'block_content:basic:56e98245-ead8-4cd7-b33f-ffbee79a452b'
+  module:
+    - block_content
+    - panels
+    - views
+id: projects-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    8277c612-0e21-496e-9a2e-301246ac5f3b:
+      id: 'views_block:projects-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      context_mapping: {  }
+      region: content
+      uuid: 8277c612-0e21-496e-9a2e-301246ac5f3b
+      weight: 2
+    5500ca80-d3a8-4cd4-887a-8ef9d312478a:
+      id: 'block_content:56e98245-ead8-4cd7-b33f-ffbee79a452b'
+      label: 'Banner Projects'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: content
+      uuid: 5500ca80-d3a8-4cd4-887a-8ef9d312478a
+      weight: 1
+  id: panels_variant
+  uuid: 56330ccc-04e5-44a8-a71d-a39d7c5a3ce8
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: projects-panels_variant-0
+  builder: ipe
+page: projects
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

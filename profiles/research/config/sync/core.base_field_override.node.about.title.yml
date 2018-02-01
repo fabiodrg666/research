@@ -1,0 +1,18 @@
+uuid: bfb5cb8a-0d23-4c9d-90ad-a85fbf619845
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.about
+id: node.about.title
+field_name: title
+entity_type: node
+bundle: about
+label: 'Title of area About'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

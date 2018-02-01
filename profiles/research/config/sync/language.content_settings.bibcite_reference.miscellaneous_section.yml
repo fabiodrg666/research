@@ -1,0 +1,11 @@
+uuid: 915f310e-3619-40e7-bb68-7d8ab3c18e32
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.miscellaneous_section
+id: bibcite_reference.miscellaneous_section
+target_entity_type_id: bibcite_reference
+target_bundle: miscellaneous_section
+default_langcode: site_default
+language_alterable: false

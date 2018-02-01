@@ -1,0 +1,11 @@
+uuid: 91ca8b4e-9c9f-4427-bed8-152bb49551d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - bibcite_entity
+id: bibcite_contributor.bibcite_contributor
+target_entity_type_id: bibcite_contributor
+target_bundle: bibcite_contributor
+default_langcode: site_default
+language_alterable: false

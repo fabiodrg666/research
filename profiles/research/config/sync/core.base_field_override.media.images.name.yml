@@ -1,0 +1,20 @@
+uuid: defac50f-09aa-4bf8-99ef-744b8344eb5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.images
+id: media.images.name
+field_name: name
+entity_type: media
+bundle: images
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

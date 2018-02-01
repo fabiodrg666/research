@@ -1,0 +1,15 @@
+variant_settings:
+  blocks:
+    c79d4df4-d6e1-4404-b773-1afe935e2da8:
+      label: 'Como e quando'
+    2a267d52-11e0-4aa4-9e2b-3cdcd42ec71e:
+      label: 'Imagem Media'
+    3c2ba28c-1733-4f93-aeb3-83f7f32d3092:
+      label: Título
+    9ade0bc8-8e01-4894-92c8-43518870b993:
+      label: 'Entidade de Financiamento'
+    839f1aee-3344-4721-b9c3-ab668e0b8edd:
+      label: Local
+    e724b1f4-5eed-494b-aef1-0ee7c38c4d36:
+      label: Descrição
+  label: ''

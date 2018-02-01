@@ -14,7 +14,7 @@ field_name: body
 entity_type: node
 bundle: funding_entity
 label: Description
-description: ''
+description: 'Add a short description of the Funding Entity.'
 required: false
 translatable: true
 default_value: {  }

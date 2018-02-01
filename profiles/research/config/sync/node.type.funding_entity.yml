@@ -13,7 +13,7 @@ _core:
   default_config_hash: 3umkvlyhWztcu6cGfVPuuW0YLUXUz9QfwuxS0zNZDB4
 name: 'Funding Entity'
 type: funding_entity
-description: 'Use funding entity to insert institutions that provided support'
+description: 'Use <b>Funding Entity</b> to insert institutions that provided support.'
 help: ''
 new_revision: false
 preview_mode: 0

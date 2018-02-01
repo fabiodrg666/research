@@ -9,14 +9,8 @@ dependencies:
     - field.field.node.funding_entity.field_url
     - node.type.funding_entity
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: Mh9smgA9OS7vi7xXRM_1Ar_ZR31tjmuqGyhUo48lk6M
 id: node.funding_entity.teaser

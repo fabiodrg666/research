@@ -15,7 +15,7 @@ third_party_settings:
 id: contacts
 theme: rebase
 region: footer
-weight: -6
+weight: -7
 provider: null
 plugin: 'block_content:c3f34ed4-2f18-4303-b6a1-93bbe903216f'
 settings:

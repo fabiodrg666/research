@@ -10,7 +10,7 @@ id: node.research_group.title
 field_name: title
 entity_type: node
 bundle: research_group
-label: 'Research group name'
+label: 'Research Group name'
 description: ''
 required: true
 translatable: true

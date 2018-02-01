@@ -10,10 +10,10 @@ id: node.file.title
 field_name: title
 entity_type: node
 bundle: file
-label: Name
+label: 'File name'
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

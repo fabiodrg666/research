@@ -1,0 +1,11 @@
+uuid: 03e43f58-13a4-4e19-873a-25bf58fd35b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.conference_paper
+id: bibcite_reference.conference_paper
+target_entity_type_id: bibcite_reference
+target_bundle: conference_paper
+default_langcode: site_default
+language_alterable: false

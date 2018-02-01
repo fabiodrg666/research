@@ -7,15 +7,9 @@ dependencies:
     - field.field.node.external_organization.field_url
     - node.type.external_organization
   module:
-    - field_layout
     - image
-    - layout_discovery
     - link
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: OG_Jn5aODaxNzpnbQsA-VGzO70Okn1WZNg-UTDZ1HQQ
 id: node.external_organization.default

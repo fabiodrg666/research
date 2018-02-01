@@ -10,15 +10,24 @@ dependencies:
     - node.type.news
   module:
     - entity_browser
-    - field_layout
-    - layout_discovery
+    - field_group
     - link
     - path
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
+  field_group:
+    group_links:
+      children:
+        - field_news_url
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Links
 _core:
   default_config_hash: 1nqcK_aS9c3TkyiBMxkRe-Sdb9R-UeG7CMoFEFnX9fI
 id: node.news.default
@@ -28,7 +37,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
@@ -37,7 +46,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -48,15 +57,15 @@ content:
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
-      open: true
       selection_mode: selection_append
       field_widget_display_settings:
         view_mode: widget
+      open: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
   field_news_url:
-    weight: 9
+    weight: 10
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -65,7 +74,7 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 3
+    weight: 4
     region: content
     settings:
       include_locked: true
@@ -80,7 +89,7 @@ content:
     region: content
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -88,7 +97,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   status:
@@ -102,7 +111,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -113,9 +122,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60

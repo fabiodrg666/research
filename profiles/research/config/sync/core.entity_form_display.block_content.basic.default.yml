@@ -6,13 +6,7 @@ dependencies:
     - block_content.type.basic
     - field.field.block_content.basic.body
   module:
-    - field_layout
-    - layout_discovery
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: SvgrWF4tu54bnflcgQ8EGzPvRMTFsosV0K98tO8PTVs
 id: block_content.basic.default
@@ -51,5 +45,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  translation:
+    weight: 10
     region: content
 hidden: {  }

@@ -11,8 +11,8 @@ id: node.project.field_member
 field_name: field_member
 entity_type: node
 bundle: project
-label: Member
-description: ''
+label: 'Internal Member'
+description: "Select one or several internal members from the existing list.\r\n"
 required: false
 translatable: false
 default_value: {  }

@@ -1,6 +1,10 @@
-label: Pessoas
-description: 'Encontrar e gerir pessoas a interagir com o teu sítio.'
 display:
+  people:
+    display_title: Membros
+    display_options:
+      menu:
+        title: Membros
+      title: Membros
   default:
     display_title: Principal
     display_options:
@@ -59,7 +63,7 @@ display:
         permission:
           expose:
             label: Permissão
-      title: Pessoas
+      title: Membros
       empty:
         area_text_custom:
           content: 'Nenhuma pessoa disponível.'
@@ -71,5 +75,7 @@ display:
         title: Lista
         description: 'Encontrar e gerir pessoas a interagir com o teu sítio.'
       tab_options:
-        title: Pessoas
+        title: Membros
         description: 'Gerir contas de utilizadores, grupos e permissões.'
+label: Membros
+description: 'Encontrar e gerir pessoas a interagir com o teu sítio.'

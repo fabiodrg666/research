@@ -11,7 +11,7 @@ dependencies:
     - rebase
 third_party_settings:
   block_class:
-    classes: ''
+    classes: social
 _core:
   default_config_hash: gJX20ADohH63ngAvyei8oPuL1yxMa35xRx1xaVmXcf8
 id: rebase_footer

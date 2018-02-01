@@ -1,0 +1,18 @@
+uuid: ecfb26b6-5052-4730-89dc-f9133f007a04
+langcode: pt-pt
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.project_status
+id: taxonomy_term.project_status.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: project_status
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

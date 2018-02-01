@@ -10,7 +10,7 @@ id: node.finantial_support.title
 field_name: title
 entity_type: node
 bundle: finantial_support
-label: Name
+label: 'Fund name'
 description: ''
 required: true
 translatable: true

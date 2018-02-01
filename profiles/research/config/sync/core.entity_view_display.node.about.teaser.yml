@@ -1,0 +1,30 @@
+uuid: e470227d-91d5-4180-94f1-aeb82a994866
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about.field_direction_board
+    - field.field.node.about.field_files
+    - field.field.node.about.field_goals
+    - field.field.node.about.field_links
+    - field.field.node.about.field_mission
+    - node.type.about
+  module:
+    - user
+id: node.about.teaser
+targetEntityType: node
+bundle: about
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_direction_board: true
+  field_files: true
+  field_goals: true
+  field_links: true
+  field_mission: true
+  langcode: true

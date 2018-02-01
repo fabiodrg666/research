@@ -1,0 +1,11 @@
+uuid: 340a9de7-5f41-4072-9906-cd254889284f
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.website
+id: bibcite_reference.website
+target_entity_type_id: bibcite_reference
+target_bundle: website
+default_langcode: site_default
+language_alterable: false

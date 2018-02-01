@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - node.type.news
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
 _core:
   default_config_hash: vRYTorr8PCdVYMjD3cn7THGFEDvGkkk_rfpxlSYjslg
 id: node.news

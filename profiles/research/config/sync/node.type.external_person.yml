@@ -13,7 +13,7 @@ _core:
   default_config_hash: tKFXC6SK9ilTvmTV3d12bsNU57k4A8HxUkR_FyL_D28
 name: 'External Person'
 type: external_person
-description: 'Use external person to reference people outside the institution'
+description: 'Use <b>External Person</b> to reference people outside the institution.'
 help: ''
 new_revision: false
 preview_mode: 0

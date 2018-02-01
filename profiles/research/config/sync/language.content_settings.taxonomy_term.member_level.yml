@@ -1,0 +1,16 @@
+uuid: 15c972c4-2c33-45f8-9e97-521659dac8c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.member_level
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.member_level
+target_entity_type_id: taxonomy_term
+target_bundle: member_level
+default_langcode: site_default
+language_alterable: true

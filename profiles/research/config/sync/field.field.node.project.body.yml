@@ -14,7 +14,7 @@ field_name: body
 entity_type: node
 bundle: project
 label: Description
-description: ''
+description: 'Add more information about the Project. '
 required: false
 translatable: true
 default_value: {  }

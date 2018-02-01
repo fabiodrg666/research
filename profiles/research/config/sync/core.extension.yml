@@ -31,6 +31,7 @@ module:
   datetime: 0
   dblog: 0
   default_content: 0
+  devel: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
@@ -40,8 +41,9 @@ module:
   entity_browser: 0
   entity_browser_entity_form: 0
   entity_embed: 0
+  entity_reference_exposed_filters: 0
   field: 0
-  field_layout: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -54,6 +56,7 @@ module:
   image_widget_crop: 0
   inline_entity_form: 0
   inline_form_errors: 0
+  kint: 0
   language: 0
   layout_discovery: 0
   link: 0
@@ -62,6 +65,7 @@ module:
   masquerade: 0
   media: 0
   media_entity_actions: 0
+  menu_link_attributes: 0
   menu_ui: 0
   metatag: 0
   metatag_facebook: 0
@@ -100,6 +104,7 @@ module:
   user: 0
   video_embed_field: 0
   video_embed_media: 0
+  views_field_view: 0
   views_ui: 0
   workflows: 0
   menu_link_content: 1

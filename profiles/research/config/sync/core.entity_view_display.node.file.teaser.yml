@@ -8,14 +8,8 @@ dependencies:
     - field.field.node.file.field_file_file
     - node.type.file
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: WjGZa7ZpUM-dN3UgUrDqtIXZFJ2tROBY-CzV0Ci7UK8
 id: node.file.teaser

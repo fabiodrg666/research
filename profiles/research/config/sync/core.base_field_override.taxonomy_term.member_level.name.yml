@@ -1,0 +1,18 @@
+uuid: e5c2549d-4f65-4e36-8500-0994f1c6ee7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.member_level
+id: taxonomy_term.member_level.name
+field_name: name
+entity_type: taxonomy_term
+bundle: member_level
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

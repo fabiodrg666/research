@@ -12,7 +12,7 @@ field_name: field_venue
 entity_type: node
 bundle: event
 label: Venue
-description: ''
+description: 'Location of the Event.'
 required: false
 translatable: false
 default_value: {  }

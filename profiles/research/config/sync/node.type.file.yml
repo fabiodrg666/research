@@ -13,7 +13,7 @@ _core:
   default_config_hash: 6YE80lPbh-fBWvZva592vRbqoXlkLZ1u0PC_DlsX2L8
 name: File
 type: file
-description: 'Use file to upload files to share with other users'
+description: 'Use <b>File</b> to upload files to share with other users.'
 help: ''
 new_revision: false
 preview_mode: 0

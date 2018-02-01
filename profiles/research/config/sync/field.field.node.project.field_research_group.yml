@@ -13,7 +13,7 @@ field_name: field_research_group
 entity_type: node
 bundle: project
 label: 'Research Group'
-description: ''
+description: 'Associate a Research Group to this Project.'
 required: false
 translatable: false
 default_value: {  }

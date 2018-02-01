@@ -1,0 +1,11 @@
+uuid: 9fc67a50-52b1-42be-bd4d-d96e9cf3ecd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.unpublished
+id: bibcite_reference.unpublished
+target_entity_type_id: bibcite_reference
+target_bundle: unpublished
+default_langcode: site_default
+language_alterable: false

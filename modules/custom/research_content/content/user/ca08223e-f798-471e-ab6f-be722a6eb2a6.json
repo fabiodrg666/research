@@ -1,0 +1,75 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/user\/1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+        }
+    },
+    "uid": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "ca08223e-f798-471e-ab6f-be722a6eb2a6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "devops"
+        }
+    ],
+    "created": [
+        {
+            "value": 1516288296
+        }
+    ],
+    "changed": [
+        {
+            "value": 1516288296,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "devops | res-dev",
+                "canonical_url": "http:\/\/default\/user\/1",
+                "description": "res-dev"
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}

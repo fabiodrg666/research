@@ -1,0 +1,20 @@
+uuid: b9c9dd2b-5c5c-440f-bf4e-454eea8a58b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.member_level
+  module:
+    - text
+id: taxonomy_term.member_level.description
+field_name: description
+entity_type: taxonomy_term
+bundle: member_level
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

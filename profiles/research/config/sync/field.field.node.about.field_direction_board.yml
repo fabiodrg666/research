@@ -1,0 +1,28 @@
+uuid: cc6d0cbc-6158-419d-97ae-04e411f96b6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_direction_board
+    - node.type.about
+id: node.about.field_direction_board
+field_name: field_direction_board
+entity_type: node
+bundle: about
+label: 'Board Member'
+description: 'Select one or several Board Member from the existing members list.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -9,14 +9,8 @@ dependencies:
     - field.field.node.news.field_news_url
     - node.type.news
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: GZTGly820BJfx-7WgamM2C5FOVw9Egm1tVhgPMPQJU8
 id: node.news.teaser

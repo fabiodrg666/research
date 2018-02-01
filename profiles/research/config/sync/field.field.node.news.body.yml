@@ -14,7 +14,7 @@ field_name: body
 entity_type: node
 bundle: news
 label: Body
-description: ''
+description: 'Add content to the News article.'
 required: false
 translatable: true
 default_value: {  }

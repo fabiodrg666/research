@@ -1,0 +1,193 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/9?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            },
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "pt-pt"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 9
+        }
+    ],
+    "uuid": [
+        {
+            "value": "20ff6a87-4e07-4bbb-b62b-5bd6faed6eac"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 9
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        },
+        {
+            "value": "pt-pt",
+            "lang": "pt-pt"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "info": [
+        {
+            "value": "Banner Members",
+            "lang": "en"
+        },
+        {
+            "value": "Banner Members",
+            "lang": "pt-pt"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1517395054,
+            "lang": "en"
+        },
+        {
+            "value": 1517395084,
+            "lang": "pt-pt"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1517395054
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        },
+        {
+            "value": false,
+            "lang": "pt-pt"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        },
+        {
+            "value": true,
+            "lang": "pt-pt"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| res-dev",
+                "canonical_url": "http:\/\/default\/%3Cnone%3E"
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        },
+        {
+            "value": "en",
+            "lang": "pt-pt"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        },
+        {
+            "value": false,
+            "lang": "pt-pt"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ca08223e-f798-471e-ab6f-be722a6eb2a6"
+                    }
+                ],
+                "lang": "en"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ca08223e-f798-471e-ab6f-be722a6eb2a6"
+                    }
+                ],
+                "lang": "pt-pt"
+            }
+        ]
+    },
+    "content_translation_status": [
+        {
+            "value": true,
+            "lang": "en"
+        },
+        {
+            "value": true,
+            "lang": "pt-pt"
+        }
+    ],
+    "content_translation_created": [
+        {
+            "value": 1517395054,
+            "lang": "en"
+        },
+        {
+            "value": 1517395084,
+            "lang": "pt-pt"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>MEMBERS<\/p>\r\n",
+            "format": "basic_html",
+            "summary": "",
+            "lang": "en"
+        },
+        {
+            "value": "<p>MEMBROS<\/p>\r\n",
+            "format": "basic_html",
+            "summary": "",
+            "lang": "pt-pt"
+        }
+    ]
+}

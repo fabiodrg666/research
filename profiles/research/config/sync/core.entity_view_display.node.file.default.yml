@@ -7,15 +7,9 @@ dependencies:
     - field.field.node.file.field_file_file
     - node.type.file
   module:
-    - field_layout
     - file
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: vznN_Hp1-vCkvqEa5vM68d_dFqhhz69LavR3qvisjEw
 id: node.file.default

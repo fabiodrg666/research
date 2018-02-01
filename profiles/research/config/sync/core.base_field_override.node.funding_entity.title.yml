@@ -10,7 +10,7 @@ id: node.funding_entity.title
 field_name: title
 entity_type: node
 bundle: funding_entity
-label: Name
+label: 'Entity name'
 description: ''
 required: true
 translatable: true

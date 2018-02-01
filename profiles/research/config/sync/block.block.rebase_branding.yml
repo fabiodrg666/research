@@ -6,6 +6,9 @@ dependencies:
     - system
   theme:
     - rebase
+third_party_settings:
+  block_class:
+    classes: ''
 _core:
   default_config_hash: eIpTXU7LjrpGaaUPe8r25VD37H9DVC6GoqqwgkCpKbo
 id: rebase_branding

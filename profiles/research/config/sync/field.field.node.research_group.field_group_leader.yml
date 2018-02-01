@@ -11,8 +11,8 @@ id: node.research_group.field_group_leader
 field_name: field_group_leader
 entity_type: node
 bundle: research_group
-label: 'Group Leader'
-description: ''
+label: 'Internal Group Leader'
+description: "Select a Group Leader from the existing members list.\r\n"
 required: false
 translatable: false
 default_value: {  }

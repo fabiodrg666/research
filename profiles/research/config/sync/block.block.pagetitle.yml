@@ -13,7 +13,7 @@ third_party_settings:
 id: pagetitle
 theme: rebase
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

@@ -8,13 +8,7 @@ dependencies:
     - media.type.images
     - responsive_image.styles.hero_responsive
   module:
-    - field_layout
-    - layout_discovery
     - responsive_image
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: zK0M6IGhbgHbYjm-BztXj8k2zQF1MlHywlPIxoqnhXc
 id: media.images.embed

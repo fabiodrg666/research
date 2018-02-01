@@ -1,0 +1,11 @@
+uuid: d3935ce8-0d3e-4021-af87-e525429765a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.hearing
+id: bibcite_reference.hearing
+target_entity_type_id: bibcite_reference
+target_bundle: hearing
+default_langcode: site_default
+language_alterable: false

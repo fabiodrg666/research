@@ -14,14 +14,14 @@ field_name: field_file
 entity_type: node
 bundle: project
 label: File
-description: ''
+description: 'Add files related to the Project.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: txt
+  file_extensions: 'txt pdf'
   max_filesize: ''
   description_field: false
   handler: 'default:file'

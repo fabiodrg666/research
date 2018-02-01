@@ -8,6 +8,9 @@ dependencies:
     - system
   theme:
     - rebase
+third_party_settings:
+  block_class:
+    classes: ''
 _core:
   default_config_hash: zxENheLKQJlPogE_X9JguLYjaVD08-Ij_NBmUuMNd9w
 id: rebase_main_menu

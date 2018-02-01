@@ -1,0 +1,11 @@
+uuid: cbc25823-dba8-40b4-95a3-64e8a9d2eca4
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.newspaper_article
+id: bibcite_reference.newspaper_article
+target_entity_type_id: bibcite_reference
+target_bundle: newspaper_article
+default_langcode: site_default
+language_alterable: false

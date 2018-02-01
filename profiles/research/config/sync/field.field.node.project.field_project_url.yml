@@ -14,7 +14,7 @@ field_name: field_project_url
 entity_type: node
 bundle: project
 label: URL
-description: ''
+description: 'Add internal or external links related to the Project.'
 required: false
 translatable: false
 default_value: {  }

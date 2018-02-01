@@ -1,11 +1,13 @@
+//** Style Mixins:
+
 @mixin wide{
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
 @mixin fullwidth{
-  width: 100%;
-  max-width: none;
+width: 100%;
+max-width: none;
 }
 @mixin label{
   color: lightgray;
@@ -14,11 +16,10 @@
   font-size: 12px;
 }
 @mixin center600{
-width: 95%;
-margin: 0 auto;
-max-width: 600px;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 600px;
 }
-
 @mixin shadow{
-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3333);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3333);
 }

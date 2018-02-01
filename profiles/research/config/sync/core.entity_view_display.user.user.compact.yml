@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_author
     - field.field.user.user.field_bio
+    - field.field.user.user.field_degois_id
     - field.field.user.user.field_google_scholar_user
     - field.field.user.user.field_institu
     - field.field.user.user.field_member_level
@@ -20,14 +21,8 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - field_layout
     - image
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: 0JurqC887ji-CsZCl3zaWcEkLANCb8HfyvXAI67C32o
 id: user.user.compact

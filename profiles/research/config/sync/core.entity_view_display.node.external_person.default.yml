@@ -10,16 +10,10 @@ dependencies:
     - field.field.node.external_person.field_photo
     - node.type.external_person
   module:
-    - field_layout
     - image
-    - layout_discovery
     - link
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: jj3svydG_J7iF3dUn2HfyidWng-HYfxvgJCPkr5sEL4
 id: node.external_person.default

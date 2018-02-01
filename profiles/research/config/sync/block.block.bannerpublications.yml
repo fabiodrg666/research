@@ -1,0 +1,35 @@
+uuid: 4d97d6d8-4f85-4e85-86a3-ec148ee7f4a6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f9949547-e808-4e47-a86b-3ca2d16a2c55'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: bannerpublications
+theme: rebase
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:f9949547-e808-4e47-a86b-3ca2d16a2c55'
+settings:
+  id: 'block_content:f9949547-e808-4e47-a86b-3ca2d16a2c55'
+  label: 'Banner Publications'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /publications
+    negate: false
+    context_mapping: {  }

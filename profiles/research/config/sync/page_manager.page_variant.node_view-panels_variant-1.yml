@@ -16,7 +16,7 @@ variant_settings:
   blocks:
     2a267d52-11e0-4aa4-9e2b-3cdcd42ec71e:
       id: 'entity_field:node:field_image_media'
-      label: 'Image Media'
+      label: 'Imagem Media'
       provider: ctools_block
       label_display: '0'
       formatter:
@@ -27,13 +27,13 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: top
-      weight: 0
+      weight: 1
       uuid: 2a267d52-11e0-4aa4-9e2b-3cdcd42ec71e
       context_mapping:
         entity: node
     3c2ba28c-1733-4f93-aeb3-83f7f32d3092:
       id: 'entity_field:node:title'
-      label: Title
+      label: Título
       provider: ctools_block
       label_display: '0'
       formatter:
@@ -44,13 +44,13 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: top
-      weight: 0
+      weight: 2
       uuid: 3c2ba28c-1733-4f93-aeb3-83f7f32d3092
       context_mapping:
         entity: node
     c79d4df4-d6e1-4404-b773-1afe935e2da8:
       id: 'entity_field:node:field_event_start_date'
-      label: 'When and where'
+      label: 'Como e quando'
       provider: ctools_block
       label_display: visible
       formatter:
@@ -62,13 +62,13 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: first_above
-      weight: -2
+      weight: 1
       uuid: c79d4df4-d6e1-4404-b773-1afe935e2da8
       context_mapping:
         entity: node
     9ade0bc8-8e01-4894-92c8-43518870b993:
       id: 'entity_field:node:field_funding_entity'
-      label: 'Funding Entity'
+      label: 'Entidade de Financiamento'
       provider: ctools_block
       label_display: visible
       formatter:
@@ -79,13 +79,13 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: first_below
-      weight: 0
+      weight: 1
       uuid: 9ade0bc8-8e01-4894-92c8-43518870b993
       context_mapping:
         entity: node
     839f1aee-3344-4721-b9c3-ab668e0b8edd:
       id: 'entity_field:node:field_venue'
-      label: Venue
+      label: Local
       provider: ctools_block
       label_display: '0'
       formatter:
@@ -96,7 +96,7 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: first_above
-      weight: -1
+      weight: 2
       uuid: 839f1aee-3344-4721-b9c3-ab668e0b8edd
       context_mapping:
         entity: node
@@ -105,13 +105,13 @@ variant_settings:
       label: 'AddToAny buttons'
       provider: addtoany
       label_display: '0'
-      region: second_above
-      weight: -9
+      region: middle
+      weight: 2
       uuid: 3f26f8af-8495-4b9b-824a-04b9923043d6
       context_mapping: {  }
     e724b1f4-5eed-494b-aef1-0ee7c38c4d36:
       id: 'entity_field:node:body'
-      label: Description
+      label: Descrição
       provider: ctools_block
       label_display: '0'
       formatter:
@@ -121,13 +121,13 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: middle
-      weight: 0
+      weight: 1
       uuid: e724b1f4-5eed-494b-aef1-0ee7c38c4d36
       context_mapping:
         entity: node
   id: panels_variant
   uuid: e76036b9-c859-4c45-a1bf-8d946c39ecea
-  label: null
+  label: ''
   weight: 0
   layout: layout_twocol_bricks
   layout_settings: {  }

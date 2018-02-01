@@ -1,0 +1,23 @@
+uuid: f9668c58-ba16-48f2-9f3e-80e91afdb334
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_usefu
+    - node.type.research_group
+  module:
+    - link
+id: node.research_group.field_usefu
+field_name: field_usefu
+entity_type: node
+bundle: research_group
+label: URL
+description: 'Add internal or external links related to the Research Group.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

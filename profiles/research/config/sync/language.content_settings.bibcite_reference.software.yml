@@ -1,0 +1,11 @@
+uuid: fb512134-d29b-422c-b479-282770e542e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.software
+id: bibcite_reference.software
+target_entity_type_id: bibcite_reference
+target_bundle: software
+default_langcode: site_default
+language_alterable: false

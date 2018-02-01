@@ -1,0 +1,29 @@
+uuid: 166d8ad8-4628-4143-90c8-735f2109fa08
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ef2e5587-d65c-450e-a00e-c9041419e214'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: partnersfunding
+theme: rebase
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:ef2e5587-d65c-450e-a00e-c9041419e214'
+settings:
+  id: 'block_content:ef2e5587-d65c-450e-a00e-c9041419e214'
+  label: Partners/Funding
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

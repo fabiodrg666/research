@@ -15,4 +15,4 @@ parameters:
   node:
     machine_name: node
     type: 'entity:node'
-    label: Node
+    label: Nó

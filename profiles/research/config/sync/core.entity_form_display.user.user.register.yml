@@ -21,16 +21,10 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.scale_and_crop_100x100
   module:
-    - field_layout
     - image
-    - layout_discovery
     - link
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: GoWDQRot3Q8XvmSziXzUaYj1rVdaNbUirPa8Nc2iRr8
 id: user.user.register
@@ -148,6 +142,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
   user_picture:
     type: image_image
     settings:

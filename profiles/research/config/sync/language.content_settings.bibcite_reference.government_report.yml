@@ -1,0 +1,11 @@
+uuid: 9f43704f-2039-4a0b-b7d6-14bb0191a227
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.government_report
+id: bibcite_reference.government_report
+target_entity_type_id: bibcite_reference
+target_bundle: government_report
+default_langcode: site_default
+language_alterable: false

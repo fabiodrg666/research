@@ -1,0 +1,15 @@
+display:
+  block_2:
+    display_title: Notícias
+    display_options:
+      title: Notícias
+      block_description: Notícias
+      fields:
+        view_node:
+          text: 'Ver mais'
+  block_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Ver mais'
+label: Notícias

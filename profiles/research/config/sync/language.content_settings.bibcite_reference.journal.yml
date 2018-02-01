@@ -1,0 +1,11 @@
+uuid: 0aa62133-b833-4523-9021-81ac1deb3104
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.journal
+id: bibcite_reference.journal
+target_entity_type_id: bibcite_reference
+target_bundle: journal
+default_langcode: site_default
+language_alterable: false

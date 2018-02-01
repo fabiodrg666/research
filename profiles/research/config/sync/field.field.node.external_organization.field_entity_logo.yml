@@ -18,7 +18,7 @@ id: node.external_organization.field_entity_logo
 field_name: field_entity_logo
 entity_type: node
 bundle: external_organization
-label: 'Entity Logo'
+label: 'Organization Logo'
 description: ''
 required: false
 translatable: true

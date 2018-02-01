@@ -10,13 +10,7 @@ dependencies:
   module:
     - datetime
     - entity_browser_entity_form
-    - field_layout
     - inline_entity_form
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: WbcJ2ZPCBuUWk4lT-nUf0mzjqc6x7ilEhR2rJwKikYA
 id: node.finantial_support.default
@@ -32,13 +26,13 @@ content:
     type: number
     region: content
   field_financial_support_date:
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_funding_entity:
-    weight: 2
+    weight: 3
     settings:
       form_mode: default
       override_labels: true
@@ -74,6 +68,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

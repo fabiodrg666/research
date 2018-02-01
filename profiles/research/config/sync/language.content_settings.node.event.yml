@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - node.type.event
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
 _core:
   default_config_hash: 0hf6ZFC_oG9rwoDhnVCYeJoVUbmwIXVyo7FIjNb7iiA
 id: node.event

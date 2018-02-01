@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - media.type.video_embed
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
 _core:
   default_config_hash: qk3nES1gwfQUyR2Qn9VmYNjmk5laAh3kEnvRSWyrcn4
 id: media.video_embed

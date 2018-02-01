@@ -11,8 +11,8 @@ id: node.research_group.field_internal_group_member
 field_name: field_internal_group_member
 entity_type: node
 bundle: research_group
-label: 'Internal Group Member'
-description: ''
+label: 'Internal Member'
+description: "Select one or several internal members from the existing list.\r\n"
 required: false
 translatable: false
 default_value: {  }

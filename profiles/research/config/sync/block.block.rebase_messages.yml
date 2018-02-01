@@ -11,7 +11,7 @@ _core:
 id: rebase_messages
 theme: rebase
 region: content
-weight: -1
+weight: -2
 provider: null
 plugin: system_messages_block
 settings:

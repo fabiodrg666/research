@@ -11,9 +11,9 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: 3gFVwx7woUolNy8DVS17AFmGWu-FcdbWveCJJO-t4Qs
-name: 'Finantial Support'
+name: 'Financial Support'
 type: finantial_support
-description: 'Use financial support to insert received funds or grants '
+description: 'Use <b>Financial Support</b> to insert received funds or grants.'
 help: ''
 new_revision: false
 preview_mode: 0

@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - node.type.file
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
 _core:
   default_config_hash: igXsmJ78S8zQESXQ9m6SC8IUw5FvUYT1R6hy0IGXKLo
 id: node.file

@@ -1,18 +1,59 @@
+//** Header style:
 
 #navbar{
-background-color: white;
-border-radius:0;
-margin: 0;
-padding: 0;
-border-top: 0;
-position: relative;
-
-@include fullwidth;
-
-  #navbar-in{
-  @include wide;
+  background-color: white;
+  border-radius:0;
+  margin: 0;
   padding: 0;
+  border-top: 0;
+  position: relative;
+  @include fullwidth;
+  #navbar-in{
+    @include wide;
+    padding: 0;
+    position: relative;
+    // Logo and login/out area.
     .navbar-header{
+      width: 100%;
+      //outline: 1px solid red;
+      .region-navigation {
+        .logo{
+          background-color: $darkest;
+          margin: 0;
+          height: 100%;
+          width: 100%;
+          padding: 15px;
+          text-align: center;
+          margin-right: 20px;
+          img{
+            width: 160px;
+          }
+        }
+        #block-useraccountmenu, // Login/out & Avatar.
+        #block-rebase-views-block-user-block-avatar{
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          //outline: 1px solid red;
+          .view-display-id-block_avatar{
+            overflow: hidden;
+            width: 60px;
+            height: 60px;
+            border-radius:30px;
+            border: 1px solid lightgray;
+            img{
+              width:100%;
+              height: auto;
+            }
+            a.profile {
+              text-transform: uppercase;
+              font-size: 16px;
+            }
+          }
+        } // End Login & Avatar.
+      }
+      // Burger menu icon.
       button.navbar-toggle {
         position: absolute;
         top: 20px;
@@ -26,23 +67,10 @@ position: relative;
         }
       }
     }
-    .region-navigation {
-      width: 100%;
-      display: table;
 
-      .logo{
-        background-color: $darkest;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-        padding: 15px;
-        text-align: center;
-        margin-right: 20px;
+    // Menu and language selector.
+    .navbar-collapse{
 
-        img{
-          width: 160px;
-        }
-      }
     }
     #navbar-collapse{
       .region-navigation-collapsible{
@@ -59,49 +87,29 @@ position: relative;
         line-height: 18px;
         padding: 0 2vw;
       }
-      div { //avatar
-          display: table-cell;
-          vertical-align: middle;
-
-        .view-display-id-block_avatar{
-          overflow:hidden;
-          width: 60px;
-          height: 60px;
-          border-radius:30px;
-          border: 1px solid lightgray;
-
-          img{
-          width:100%;
-          }
-          a.profile {
-            text-transform: uppercase;
-            font-size: 16px;
-          }
-        }
-      } // End Avatar
-    } // End region-navigation
-  }//End navbar-in
+    } // End region-navigation.
+  } // End navbar-in.
 }
 
 .navbar-static-top{
   z-index: 100;
 }
 
-// Media query > 768
+// Media query > 768, for sm, md and lg devices.
 @media screen and (min-width: 768px){
   body {
-      margin-top: 0;
-
-      header#navbar #navbar-in{
-        background-color: white;
-          .region-navigation {
-            width: auto;
-            .logo {
-              width: 280px;
-            }
+    margin-top: 0;
+    header#navbar #navbar-in{
+      background-color: white;
+      .navbar-header{
+        width: 25%;
+      }
+      .region-navigation {
+        width: auto;
+        .logo {
+          width: 280px;
         }
       }
+    }
   }
 }
-
-

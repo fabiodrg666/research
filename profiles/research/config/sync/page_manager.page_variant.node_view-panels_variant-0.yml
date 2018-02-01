@@ -4,13 +4,11 @@ status: true
 dependencies:
   config:
     - page_manager.page.node_view
-    - views.view.author
   module:
     - addtoany
     - ctools
     - ctools_block
     - panels
-    - views
 id: node_view-panels_variant-0
 label: News
 variant: panels_variant
@@ -29,7 +27,7 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: top
-      weight: -1
+      weight: 2
       uuid: 84dfbd3a-cc8e-423c-a43a-2823f2ddff82
       context_mapping:
         entity: node
@@ -46,7 +44,7 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: top
-      weight: -2
+      weight: 1
       uuid: a3f221f1-f5df-4636-93cd-769faddb5f47
       context_mapping:
         entity: node
@@ -62,28 +60,17 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: middle
-      weight: -1
+      weight: 1
       uuid: 223ec9cc-e8c1-4d3e-b065-c03804d145f7
       context_mapping:
         entity: node
-    ec08848a-2047-4cf0-b507-f0045693ca02:
-      id: 'views_block:author-block_1'
-      label: ''
-      provider: views
-      label_display: '0'
-      views_label: ''
-      items_per_page: none
-      region: first_above
-      weight: -1
-      uuid: ec08848a-2047-4cf0-b507-f0045693ca02
-      context_mapping: {  }
     d1bcb647-a508-4026-a4c9-93956865233c:
       id: addtoany_block
       label: 'AddToAny buttons'
       provider: addtoany
       label_display: '0'
-      region: second_above
-      weight: 0
+      region: first_above
+      weight: 1
       uuid: d1bcb647-a508-4026-a4c9-93956865233c
       context_mapping: {  }
   id: panels_variant

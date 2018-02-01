@@ -1,3 +1,5 @@
 fields:
   bibcite_type_of_work:
     label: Tipo
+  bibcite_publisher:
+    label: Instituição

@@ -12,7 +12,7 @@ field_name: field_internal_coordinator
 entity_type: node
 bundle: project
 label: 'Internal Coordinator'
-description: ''
+description: 'Select one or several coordinators from the existing members list.'
 required: false
 translatable: false
 default_value: {  }

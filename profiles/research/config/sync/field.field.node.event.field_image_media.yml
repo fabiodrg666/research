@@ -10,8 +10,8 @@ id: node.event.field_image_media
 field_name: field_image_media
 entity_type: node
 bundle: event
-label: 'Image Media'
-description: ''
+label: Image
+description: 'Add an image related to the Event. Select from the existing media list or add a new one.'
 required: false
 translatable: true
 default_value: {  }

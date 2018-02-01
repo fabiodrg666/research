@@ -1,0 +1,11 @@
+label: Projetos
+display:
+  default:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<h2>{{ title }}</h2>\r\n<p>{{ body }}</p>\r\n<div class=\"read-more\">{{ view_node }}</div>"
+        view_node:
+          text: 'Ver mais'
+      title: 'Projetos em Destaque'

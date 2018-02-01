@@ -1,0 +1,12 @@
+uuid: d8fc6ba1-a6e7-4354-833d-61f018da6acd
+langcode: en
+status: true
+dependencies: {  }
+id: center
+label: Center
+description: ''
+use_admin_theme: false
+path: /center
+access_logic: and
+access_conditions: {  }
+parameters: {  }

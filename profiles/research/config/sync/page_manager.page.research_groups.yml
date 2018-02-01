@@ -1,0 +1,12 @@
+uuid: 5dcc0f28-fa02-4573-985d-470c84b4661c
+langcode: en
+status: true
+dependencies: {  }
+id: research_groups
+label: 'Research Groups'
+description: ''
+use_admin_theme: false
+path: /research-groups
+access_logic: and
+access_conditions: {  }
+parameters: {  }

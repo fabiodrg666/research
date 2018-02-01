@@ -13,7 +13,7 @@ _core:
   default_config_hash: db9AOcB2d1Y0AUE5x22PkGeO-9vQkFGKT3L0DFA0uVg
 name: 'Research Group'
 type: research_group
-description: ''
+description: 'Use <b>Research Group</b> to create a new research group.'
 help: ''
 new_revision: false
 preview_mode: 0

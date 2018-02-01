@@ -1,0 +1,11 @@
+uuid: 682eb401-1124-45f2-9c33-cd4796b35838
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.artwork
+id: bibcite_reference.artwork
+target_entity_type_id: bibcite_reference
+target_bundle: artwork
+default_langcode: site_default
+language_alterable: false

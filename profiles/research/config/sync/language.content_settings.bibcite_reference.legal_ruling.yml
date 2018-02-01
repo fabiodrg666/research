@@ -1,0 +1,11 @@
+uuid: b5d34e5f-2efb-4b79-be80-422b7ccc1f91
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.legal_ruling
+id: bibcite_reference.legal_ruling
+target_entity_type_id: bibcite_reference
+target_bundle: legal_ruling
+default_langcode: site_default
+language_alterable: false

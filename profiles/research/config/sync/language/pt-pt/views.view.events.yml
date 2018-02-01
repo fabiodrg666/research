@@ -1,0 +1,8 @@
+label: Eventos
+display:
+  default:
+    display_options:
+      title: 'Próximos eventos'
+      fields:
+        view_node:
+          text: 'Ver mais'

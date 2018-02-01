@@ -1,0 +1,11 @@
+uuid: f5d632c5-45c8-4cbb-bb22-929cc39a431e
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.patent
+id: bibcite_reference.patent
+target_entity_type_id: bibcite_reference
+target_bundle: patent
+default_langcode: site_default
+language_alterable: false

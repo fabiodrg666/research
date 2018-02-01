@@ -1,0 +1,18 @@
+uuid: 45cd22a8-ad7f-4ad0-8110-ab7edfc017b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.menu_link_content.metatag
+field_name: metatag
+entity_type: menu_link_content
+bundle: menu_link_content
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

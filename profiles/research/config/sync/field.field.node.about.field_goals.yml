@@ -1,0 +1,21 @@
+uuid: abca50f9-2672-434c-86d1-7d4d75b05c13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_goals
+    - node.type.about
+  module:
+    - text
+id: node.about.field_goals
+field_name: field_goals
+entity_type: node
+bundle: about
+label: Goals
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

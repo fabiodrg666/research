@@ -14,7 +14,7 @@ field_name: field_url
 entity_type: node
 bundle: funding_entity
 label: URL
-description: ''
+description: 'Add a link to the Funding Entity''s website page.'
 required: false
 translatable: false
 default_value: {  }

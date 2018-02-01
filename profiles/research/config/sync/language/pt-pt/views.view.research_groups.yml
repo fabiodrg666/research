@@ -1,0 +1,9 @@
+label: 'Grupos de Investigação'
+display:
+  default:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "{{ field_image_media }}\r\n<h2>{{ title }}</h2>\r\n{{ body }}"
+      title: 'Grupos de Investigação'

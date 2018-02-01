@@ -8,17 +8,12 @@ dependencies:
     - field.field.node.event.field_event_end_date
     - field.field.node.event.field_event_start_date
     - field.field.node.event.field_fundin
+    - field.field.node.event.field_image_media
     - field.field.node.event.field_venue
     - node.type.event
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: AEiFBo9goGdWHdQF683MdHXcW-oAKRwazDfre-L7ozs
 id: node.event.teaser

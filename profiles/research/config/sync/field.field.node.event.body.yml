@@ -14,7 +14,7 @@ field_name: body
 entity_type: node
 bundle: event
 label: Description
-description: ''
+description: 'Add more information about the Event. You can also add internal or external links related to the Event.'
 required: false
 translatable: true
 default_value: {  }

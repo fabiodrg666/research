@@ -12,7 +12,7 @@ field_name: field_partner_name
 entity_type: node
 bundle: project
 label: 'Partner Name'
-description: ''
+description: "Add partners of the Project.\r\n"
 required: false
 translatable: false
 default_value: {  }

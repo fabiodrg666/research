@@ -12,8 +12,8 @@ id: node.research_group.field_external_group_member
 field_name: field_external_group_member
 entity_type: node
 bundle: research_group
-label: 'External Group Member'
-description: ''
+label: 'External Member'
+description: 'Select one or several external members from the existing list, or add a new one.'
 required: false
 translatable: false
 default_value: {  }

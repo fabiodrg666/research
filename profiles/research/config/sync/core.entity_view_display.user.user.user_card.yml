@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.user.user_card
     - field.field.user.user.field_author
     - field.field.user.user.field_bio
+    - field.field.user.user.field_degois_id
     - field.field.user.user.field_google_scholar_user
     - field.field.user.user.field_institu
     - field.field.user.user.field_member_level
@@ -20,14 +21,8 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.scale_and_crop_100x100
   module:
-    - field_layout
     - image
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: vIdLCX9fAc9gNdF2Z0m9hcifOUMbugR2NI7g5NOoOFg
 id: user.user.user_card

@@ -12,8 +12,8 @@ id: node.news.field_image_media
 field_name: field_image_media
 entity_type: node
 bundle: news
-label: 'Image Media'
-description: ''
+label: Image
+description: "Add an image related to the News article. Select from the existing media list or add a new one.\r\n"
 required: false
 translatable: false
 default_value: {  }

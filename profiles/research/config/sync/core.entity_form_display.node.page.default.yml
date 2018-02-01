@@ -6,14 +6,8 @@ dependencies:
     - field.field.node.page.body
     - node.type.page
   module:
-    - field_layout
-    - layout_discovery
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: aA-AhNv3HVosIgMcv37ZTa1nfOKaxFEPDbuEdz-YB44
 id: node.page.default

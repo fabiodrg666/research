@@ -1,0 +1,11 @@
+uuid: ddf5ecd8-62a6-46a2-9890-0912679f10ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.manuscript
+id: bibcite_reference.manuscript
+target_entity_type_id: bibcite_reference
+target_bundle: manuscript
+default_langcode: site_default
+language_alterable: false

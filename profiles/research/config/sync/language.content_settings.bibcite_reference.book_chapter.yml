@@ -1,0 +1,11 @@
+uuid: e1d06c1c-5dc3-4845-aea7-1e28b2f61695
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.book_chapter
+id: bibcite_reference.book_chapter
+target_entity_type_id: bibcite_reference
+target_bundle: book_chapter
+default_langcode: site_default
+language_alterable: false

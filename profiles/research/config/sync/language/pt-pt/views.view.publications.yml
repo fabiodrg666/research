@@ -1,0 +1,9 @@
+label: Publicações
+display:
+  default:
+    display_options:
+      title: Publicações
+  page_1:
+    display_options:
+      menu:
+        title: Publicações

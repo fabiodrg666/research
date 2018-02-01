@@ -13,7 +13,7 @@ _core:
   default_config_hash: 4wItpwt-HpP4vlctKdeD37HejS5mj-50vP2rGfiSdjs
 name: 'External organization'
 type: external_organization
-description: 'Use external organization to insert other relate institutions'
+description: 'Use <b>External Organization</b> to insert other related institutions.'
 help: ''
 new_revision: false
 preview_mode: 0

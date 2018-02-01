@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - node.type.research_group
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
 _core:
   default_config_hash: eJxLLp4c_itEu_OpUZlf4PrFfdQZA2AT9qA4kPXaBYo
 id: node.research_group

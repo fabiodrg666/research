@@ -13,7 +13,7 @@ field_name: field_fundin
 entity_type: node
 bundle: event
 label: 'Funding Entity'
-description: ''
+description: 'Add sponsors or collaborators of the Event. Select from the existing list or add new ones.'
 required: false
 translatable: false
 default_value: {  }

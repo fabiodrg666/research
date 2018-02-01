@@ -17,6 +17,18 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "kenwheeler/slick",
+                "version": "master",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/master.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "replace": {
@@ -109,10 +121,6 @@
                 "2868216 - Page variants cannot be selected": "https://www.drupal.org/files/issues/page_manager-page_variants_selection-2868216-7.patch",
                 "2870261 - UI Page Variants JS does not fire with BigPipe enabled": "https://www.drupal.org/files/issues/page_manager-ui-variant-js-big-pipe-2870261-2.patch"
             },
-            "drupal/slick": {
-                "2855190 - Using bower or composer to download the slick library":
-                "https://www.drupal.org/files/issues/2855190-13_0.patch"
-            },
             "drupal/bibcite": {
                 "2934158 - Add 'Published' and 'Promoted' to the Reference entity": "https://www.drupal.org/files/issues/2934158-promoted_published.patch"
             }
@@ -152,6 +160,7 @@
         "drupal/simple_sitemap": "^2.9",
         "drupal/email_registration": "^1.0@RC",
         "drupal/slick": "^1.0",
+        "kenwheeler/slick": "*",
         "drupal/slick_views": "1.x-dev",
         "bower-asset/slick-carousel": "^1.7",
         "drupal/diff": "^1.0",
@@ -168,7 +177,13 @@
         "drupal/default_content": "^1.0@alpha",
         "drupal/superfish": "^1.1",
         "drupal/chosen": "^2.4",
-        "bower-asset/chosen": "^1.8"
+        "bower-asset/chosen": "^1.8",
+        "drupal/menu_link_attributes": "^1.0",
+        "drupal/entity_reference_exposed_filters": "^1.0@alpha",
+        "drupal/content_access": "^1.0@alpha",
+        "drupal/views_field_view": "^1.0@beta",
+        "drupal/devel": "^1.2",
+        "drupal/field_group": "^1.0"
     },
     "scripts": {
         "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",

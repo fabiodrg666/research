@@ -1,0 +1,28 @@
+uuid: 8c6356e5-fcbf-42d8-a5f8-fa6255376f78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_group_leader
+    - node.type.external_person
+    - node.type.research_group
+id: node.research_group.field_external_group_leader
+field_name: field_external_group_leader
+entity_type: node
+bundle: research_group
+label: 'External Group Leader'
+description: 'Select one or several external group leader from the existing list, or add a new one.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      external_person: external_person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

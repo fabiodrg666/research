@@ -1,0 +1,11 @@
+uuid: a7db8d44-7b61-449b-ad43-ee1c6463588d
+langcode: en
+status: true
+dependencies:
+  module:
+    - bibcite_entity
+id: bibcite_keyword.bibcite_keyword
+target_entity_type_id: bibcite_keyword
+target_bundle: bibcite_keyword
+default_langcode: site_default
+language_alterable: false

@@ -5,20 +5,17 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.research_group.body
+    - field.field.node.research_group.field_external_group_leader
     - field.field.node.research_group.field_external_group_member
     - field.field.node.research_group.field_group_leader
     - field.field.node.research_group.field_image_media
     - field.field.node.research_group.field_internal_group_member
+    - field.field.node.research_group.field_usefu
+    - field.field.node.research_group.field_usefull_files
     - node.type.research_group
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: DoCUhpO8hso8tBXqYd5KeGPKGynzGz01FJKnpA2Qrfc
 id: node.research_group.teaser
@@ -39,8 +36,11 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_external_group_leader: true
   field_external_group_member: true
   field_group_leader: true
   field_image_media: true
   field_internal_group_member: true
+  field_usefu: true
+  field_usefull_files: true
   langcode: true

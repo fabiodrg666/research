@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.project.field_external_coordinator
     - field.field.node.project.field_external_member
     - field.field.node.project.field_file
+    - field.field.node.project.field_image_media
     - field.field.node.project.field_internal_coordinator
     - field.field.node.project.field_member
     - field.field.node.project.field_partner_name
@@ -19,14 +20,8 @@ dependencies:
     - field.field.node.project.field_status
     - node.type.project
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: O_ngOFMdUEQOibgG2T10ueOpnDNjnCzPmUJ6n-TmFsY
 id: node.project.teaser

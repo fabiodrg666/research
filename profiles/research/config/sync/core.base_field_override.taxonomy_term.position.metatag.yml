@@ -1,0 +1,18 @@
+uuid: bda16ca6-02d0-472c-96ad-7fa978a52fda
+langcode: pt-pt
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.position
+id: taxonomy_term.position.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: position
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

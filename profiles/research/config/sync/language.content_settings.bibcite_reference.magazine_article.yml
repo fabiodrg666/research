@@ -1,0 +1,11 @@
+uuid: 405e1696-fbe2-48d8-bd36-3383e7e0b1dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - bibcite_entity.bibcite_reference_type.magazine_article
+id: bibcite_reference.magazine_article
+target_entity_type_id: bibcite_reference
+target_bundle: magazine_article
+default_langcode: site_default
+language_alterable: false

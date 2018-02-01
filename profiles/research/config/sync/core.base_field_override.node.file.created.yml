@@ -1,0 +1,18 @@
+uuid: 89754ef9-0161-4403-9eaf-6dcfa3af382e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.file
+id: node.file.created
+field_name: created
+entity_type: node
+bundle: file
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

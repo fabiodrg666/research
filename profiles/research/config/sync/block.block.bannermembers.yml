@@ -1,0 +1,35 @@
+uuid: 054d060f-4c7e-441d-8e36-ce6bc308afc5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:20ff6a87-4e07-4bbb-b62b-5bd6faed6eac'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: bannermembers
+theme: rebase
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:20ff6a87-4e07-4bbb-b62b-5bd6faed6eac'
+settings:
+  id: 'block_content:20ff6a87-4e07-4bbb-b62b-5bd6faed6eac'
+  label: 'Banner Members'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /members
+    negate: false
+    context_mapping: {  }

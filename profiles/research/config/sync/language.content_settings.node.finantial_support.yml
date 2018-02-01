@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - node.type.finantial_support
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
 _core:
   default_config_hash: OHHSIo_QBoIZm2miGi6jdV6RfWlJfXEUKO9BnlL169A
 id: node.finantial_support

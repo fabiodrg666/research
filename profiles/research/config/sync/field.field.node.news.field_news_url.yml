@@ -14,7 +14,7 @@ field_name: field_news_url
 entity_type: node
 bundle: news
 label: URL
-description: ''
+description: 'Add internal or external links related to the News article.'
 required: false
 translatable: false
 default_value: {  }
