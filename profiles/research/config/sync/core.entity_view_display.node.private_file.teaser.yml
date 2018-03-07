@@ -1,0 +1,32 @@
+uuid: 4e947f47-a663-47ab-8771-4f66bff575b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.private_file.body
+    - node.type.private_file
+  module:
+    - text
+    - user
+id: node.private_file.teaser
+targetEntityType: node
+bundle: private_file
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_folder: true
+  field_private_file: true
+  langcode: true

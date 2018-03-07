@@ -2,8 +2,18 @@ label: Publicações
 display:
   default:
     display_options:
-      title: Publicações
+      exposed_form:
+        options:
+          submit_button: Pesquisar
+          exposed_sorts_label: 'Ordenar por'
   page_1:
     display_options:
       menu:
         title: Publicações
+      filters:
+        title:
+          expose:
+            label: Pesquisa
+        type:
+          expose:
+            label: 'Tipo de referência'

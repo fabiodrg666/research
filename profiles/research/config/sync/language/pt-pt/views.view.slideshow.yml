@@ -12,4 +12,6 @@ display:
       fields:
         view_node:
           text: 'Ver mais'
+          alter:
+            text: '<a href="{{ path }}">Ver mais</a>'
 label: Notícias

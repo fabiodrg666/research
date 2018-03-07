@@ -1,19 +1,15 @@
 //** Style Mixins:
 
+// Structure mixins.
 @mixin wide{
   width: 100%;
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 0px auto;
+  float: none;
 }
 @mixin fullwidth{
-width: 100%;
-max-width: none;
-}
-@mixin label{
-  color: lightgray;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 12px;
+  width: 100%;
+  max-width: none;
 }
 @mixin center600{
   width: 95%;
@@ -22,4 +18,40 @@ max-width: none;
 }
 @mixin shadow{
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3333);
+}
+
+// Text styles mixins.
+
+// Title.
+@mixin texttitle{ // h2
+  font: 300 normal 30px/36px 'Titillium Web', sans-serif;
+  color: $darkest;
+}
+// Subtitle.
+@mixin textsubtitle{ // h3
+  font: 300 normal 24px/28px 'Titillium Web', sans-serif;
+  color: $dark;
+}
+// Large text.
+@mixin textlarge{ 
+  font: 300 normal 18px/24px 'Titillium Web', sans-serif;
+  color: $graytext;
+}
+// Normal text.
+@mixin textnormal{
+  font: 400 normal 14px/20px 'Titillium Web', sans-serif;
+  color: $graytext;
+}
+// Small text.
+@mixin textsmall{
+  font: 400 normal 12px/16px 'Titillium Web', sans-serif;
+  color: $graytext;
+}
+
+// Other mixins.
+@mixin label{
+  color: lightgray;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
 }

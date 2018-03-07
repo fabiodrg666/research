@@ -1,0 +1,29 @@
+uuid: eaaf606b-c70b-4621-bb5a-05ecc3d6a309
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_folder
+    - node.type.private_file
+    - taxonomy.vocabulary.file_folder
+id: node.private_file.field_folder
+field_name: field_folder
+entity_type: node
+bundle: private_file
+label: Folder
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      file_folder: file_folder
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -12,7 +12,7 @@ bundle: about
 label: 'Board Member'
 description: 'Select one or several Board Member from the existing members list.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

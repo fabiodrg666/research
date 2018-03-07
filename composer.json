@@ -109,10 +109,6 @@
                 "2913353 - IPE attaches behaviors a bit too quickly":
                 "https://www.drupal.org/files/issues/2913353-2.patch"
             },
-            "drupal/crop": {
-                "Make Crop API compatible with core Media":
-                "https://www.drupal.org/files/issues/2918441-beta1-packaged-info-file.patch"
-            },
             "drupal/entity_embed": {
                 "2832504 - Send the CKEditor instance ID to the embed.preview route":
                 "https://www.drupal.org/files/issues/2832504-2.patch"
@@ -166,7 +162,7 @@
         "drupal/diff": "^1.0",
         "drupal/dropzonejs": "2.0.0-alpha3",
         "bower-asset/dropzone": "^5.1",
-        "drupal/crop": "2.0.0-beta1",
+        "drupal/crop": "~2.0.0-rc1",
         "bower-asset/cropper": "^2.3",
         "drupal/image_widget_crop": "^2.0",
         "drupal/focal_point": "1.x-dev",
@@ -181,9 +177,12 @@
         "drupal/menu_link_attributes": "^1.0",
         "drupal/entity_reference_exposed_filters": "^1.0@alpha",
         "drupal/content_access": "^1.0@alpha",
+        "drupal/permissions_by_term": "~1.42",
         "drupal/views_field_view": "^1.0@beta",
+        "drupal/field_group": "^1.0",
+        "drupal/better_exposed_filters": "^3.0@alpha",
         "drupal/devel": "^1.2",
-        "drupal/field_group": "^1.0"
+        "drupal/kint": "^1.2"
     },
     "scripts": {
         "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",

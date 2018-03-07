@@ -18,5 +18,5 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
-  - 'view contributor entities'
+  - 'view bibcite_contributor'
   - 'view media'

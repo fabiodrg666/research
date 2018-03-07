@@ -20,9 +20,9 @@ dependencies:
 _core:
   default_config_hash: KmD-tyGDITdNUr43H9JI0768Irbw5GfX1VTIYNnE63I
 id: user_admin_people
-label: Pessoas
+label: People
 module: user
-description: 'Encontrar e gerir pessoas a interagir com o teu sítio.'
+description: ' Find and manage people interacting with your site.'
 tag: default
 base_table: users_field_data
 base_field: uid

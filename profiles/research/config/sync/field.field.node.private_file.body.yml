@@ -1,0 +1,22 @@
+uuid: 21bcc508-666e-448b-a8b0-3f67a9b6e190
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.private_file
+  module:
+    - text
+id: node.private_file.body
+field_name: body
+entity_type: node
+bundle: private_file
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

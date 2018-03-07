@@ -15,5 +15,5 @@ permissions:
   - 'access user profiles'
   - 'search content'
   - 'use text format restricted_html'
-  - 'view contributor entities'
+  - 'view bibcite_contributor'
   - 'view media'

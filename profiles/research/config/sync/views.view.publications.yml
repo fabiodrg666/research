@@ -131,7 +131,7 @@ display:
           type: bibcite_contributor_label
           settings:
             link: false
-          group_column: ''
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -1125,6 +1125,8 @@ display:
         arguments: false
         filters: false
         filter_groups: false
+        query: false
+        group_by: false
       arguments:
         uid:
           id: uid
@@ -1158,7 +1160,7 @@ display:
             type: none
             fail: 'not found'
           validate_options: {  }
-          break_phrase: false
+          break_phrase: true
           not: false
           entity_type: user
           entity_field: uid
@@ -1208,6 +1210,15 @@ display:
         operator: AND
         groups:
           1: AND
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      group_by: true
     cache_metadata:
       max-age: -1
       contexts:

@@ -22,6 +22,7 @@ dependencies:
   module:
     - datetime
     - entity_browser
+    - entity_browser_entity_form
     - field_group
     - file
     - inline_entity_form
@@ -155,6 +156,7 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      empty_mode: ''
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
@@ -170,6 +172,7 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      empty_mode: ''
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
@@ -230,8 +233,11 @@ content:
       label_plural: 'funding entities'
       allow_new: true
       allow_existing: true
+      empty_mode: ''
       match_operator: CONTAINS
-    third_party_settings: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
     type: inline_entity_form_complex
     region: content
   field_project_url:

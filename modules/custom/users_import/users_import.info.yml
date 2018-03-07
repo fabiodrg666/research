@@ -1,0 +1,7 @@
+name: Users Import
+description: Import users from TSV file
+core: 8.x
+type: module
+package: Omibee
+dependencies:
+  - bibcite

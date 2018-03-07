@@ -1,0 +1,21 @@
+{
+    "name": "org/users_import",
+    "description": "Import users from TSV file.",
+    "type": "drupal-drush",
+    "authors": [
+        {
+            "name": "Luís Mendes",
+            "email": "luis.mendes@omibee.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^9"
+            }
+        }
+    }
+}

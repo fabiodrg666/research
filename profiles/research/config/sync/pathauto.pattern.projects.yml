@@ -1,0 +1,33 @@
+uuid: f122da7a-2466-4a6d-a393-4ebd0601360d
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: projects
+label: Projects
+type: 'canonical_entities:node'
+pattern: '/projects/[node:title]'
+selection_criteria:
+  5006034c-e832-4dce-9867-1a469eab6790:
+    id: node_type
+    bundles:
+      project: project
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5006034c-e832-4dce-9867-1a469eab6790
+  5442e25f-64ba-427e-b6d8-a1686a7a793e:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 5442e25f-64ba-427e-b6d8-a1686a7a793e
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -1,0 +1,33 @@
+uuid: 2f816659-c652-40d7-943e-766757bc97bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: gru
+label: 'Grupos de Investigação'
+type: 'canonical_entities:node'
+pattern: '/grupos-de-investigacao/[node:title]'
+selection_criteria:
+  a18c1924-8b7a-4bb3-a9d4-83ac5def734e:
+    id: node_type
+    bundles:
+      research_group: research_group
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a18c1924-8b7a-4bb3-a9d4-83ac5def734e
+  7d61cb87-e2ca-4cd8-8258-40d8e0234798:
+    id: language
+    langcodes:
+      pt-pt: pt-pt
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 7d61cb87-e2ca-4cd8-8258-40d8e0234798
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -1,0 +1,9 @@
+uuid: eab82687-5398-4934-a5ea-01ac461f7d98
+langcode: en
+status: true
+dependencies: {  }
+name: 'File folder'
+vid: file_folder
+description: ''
+hierarchy: 0
+weight: 0

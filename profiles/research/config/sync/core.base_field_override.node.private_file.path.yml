@@ -1,0 +1,20 @@
+uuid: 73976c98-19bf-433b-b4a7-04a9d4386054
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_file
+  module:
+    - path
+id: node.private_file.path
+field_name: path
+entity_type: node
+bundle: private_file
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

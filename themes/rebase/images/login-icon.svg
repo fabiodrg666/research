@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>login-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="login-icon" stroke="#FFFFFF" stroke-width="2">
+            <g id="Group" transform="translate(2.000000, 1.000000)">
+                <circle id="Oval-2" cx="22.68" cy="11.88" r="11.88"></circle>
+                <path d="M44.76,48 C44.76,35.8055527 34.8744473,25.92 22.68,25.92 C10.4855527,25.92 0.6,35.8055527 0.6,48 C8.233125,48 33.2950227,48 44.76,48 Z" id="Oval-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

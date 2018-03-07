@@ -7,7 +7,6 @@ dependencies:
     - views.view.events
     - views.view.projects
     - views.view.research_groups
-    - views.view.slideshow
   module:
     - panels
     - views
@@ -16,17 +15,6 @@ label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    698b797c-d3ac-43d9-80e4-f5a0c2ebe191:
-      id: 'views_block:slideshow-block_1'
-      label: ''
-      provider: views
-      label_display: '0'
-      views_label: ''
-      items_per_page: none
-      region: content
-      weight: 1
-      uuid: 698b797c-d3ac-43d9-80e4-f5a0c2ebe191
-      context_mapping: {  }
     b6ac6948-8a96-4ce3-9095-43d4e3aeac0d:
       id: 'views_block:research_groups-block_1'
       label: ''
@@ -37,7 +25,7 @@ variant_settings:
       context_mapping: {  }
       region: content
       uuid: b6ac6948-8a96-4ce3-9095-43d4e3aeac0d
-      weight: 3
+      weight: 2
     a55dc55c-64b5-4de5-bb49-e8e49e5dbce9:
       id: 'views_block:events-block_events'
       label: ''
@@ -48,18 +36,18 @@ variant_settings:
       context_mapping: {  }
       region: content
       uuid: a55dc55c-64b5-4de5-bb49-e8e49e5dbce9
-      weight: 2
-    e532da12-9395-428e-b0ad-d45674fcf80c:
-      id: 'views_block:projects-projects_block'
+      weight: 1
+    138511e9-d9d9-45f6-ba40-56023ed4a441:
+      id: 'views_block:projects-block_2'
       label: ''
       provider: views
-      label_display: visible
+      label_display: '0'
       views_label: ''
       items_per_page: none
       context_mapping: {  }
       region: content
-      uuid: e532da12-9395-428e-b0ad-d45674fcf80c
-      weight: 4
+      uuid: 138511e9-d9d9-45f6-ba40-56023ed4a441
+      weight: 3
   id: panels_variant
   uuid: e3dbbf00-54d2-4eb3-bd06-985a813a7fa7
   label: null

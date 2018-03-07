@@ -1,0 +1,27 @@
+uuid: c252c90b-1e7d-4387-811f-7e4c93a3d8cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_private_file
+    - node.type.private_file
+  module:
+    - file
+id: node.private_file.field_private_file
+field_name: field_private_file
+entity_type: node
+bundle: private_file
+label: 'Private File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx xls xlsx ppt pptx png jpg jpeg tif'
+  max_filesize: '20 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

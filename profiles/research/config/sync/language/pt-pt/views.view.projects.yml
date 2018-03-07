@@ -9,3 +9,16 @@ display:
         view_node:
           text: 'Ver mais'
       title: 'Projetos em Destaque'
+      exposed_form:
+        options:
+          submit_button: Pesquisar
+          exposed_sorts_label: 'Ordenar por'
+  block_1:
+    display_options:
+      filters:
+        title:
+          expose:
+            label: Pesquisa
+        field_status_target_id:
+          expose:
+            label: 'Status do Projeto'

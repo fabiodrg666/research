@@ -45,53 +45,5 @@ class OaiImportCommands extends DrushCommands {
       }
     }
   }
-
-  /**
-   * Perform OAI data import.
-   *
-   * @command oai_import:users
-   * @param array $options An associative array of options whose values come from cli, aliases, config, etc.
-   * @option file tsv users file
-   * @aliases users-import,usi
-   */
-  public function users(array $options = ['file' => null])
-  {
-    $users = file($options['file']);
-    if (!empty($users)) {
-      $member_level = \Drupal::entityTypeManager()
-          ->getStorage('taxonomy_term')
-          ->loadByProperties(['name' => 'Integrated member']);
-      $fields = [
-        'email',
-        'bio',
-        'name',
-        'phone',
-        'position',
-        'website',
-        'degois_id'
-      ];
-      foreach ($users as $user_row) {
-        $user = array_combine($fields, explode(chr(9), $user_row));
-
-        $position = \Drupal::entityTypeManager()
-          ->getStorage('taxonomy_term')
-          ->loadByProperties(['name' => $user['position']]);
-
-        $account = \Drupal\user\Entity\User::create();
-        $account->setUsername($user['email']);
-        $account->setPassword(user_password());
-        $account->setEmail($user['email']);
-        $account->enforceIsNew();
-        $account->set('field_bio', $user['bio']);
-        $account->set('field_name', $user['name']);
-        $account->set('field_phone', $user['phone']);
-        $account->set('field_website', $user['website']);
-        $account->set('field_degois_id', $user['degois_id']);
-        $account->set('field_position', $position);
-        $account->set('field_member_level', $member_level);
-        $account->activate();
-        $account->save();
-      }
-    }
-  }
+  
 }

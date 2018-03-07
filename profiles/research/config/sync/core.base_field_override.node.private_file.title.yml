@@ -1,0 +1,18 @@
+uuid: e1ea6c66-bf5c-49c5-aae5-849faf476286
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_file
+id: node.private_file.title
+field_name: title
+entity_type: node
+bundle: private_file
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

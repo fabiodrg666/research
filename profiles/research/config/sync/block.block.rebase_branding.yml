@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - system
   theme:
     - rebase
@@ -14,7 +15,7 @@ _core:
 id: rebase_branding
 theme: rebase
 region: navigation
-weight: -7
+weight: -8
 provider: null
 plugin: system_branding_block
 settings:

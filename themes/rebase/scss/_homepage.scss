@@ -1,125 +1,178 @@
+//** Homepage style:
+
 body.path-frontpage{
   .region-content{
     width: 100%;
-      #slick-views-slideshow-block-1-1{
+    // Slideshow.
+    #slick-views-slideshow-block-1-1,
+    #slick-views-slideshow-block-1-2{
+      .slick__slide{
         position: relative;
-        .slick__slide{
-          position: relative;
-          .views-field-title{
-            position: absolute;
-            right: 100px;
-            bottom: 30px;
-            background: rgba(255,255,255,0.8);
-            width: 40%;
-            padding: 20px;
-          }
-          .views-field-title{
-            h2{
-              a{
-                color: $darkest;
-              }
+        min-height: 140px;
+        max-height: 300px;
+        background-color: $grayBackground;
+        .views-field-title{
+          position: absolute;
+          right: 100px;
+          bottom: 30px;
+          background: rgba(255,255,255,0.8);
+          width: 40%;
+          padding: 20px;
+        }
+        .views-field-title{
+          h2{
+            a{
+              color: $darkest;
             }
+          }
+        }
+        .views-field-view-node{
+          position: absolute;
+          right: 0px;
+          bottom: 30px;
+          width: 100px;
+          background: $darkest;
+          height: 40px;
+          a{
+            color: white;
+            font-size: 12px;
+            line-height: 40px;
+            padding-left: 10px;
+            &:visited{
+              color: white;
+            }
+          }
+        }
+      } // End slick__slide
+      ul.slick-dots{
+        position: absolute;
+        bottom: 30px;
+        left: 100px;
+
+        list-style: none;
+        li{
+          width: 12px;
+          height: 12px;
+          border-radius: 6px;
+          overflow: hidden;
+          margin-right: 30px;
+          display: inline-block;
+          border: 2px solid $darkest;
+
+            button{
+              background: white;
+              border:0;
+              padding: 12px;
+            }
+
+          &.slick-active{
+            border: 2px solid white;
+
+            button{
+              background: $darkest;
+            }
+          }
+        }
+      }
+    } 
+    // Events, Research Groups, Projets.
+    .view-id-research_groups, 
+    .view-id-events, 
+    .view-id-projects{
+      .view-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+      }
+      .views-row{
+        width: 100%;
+        max-width: 520px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 40px;
+      }
+    }
+    .view-id-events{
+      padding: 40px 0;
+     .view-content {
+        .views-row{
+          position: relative;
+          text-align: left;
+          flex-basis: 100%;
+          padding: 25px 0;
+          border-top: 1px solid $dark;
+          border-left: none;
+          .views-field-field-venue{
+            @include textnormal;
+            color: $light
+          }
+          .views-field-title h3{
+            margin: 5px 0 10px 0;
+          }
+          .views-field-body{
+            @include textlarge;
+            margin-bottom: 30px;
           }
           .views-field-view-node{
             position: absolute;
-            right: 0px;
-            bottom: 30px;
-            width: 100px;
-            background: $darkest;
-            height: 40px;
-            a{
-              color: white;
-              font-size: 12px;
-              line-height: 40px;
-              padding-left: 10px;
-              &:visited{
-                color: white;
-              }
-            }
-          }
-        } // End slick__slide
-        ul.slick-dots{
-          position: absolute;
-          bottom: 30px;
-          left: 100px;
-
-          list-style: none;
-          li{
-            width: 12px;
-            height: 12px;
-            border-radius: 6px;
-            overflow: hidden;
-            margin-right: 30px;
-            display: inline-block;
-            border: 2px solid $darkest;
-
-              button{
-                background: white;
-                border:0;
-                padding: 12px;
-              }
-
-            &.slick-active{
-              border: 2px solid white;
-
-              button{
-                background: $darkest;
-              }
-            }
-          }
-        }
-      } // End slick-views-slideshow-block-1-1-slider
-      .view-id-research_groups, .view-id-events, .view-id-projects{
-        .view-content {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content:center;
-        }
-        .views-row{
-          width: 100%;
-          max-width: 520px;
-          text-align: center;
-          padding: 30px;
-          margin-bottom: 40px;
-        }
-
-      }
-      .view-id-research_groups{
-
-      }
-      .view-id-events{
-        padding: 40px 0;
-
-       .view-content {
-         justify-content: inherit;
-
-        .views-row{
-          text-align: left;
-          max-width: 340px;
-          padding: 0 30px;
-          border-right: 1px solid $normal;
-          .views-field-field-venue{
-            color: $normal;
-          }
-          h3{
-            margin-top: 8px;
+            bottom: 0;
+            @include textsmall;
+            text-transform: uppercase;
           }
         }
       }
     }
+    .block-views-blockresearch-groups-block-1{
+      padding: 30px 0;
+      background-color: #E9F8F9;
+      position: relative;
+    }
+    .block-views-blockresearch-groups-block-1::before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #E9F8F9;
+    }
+    .block-views-blockresearch-groups-block-1::after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      background-color: #E9F8F9;
+    }
     .view-id-projects{
       padding-top: 20px;
-        .views-row{
-          text-align: left;
-          padding: 20px;
+      .views-row{
+        text-align: left;
+        padding: 20px;
+      }
+    }   
+  }
+}
 
-          h2{
-            }
-
-          .views-field.views-field-field-image-media img {
-
+// Media query > 992, for sm, md and lg devices.
+@media screen and (min-width: 768px){
+  body.path-frontpage{
+    .region-content{
+      width: 100%;
+      // Events, Research Groups, Projets.
+      .view-id-events{
+       .view-content {
+          .views-row{
+            flex-basis: 25%;
+            padding: 0 25px;
+            border-top: none;
+            border-left: 1px solid $dark;
           }
         }
-    }   //End view-id-research_groups, .view-id-events
+      }   
+    }
   }
 }

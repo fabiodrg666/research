@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - system
   theme:
     - rebase
@@ -16,7 +17,7 @@ _core:
 id: rebase_main_menu
 theme: rebase
 region: navigation_collapsible
-weight: -6
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:

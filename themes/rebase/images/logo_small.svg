@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="38px" viewBox="0 0 29 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>logo_small</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,5 L0,38 L3.66567474,38 L3.66567474,25.3626177 L12.9993772,25.3626177 L18.9523183,38 L23,38 L16.6666436,24.5991789 C20.5917647,23.3320937 22.6068512,20.2703695 22.7119031,15.4156001 L18.9507266,15.4156001 C18.875917,19.8862594 16.6395848,22.1207921 12.2385467,22.1207921 L3.66567474,22.1207921 L3.66567474,8.24501328 L11.8262976,8.24501328 L11.8262976,5 L0,5 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-23.000000, -10.000000)">
+            <g id="logo_small" transform="translate(23.000000, 10.000000)">
+                <g id="logo_r">
+                    <g id="Page-1" transform="translate(15.000000, 0.000000)"></g>
+                    <polygon id="Fill-4" fill="#2BEFFF" points="20.1502591 0 20.1502591 4.77932171 15 4.77932171 15 8.21914743 20.1502591 8.21914743 20.1502591 13 23.8513895 13 23.8513895 8.21914743 29 8.21914743 29 4.77932171 23.8513895 4.77932171 23.8513895 0"></polygon>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Clip-2" fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

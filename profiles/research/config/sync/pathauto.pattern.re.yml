@@ -1,0 +1,33 @@
+uuid: 8f9a5b25-708d-4a8c-bce0-186e0fcc4f6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: re
+label: 'Research Group'
+type: 'canonical_entities:node'
+pattern: '/research-groups/[node:title]'
+selection_criteria:
+  64b0003e-9270-450a-bbd8-6d546b42b345:
+    id: node_type
+    bundles:
+      research_group: research_group
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 64b0003e-9270-450a-bbd8-6d546b42b345
+  a2e0bb71-d05e-4d61-9ecb-5c1b69947eca:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: a2e0bb71-d05e-4d61-9ecb-5c1b69947eca
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

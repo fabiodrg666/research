@@ -1,0 +1,33 @@
+uuid: 26c268d9-0560-4783-ba27-90f2393639a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: eventos
+label: Eventos
+type: 'canonical_entities:node'
+pattern: '/eventos/[node:title]'
+selection_criteria:
+  81361cbc-8fb1-4095-810b-6895c6415af2:
+    id: node_type
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 81361cbc-8fb1-4095-810b-6895c6415af2
+  bcee1618-0c94-4f99-ba86-421a3d8cd5f7:
+    id: language
+    langcodes:
+      pt-pt: pt-pt
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: bcee1618-0c94-4f99-ba86-421a3d8cd5f7
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -1,0 +1,16 @@
+uuid: f9d57b73-ecf8-4163-83c1-bc0c9abba1d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_file
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.private_file
+target_entity_type_id: node
+target_bundle: private_file
+default_langcode: site_default
+language_alterable: false

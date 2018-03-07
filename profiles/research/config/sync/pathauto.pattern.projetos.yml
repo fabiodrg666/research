@@ -1,0 +1,33 @@
+uuid: f3014de9-3044-49c2-ae2f-eef624c83252
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: projetos
+label: Projetos
+type: 'canonical_entities:node'
+pattern: '/projetos/[node:title]'
+selection_criteria:
+  73afbe6e-2d24-4aec-a86c-1fedb8172d7b:
+    id: node_type
+    bundles:
+      project: project
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 73afbe6e-2d24-4aec-a86c-1fedb8172d7b
+  7f67c830-77db-4e88-9fa5-8771ab22cc87:
+    id: language
+    langcodes:
+      pt-pt: pt-pt
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 7f67c830-77db-4e88-9fa5-8771ab22cc87
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

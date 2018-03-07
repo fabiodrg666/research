@@ -1,0 +1,5 @@
+services:
+  users_import.commands:
+    class: \Drupal\users_import\Commands\UsersImportCommands
+    tags:
+      - { name: drush.command }

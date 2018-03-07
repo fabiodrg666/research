@@ -1,0 +1,33 @@
+uuid: e77f2c64-cc67-45f8-80cb-9a2e76e4347f
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: noticias
+label: Noticias
+type: 'canonical_entities:node'
+pattern: '/noticias/[node:title]'
+selection_criteria:
+  731c2ef4-775f-4a6e-beb7-9263ea1d3dd4:
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 731c2ef4-775f-4a6e-beb7-9263ea1d3dd4
+  c92d784a-8329-42ed-a787-21e772df02ab:
+    id: language
+    langcodes:
+      pt-pt: pt-pt
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: c92d784a-8329-42ed-a787-21e772df02ab
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

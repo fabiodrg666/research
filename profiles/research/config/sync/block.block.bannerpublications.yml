@@ -16,7 +16,7 @@ third_party_settings:
 id: bannerpublications
 theme: rebase
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: 'block_content:f9949547-e808-4e47-a86b-3ca2d16a2c55'
 settings:

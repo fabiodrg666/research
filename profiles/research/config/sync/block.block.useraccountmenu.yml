@@ -11,11 +11,11 @@ dependencies:
     - rebase
 third_party_settings:
   block_class:
-    classes: ''
+    classes: 'col-xs-2 col-md-1'
 id: useraccountmenu
 theme: rebase
-region: navigation_collapsible
-weight: -5
+region: navigation
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:
