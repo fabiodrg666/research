@@ -32,6 +32,7 @@ class UsersImportCommands extends DrushCommands {
         'email',
         'name',
         'institution',
+        'picture',
         'member_level',
         'position',
         'author_first_name',
@@ -45,6 +46,7 @@ class UsersImportCommands extends DrushCommands {
         'researcher_id',
         'scopus_id',
         'google_scholar_user',
+        'roles',
       ];
       $is_header = TRUE;
       foreach ($users as $user_row) {
@@ -60,22 +62,59 @@ class UsersImportCommands extends DrushCommands {
         $member_level = \Drupal::entityTypeManager()
           ->getStorage('taxonomy_term')
           ->loadByProperties(['name' => $user['member_level']]);
-        // Fetch the author (bibcite contributor)
-        $author = NULL;
-        $query = \Drupal::entityQuery('bibcite_contributor');
-        $query->condition('first_name', $user['author_first_name']);
-        $query->condition('last_name', $user['author_last_name']);
-        $id = current($query->execute());
-        if (!empty($id)) {
-          $author = Contributor::load($id);
-        }
+
+          //upload user picture
+          $userimgname = trim($user['picture']);
+
+          $path = "./" . drupal_get_path('module', 'users_import') . "/users_img/";
+
+          $contents = file_get_contents($path . $userimgname, FILE_USE_INCLUDE_PATH);
+
+          $file = "";
+          
+          if(!empty($contents)){
+              $uri = 'public://pictures/' . $userimgname;
+              $file = file_save_data($contents, $uri, FILE_EXISTS_RENAME);
+              $file->setOwnerId(1);
+              $file->save();
+          }
+
+          //get authors
+          $author_first_name = explode(",", $user['author_first_name']);
+          $author_last_name = explode(",", $user['author_last_name']);
+          $authors = array();
+          for($i = 0; $i <= sizeof($user['author_first_name']); $i++){
+              $query = \Drupal::entityQuery('bibcite_contributor');
+              $query->condition('first_name', $author_first_name[$i]);
+              $query->condition('last_name', $author_last_name[$i]);
+              $id = current($query->execute());
+
+              if(!empty($id)){
+                  $authors[] = $id;
+              }
+          }
+
+          //get roles
+          $user_roles = trim($user['roles']);
+          $roles = explode(',', $user_roles);
+
+          //lower case & underscore
+          foreach ($roles as $key => $value){
+              $roles[$key] = strtolower(str_replace(' ', '_', $value));
+          }
+
+          // Remove role "Administrator" if exists
+          $admin = array_search('administrator', $roles);
+          if(!empty($admin)){
+              unset($roles[$admin]);
+          }
 
         $account = \Drupal\user\Entity\User::create();
         $account->setUsername($user['email']);
         $account->setPassword(user_password());
         $account->setEmail($user['email']);
         $account->enforceIsNew();
-        $account->set('field_author', $author);
+        $account->set('field_author', $authors);
         $account->set('field_bio', $user['bio']);
         $account->set('field_degois_id', $user['degois_id']);
         $account->set('field_google_scholar_user', $user['google_scholar_user']);
@@ -89,6 +128,10 @@ class UsersImportCommands extends DrushCommands {
         $account->set('field_research_gate_id', $user['researchgate_id']);
         $account->set('field_scopus_id', $user['scopus_id']);
         $account->set('field_website', $user['website']);
+        $account->set('user_picture', $file);
+          foreach ($roles as $role){
+              $account->addRole($role);
+          }
         $account->activate();
         $account->save();
       }

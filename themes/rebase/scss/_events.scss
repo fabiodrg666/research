@@ -1,0 +1,175 @@
+//** Events style:
+
+// Mobile first.
+body.path-frontpage,
+body.path-center{
+  .region-content{
+    // Events.
+    .block-views-blockevents-block-events,
+    .block-views-blockevents-block-1{
+      padding: 50px 0;
+      .view-id-events, 
+      .view-id-research_groups, 
+      .view-id-projects{
+        .view-content {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content:space-around;  
+        }
+        .views-row{
+          flex-basis: 100%;
+          padding: 25px;
+          margin-bottom: 30px;
+        }
+        .views-field-field-image-media{
+          transition: all 0.3s;
+          overflow: hidden;
+          img{
+            opacity: 1;
+            transform: scale(1);
+            transition: all 0.3s;
+          }
+          &:hover{
+            img{
+              opacity: 0.75;
+              transform: scale(1.02);
+            }
+          }
+        }
+      }
+    }
+    .view-id-events{
+      padding: 40px 0;
+     .view-content {
+        .views-row{
+          position: relative;
+          text-align: left;
+          border-top: 1px solid $dark;
+          border-left: none;
+          .views-field-field-venue{
+            @include textnormal;
+            color: $light;
+          }
+          .views-field-title h3{
+            margin: 5px 0 10px 0;
+          }
+          .views-field-body{
+            @include textnormal;
+            margin-bottom: 15px;
+          }
+          .read-more{
+            position: absolute;
+            bottom: 0;
+            @include readmore;
+          }
+        }
+      }
+    }  
+  }
+}
+
+// Events node pages.
+body.page-node-type-event .main-container {
+  border-top: 1px solid $grayBackground;
+  .block-views-blockevents-block-2{
+    .field-content{
+      margin: 0;
+      .top-banner {
+        background-color: $darkgray;
+        .events-text{
+          margin: 0;
+          position: absolute;
+          width: 100%;
+          h1{
+            position: relative;
+            font: 300 36px/40px 'Titillium Web', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 1px 1px 2px grey;
+          }
+          h3{
+            @include textsubtitle;
+            color: white;
+            text-shadow: 1px 1px 2px grey;
+          }
+        }
+        img{
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+  section .region-content .layout{
+    margin: 60px auto;
+    .block-entity-fieldnodefield-image-media{
+      margin-bottom: 30px; 
+    }
+    .block-entity-fieldnodebody,
+    .block-views-blocknode-summary-block-1,
+    .block-entity-fieldnodefield-fundin{
+      padding: 10px 25px;
+    }
+    .block-entity-fieldnodebody{
+      h1, h2, h3, h4, p{
+        color: $darkgray;
+      }
+    }
+    .block-views-blocknode-summary-block-1{
+      @include textsubtitle;
+      color: $dark;
+      margin-bottom: 15px;
+    }
+    .block-entity-fieldnodefield-fundin{
+      width: 100%;
+      float: none;
+      margin-bottom: 30px;
+      h2.block-title{
+        @include textlarge;
+        color: $dark;
+        text-align: left;
+        border-top: 1px solid $dark; 
+        display: block; 
+        padding-top: 5px;      
+      }
+      .field--type-entity-reference{
+        display: flex;
+        flex-wrap: wrap;
+        .field--item{
+          flex-basis: 100%;
+          article > h2{
+            display: none;
+          }
+          .field--name-field-entity-logo{
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media query > 992, for sm, md and lg devices.
+@media screen and (min-width: 768px){
+	body.path-frontpage,
+	body.path-center{
+	    .region-content{
+			// Events.
+			.view-id-events .view-content .views-row{
+				flex-basis: 25%;
+				border-top: none;
+				border-left: 1px solid $dark;
+			}  
+		}
+	}
+  body.page-node-type-event .main-container {
+    section .region-content .layout{
+      .block-entity-fieldnodefield-fundin{
+        .field--type-entity-reference{
+          .field--item{
+            flex-basis: 33%;
+          }
+        }
+      }
+    }
+  }
+}

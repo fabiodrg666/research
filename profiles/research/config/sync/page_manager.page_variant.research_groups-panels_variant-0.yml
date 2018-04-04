@@ -5,10 +5,7 @@ dependencies:
   config:
     - page_manager.page.research_groups
     - views.view.research_groups
-  content:
-    - 'block_content:basic:adb4131f-ade1-4161-944d-cf240622f487'
   module:
-    - block_content
     - panels
     - views
 id: research_groups-panels_variant-0
@@ -26,18 +23,6 @@ variant_settings:
       context_mapping: {  }
       region: content
       uuid: f82ec285-f86a-40d7-b592-d0f4340c917e
-      weight: 2
-    9aa0242e-19d0-48fd-9354-c1a4d4b84bdc:
-      id: 'block_content:adb4131f-ade1-4161-944d-cf240622f487'
-      label: 'Banner Research Groups'
-      provider: block_content
-      label_display: '0'
-      status: true
-      info: ''
-      view_mode: full
-      context_mapping: {  }
-      region: content
-      uuid: 9aa0242e-19d0-48fd-9354-c1a4d4b84bdc
       weight: 1
   id: panels_variant
   uuid: dc7d87dc-809d-40dd-a757-6422c4cd6c21

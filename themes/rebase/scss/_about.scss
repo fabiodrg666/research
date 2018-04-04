@@ -1,0 +1,50 @@
+//** About content style:
+
+// Mobile first.
+body.path-center{
+	.view-id-about{
+		padding: 25px 0 80px 0;
+		.views-field-field-mission{
+			margin-bottom: 30px;
+			padding: 0 25px;
+			p{
+				@include textlarge;
+				text-align: center;
+			}
+			.views-label{
+				display: block;
+				@include textsubtitle;
+				text-align: center;
+			    color: #04686F;
+			    margin: 25px 0;
+			}
+		}
+		.views-field-field-direction-board{
+			.views-label{
+				@include textsubtitle;
+			    color: $darkest;
+			    text-align: center;
+			    margin: 30px 0 0 0;
+			    display: inline-block;
+			    width: 100%;
+			}
+			.field-content{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				text-align: center;
+				article{
+					padding: 30px;
+					.field--name-user-picture img{
+		          		@include largeprofilepic;
+		        	}
+					.field--name-field-name{
+						@include textlarge;
+						margin: 15px 0 5px 0;
+					}
+				}
+			}
+			
+		}
+	}
+}

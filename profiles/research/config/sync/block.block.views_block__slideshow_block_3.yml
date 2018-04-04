@@ -1,0 +1,35 @@
+uuid: 39a0fb4b-c52d-4f50-a46f-5d2732ebed9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slideshow
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__slideshow_block_3
+theme: rebase
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:slideshow-block_3'
+settings:
+  id: 'views_block:slideshow-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/news/*\r\n/noticias/*"
+    negate: false
+    context_mapping: {  }

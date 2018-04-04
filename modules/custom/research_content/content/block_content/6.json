@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/5?_format=hal_json"
+            "href": "http:\/\/default\/block\/6?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
@@ -19,17 +19,17 @@
     },
     "id": [
         {
-            "value": 5
+            "value": 6
         }
     ],
     "uuid": [
         {
-            "value": "56e98245-ead8-4cd7-b33f-ffbee79a452b"
+            "value": "adb4131f-ade1-4161-944d-cf240622f487"
         }
     ],
     "revision_id": [
         {
-            "value": 5
+            "value": 6
         }
     ],
     "langcode": [
@@ -49,27 +49,27 @@
     ],
     "info": [
         {
-            "value": "Banner Projects",
+            "value": "Banner Research Groups",
             "lang": "en"
         },
         {
-            "value": "Banner Projects",
+            "value": "Banner Research Groups",
             "lang": "pt-pt"
         }
     ],
     "changed": [
         {
-            "value": 1517328913,
+            "value": 1520506320,
             "lang": "en"
         },
         {
-            "value": 1517328880,
+            "value": 1520506277,
             "lang": "pt-pt"
         }
     ],
     "revision_created": [
         {
-            "value": 1517328837
+            "value": 1517329131
         }
     ],
     "default_langcode": [
@@ -95,7 +95,7 @@
     "metatag": [
         {
             "value": {
-                "title": "| res-dev",
+                "title": "| Research",
                 "canonical_url": "http:\/\/default\/%3Cnone%3E"
             }
         }
@@ -168,24 +168,24 @@
     ],
     "content_translation_created": [
         {
-            "value": 1517328837,
+            "value": 1517329131,
             "lang": "en"
         },
         {
-            "value": 1517328880,
+            "value": 1517329177,
             "lang": "pt-pt"
         }
     ],
     "body": [
         {
-            "value": "<p>PROJECTS<\/p>\r\n",
-            "format": "basic_html",
+            "value": "<div class=\"top-banner\"><img alt=\"top-banner-image\" data-entity-type=\"file\" data-entity-uuid=\"36bb648a-9588-4da2-8ee4-33db7e8f7727\" src=\"\/sites\/default\/files\/inline-images\/photo-1460518451285-97b6aa326961.jpeg\" \/>\r\n<h1>Research Groups<\/h1>\r\n<\/div>\r\n",
+            "format": "full_html",
             "summary": "",
             "lang": "en"
         },
         {
-            "value": "<p>PROJETOS<\/p>\r\n",
-            "format": "basic_html",
+            "value": "<div class=\"top-banner\"><img alt=\"top-banner-image\" data-entity-type=\"file\" data-entity-uuid=\"36bb648a-9588-4da2-8ee4-33db7e8f7727\" src=\"\/sites\/default\/files\/inline-images\/photo-1460518451285-97b6aa326961.jpeg\" \/>\r\n<h1>Grupos de Investiga\u00e7\u00e3o<\/h1>\r\n<\/div>\r\n",
+            "format": "full_html",
             "summary": "",
             "lang": "pt-pt"
         }

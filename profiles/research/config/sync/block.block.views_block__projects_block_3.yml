@@ -1,0 +1,45 @@
+uuid: c3ac17d6-e03e-45d4-b5ec-0122fc5e3b44
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects
+  module:
+    - block_class
+    - ctools
+    - node
+    - views
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__projects_block_3
+theme: rebase
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:projects-block_3'
+settings:
+  id: 'views_block:projects-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      project: project
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      project: project
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

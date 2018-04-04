@@ -1,0 +1,29 @@
+uuid: 6289714d-a54d-4f67-908e-5d743d1eeed7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ad64a551-a0a9-4773-b29a-30b5666780d9'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: bottom-notice
+id: notice
+theme: rebase
+region: content
+weight: 5
+provider: null
+plugin: 'block_content:ad64a551-a0a9-4773-b29a-30b5666780d9'
+settings:
+  id: 'block_content:ad64a551-a0a9-4773-b29a-30b5666780d9'
+  label: Notice
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

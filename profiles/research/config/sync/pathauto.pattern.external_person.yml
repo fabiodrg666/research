@@ -1,0 +1,33 @@
+uuid: 1c363dc0-c7f6-4efe-afa9-564dba527d1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: external_person
+label: 'External Person'
+type: 'canonical_entities:node'
+pattern: '/external-member/[node:title]'
+selection_criteria:
+  c2595730-bc99-42ae-8c07-f0aadd37fc91:
+    id: node_type
+    bundles:
+      external_person: external_person
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c2595730-bc99-42ae-8c07-f0aadd37fc91
+  7da19342-976c-4d3e-be99-8d9eab01bd78:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 7da19342-976c-4d3e-be99-8d9eab01bd78
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

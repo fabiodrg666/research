@@ -7,7 +7,9 @@
     "prefer-stable": true,
     "require-dev": {
         "drupal/console": "~1.0",
-        "drupal/install_profile_generator": "^1.0"
+        "drupal/install_profile_generator": "^1.0",
+        "drupal/devel": "^1.2",
+        "drupal/kint": "^1.2"
     },
     "repositories": [
         {
@@ -36,7 +38,7 @@
     "config": {
         "preferred-install": "dist",
         "autoloader-suffix": "Drupal8",
-        "platform": {"php": "7.0"}
+        "platform": {"php": "7.0.22"}
     },
     "extra": {
         "_readme": [
@@ -71,19 +73,14 @@
         "patches":{
             "drupal/core": {
                 "2788777 - Allow a profile to be installed from existing config()":
-                "https://www.drupal.org/files/issues/drupal-n2788777-105.patch",
+                "https://www.drupal.org/files/issues/2788777-3-146.patch",
                 "2869592 - Disabled update module shouldn't produce a status report warning":
                 "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
-                "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer":
-                "https://www.drupal.org/files/issues/2885441-2.patch",
-                "2883813 - Move File/Image media type into Standard once Media is stable":
-                "https://www.drupal.org/files/issues/2883813-27.patch",
                 "2877383 - Add action support to Media module":
-                "https://www.drupal.org/files/issues/2877383-23.patch",
-                "2815221 - Add quickedit to the latest-revision route":
-                "https://www.drupal.org/files/issues/2815221-69-8.4.x.patch",
+                "https://www.drupal.org/files/issues/2877383-56.patch",
                 "2868294 - Call to a member function getThirdPartySetting() on null in ContentTranslationManager":
-               "https://www.drupal.org/files/issues/2868294-12.patch"
+               "https://www.drupal.org/files/issues/2868294-13.patch"
+
             },
             "drupal/entity_block": {
                 "2844068 - Create derivatives for any viewable entity.":
@@ -144,7 +141,7 @@
         "drupal/entity_block": "1.0.0-alpha2",
         "drupal/bootstrap": "^3.5",
         "drupal/panels": "^4.2",
-        "drupal/page_manager": "^4.0",
+        "drupal/page_manager": "4.x-dev",
         "drupal/admin_toolbar": "^1.19",
         "drupal/ctools": "^3.0",
         "drupal/masquerade": "^2.0@beta",
@@ -181,8 +178,8 @@
         "drupal/views_field_view": "^1.0@beta",
         "drupal/field_group": "^1.0",
         "drupal/better_exposed_filters": "^3.0@alpha",
-        "drupal/devel": "^1.2",
-        "drupal/kint": "^1.2"
+        "drupal/smtp": "1.x-dev",
+        "drupal/flood_unblock": "^1.5"
     },
     "scripts": {
         "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",

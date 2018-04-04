@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/6?_format=hal_json"
+            "href": "http:\/\/default\/block\/4?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
@@ -10,36 +10,28 @@
             {
                 "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
-            },
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
-                "lang": "pt-pt"
             }
         ]
     },
     "id": [
         {
-            "value": 6
+            "value": 4
         }
     ],
     "uuid": [
         {
-            "value": "adb4131f-ade1-4161-944d-cf240622f487"
+            "value": "ef2e5587-d65c-450e-a00e-c9041419e214"
         }
     ],
     "revision_id": [
         {
-            "value": 6
+            "value": 4
         }
     ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
-        },
-        {
-            "value": "pt-pt",
-            "lang": "pt-pt"
         }
     ],
     "type": [
@@ -49,53 +41,37 @@
     ],
     "info": [
         {
-            "value": "Banner Research Groups",
+            "value": "Partners\/Funding",
             "lang": "en"
-        },
-        {
-            "value": "Banner Research Groups",
-            "lang": "pt-pt"
         }
     ],
     "changed": [
         {
-            "value": 1517329131,
+            "value": 1520437330,
             "lang": "en"
-        },
-        {
-            "value": 1517329177,
-            "lang": "pt-pt"
         }
     ],
     "revision_created": [
         {
-            "value": 1517329131
+            "value": 1517328725
         }
     ],
     "default_langcode": [
         {
             "value": true,
             "lang": "en"
-        },
-        {
-            "value": false,
-            "lang": "pt-pt"
         }
     ],
     "revision_translation_affected": [
         {
             "value": true,
             "lang": "en"
-        },
-        {
-            "value": true,
-            "lang": "pt-pt"
         }
     ],
     "metatag": [
         {
             "value": {
-                "title": "| res-dev",
+                "title": "| Research",
                 "canonical_url": "http:\/\/default\/%3Cnone%3E"
             }
         }
@@ -104,20 +80,12 @@
         {
             "value": "und",
             "lang": "en"
-        },
-        {
-            "value": "en",
-            "lang": "pt-pt"
         }
     ],
     "content_translation_outdated": [
         {
             "value": false,
             "lang": "en"
-        },
-        {
-            "value": false,
-            "lang": "pt-pt"
         }
     ],
     "_embedded": {
@@ -137,22 +105,6 @@
                     }
                 ],
                 "lang": "en"
-            },
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "ca08223e-f798-471e-ab6f-be722a6eb2a6"
-                    }
-                ],
-                "lang": "pt-pt"
             }
         ]
     },
@@ -160,34 +112,20 @@
         {
             "value": true,
             "lang": "en"
-        },
-        {
-            "value": true,
-            "lang": "pt-pt"
         }
     ],
     "content_translation_created": [
         {
-            "value": 1517329131,
+            "value": 1517328725,
             "lang": "en"
-        },
-        {
-            "value": 1517329177,
-            "lang": "pt-pt"
         }
     ],
     "body": [
         {
-            "value": "<p>Research Groups<\/p>\r\n",
-            "format": "basic_html",
+            "value": "<h2 class=\"block-title\">Partners<\/h2>\r\n<img alt=\"Partners logos\" data-entity-type=\"file\" data-entity-uuid=\"ac0586e5-7dc9-4307-af67-ddbdc300f036\" src=\"\/sites\/default\/files\/inline-images\/logos_example_0.png\" \/>\r\n",
+            "format": "full_html",
             "summary": "",
             "lang": "en"
-        },
-        {
-            "value": "<p>Grupos de investiga\u00e7\u00e3o<\/p>\r\n",
-            "format": "basic_html",
-            "summary": "",
-            "lang": "pt-pt"
         }
     ]
 }

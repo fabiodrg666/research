@@ -1,0 +1,129 @@
+display:
+  default:
+    display_options:
+      fields:
+        type:
+          alter:
+            text: '<p><b>Tipo:</b> </p>'
+        bibcite_year:
+          alter:
+            text: '<p>Ano da Publicação: {{ bibcite_year }}</p>'
+        bibcite_section:
+          alter:
+            text: '<p>Secção: {{ bibcite_section }}</p>'
+        bibcite_issue:
+          alter:
+            text: '<p>Edição: {{ bibcite_issue }}</p>'
+        bibcite_pages:
+          alter:
+            text: '<p>Páginas: {{ bibcite_pages }}</p>'
+        bibcite_date:
+          alter:
+            text: '<p>Data de Publicação: {{ bibcite_date }}</p>'
+        bibcite_type_of_work:
+          alter:
+            text: '<p>Tipo: {{ bibcite_type_of_work }}</p>'
+        bibcite_reprint_edition:
+          alter:
+            text: '<p>Edição Reprint: {{ bibcite_reprint_edition }}</p>'
+        bibcite_accession_number:
+          alter:
+            text: '<p>Nº de adesão: {{ bibcite_accession_number }}</p>'
+        bibcite_call_number:
+          alter:
+            text: '<p>Chamada nº: {{ bibcite_call_number }}</p>'
+        bibcite_other_number:
+          alter:
+            text: '<p>Outro: {{ bibcite_other_number }}</p>'
+        bibcite_original_publication:
+          alter:
+            text: '<p>Título original: {{ bibcite_original_publication }}</p>'
+        bibcite_alternate_title:
+          alter:
+            text: '<p>Título alternativo: {{ bibcite_alternate_title }}</p>'
+        bibcite_short_title:
+          alter:
+            text: '<p>Título curto: {{ bibcite_short_title }}</p>'
+        nothing:
+          admin_label: Publicação
+          alter:
+            text: "<h3>Publicação</h3>\r\n<div>{{ bibcite_year }}</div>\r\n<div>{{ bibcite_volume }}</div>\r\n<div>{{ bibcite_section }}</div>\r\n<div>{{ bibcite_issue }}</div>\r\n<div>{{ bibcite_pages }}</div>\r\n<div>{{ bibcite_date }}</div>\r\n<div>{{ bibcite_type_of_work }}</div>\r\n<div>{{ bibcite_reprint_edition }}</div>"
+        nothing_1:
+          admin_label: Identificadores
+          alter:
+            text: "<h3>Identificadores</h3>\r\n<div>{{ bibcite_issn }}</div>\r\n<div>{{ bibcite_isbn }}</div>\r\n<div>{{ bibcite_accession_number }}</div>\r\n<div>{{ bibcite_call_number }}</div>\r\n<div>{{ bibcite_other_number }}</div>\r\n<div>{{ bibcite_pmid }}</div>"
+        nothing_2:
+          admin_label: Localizadores
+          alter:
+            text: "<h3>Localizadores</h3>\r\n<div>{{ bibcite_url }}</div>\r\n<div>{{ bibcite_doi }}</div>\r\n"
+        nothing_3:
+          admin_label: 'Títulos Alternativos'
+          alter:
+            text: "<h3>Títulos Alternativos</h3>\r\n<div>{{ bibcite_original_publication }}</div>\r\n<div>{{ bibcite_alternate_title }}</div>\r\n<div>{{ bibcite_short_title }}</div>"
+  block_1:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<h3>Publicação</h3>\r\n<div>{{ bibcite_year }}</div>\r\n<div>{{ bibcite_volume }}</div>\r\n<div>{{ bibcite_section }}</div>\r\n<div>{{ bibcite_issue }}</div>\r\n<div>{{ bibcite_pages }}</div>\r\n<div>{{ bibcite_date }}</div>\r\n<div>{{ bibcite_type_of_work }}</div>\r\n<div>{{ bibcite_reprint_edition }}</div>"
+          admin_label: Publicação
+        nothing_1:
+          alter:
+            text: "<h3>Identificadores</h3>\r\n<div>{{ bibcite_issn }}</div>\r\n<div>{{ bibcite_isbn }}</div>\r\n<div>{{ bibcite_accession_number }}</div>\r\n<div>{{ bibcite_call_number }}</div>\r\n<div>{{ bibcite_other_number }}</div>\r\n<div>{{ bibcite_pmid }}</div>"
+          admin_label: Identificadores
+        nothing_2:
+          alter:
+            text: "<h3>Localizadores</h3>\r\n<div>{{ bibcite_url }}</div>\r\n<div>{{ bibcite_doi }}</div>\r\n"
+          admin_label: Localizadores
+        nothing_3:
+          alter:
+            text: "<h3>Títulos Alternativos</h3>\r\n<div>{{ bibcite_original_publication }}</div>\r\n<div>{{ bibcite_alternate_title }}</div>\r\n<div>{{ bibcite_short_title }}</div>"
+          admin_label: 'Títulos Alternativos'
+        bibcite_year:
+          alter:
+            text: '<p>Ano da publicação: {{ bibcite_year }}</p>'
+        bibcite_section:
+          alter:
+            text: '<p>Secção: {{ bibcite_section }}</p>'
+        bibcite_issue:
+          alter:
+            text: '<p>Edição: {{ bibcite_issue }}</p>'
+        bibcite_pages:
+          alter:
+            text: '<p>Páginas: {{ bibcite_pages }}</p>'
+        bibcite_date:
+          alter:
+            text: '<p>Data de publicação: {{ bibcite_date }}</p>'
+        bibcite_type_of_work:
+          alter:
+            text: '<p>Tipo: {{ bibcite_type_of_work }}</p>'
+        bibcite_reprint_edition:
+          alter:
+            text: '<p>Edição Reprint: {{ bibcite_reprint_edition }}</p>'
+        bibcite_accession_number:
+          alter:
+            text: '<p>Adesão nº: {{ bibcite_accession_number }}</p>'
+        bibcite_call_number:
+          alter:
+            text: '<p>Chamada nº: {{ bibcite_call_number }}</p>'
+        bibcite_other_number:
+          alter:
+            text: '<p>Outro: {{ bibcite_other_number }}</p>'
+        bibcite_original_publication:
+          alter:
+            text: '<p>Título original: {{ bibcite_original_publication }}</p>'
+        bibcite_alternate_title:
+          alter:
+            text: '<p>Título alternativo: {{ bibcite_alternate_title }}</p>'
+        bibcite_short_title:
+          alter:
+            text: '<p>Título curto: {{ bibcite_short_title }}</p>'
+        type:
+          alter:
+            text: '<p><b>Tipo:</b> </p>'
+  block_2:
+    display_options:
+      fields:
+        title:
+          alter:
+            text: "<div class=\"top-banner\">\r\n<img alt=\"top-banner-image\" data-entity-type=\"file\" data-entity-uuid=\"36bb648a-9588-4da2-8ee4-33db7e8f7727\" src=\"/sites/default/files/inline-images/photo-1460518451285-97b6aa326961.jpeg\" />\r\n<h1>{{ title__value }}</h1>\r\n</div>"

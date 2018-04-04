@@ -19,4 +19,5 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view bibcite_contributor'
+  - 'view bibcite_reference'
   - 'view media'

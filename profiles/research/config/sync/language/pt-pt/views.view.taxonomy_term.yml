@@ -6,10 +6,10 @@ display:
       exposed_form:
         options:
           submit_button: Aplicar
-          reset_button_label: Reiniciar
+          reset_button_label: Limpar
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Ascendente
-          sort_desc_label: Descendente
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:

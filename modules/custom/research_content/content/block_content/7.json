@@ -59,11 +59,11 @@
     ],
     "changed": [
         {
-            "value": 1517394152,
+            "value": 1520506199,
             "lang": "en"
         },
         {
-            "value": 1517394207,
+            "value": 1520506175,
             "lang": "pt-pt"
         }
     ],
@@ -95,7 +95,7 @@
     "metatag": [
         {
             "value": {
-                "title": "| res-dev",
+                "title": "| Research",
                 "canonical_url": "http:\/\/default\/%3Cnone%3E"
             }
         }
@@ -178,14 +178,14 @@
     ],
     "body": [
         {
-            "value": "<p>PUBLICATIONS<\/p>\r\n",
-            "format": "basic_html",
+            "value": "<div class=\"top-banner\"><img alt=\"top-banner-image\" data-entity-type=\"file\" data-entity-uuid=\"36bb648a-9588-4da2-8ee4-33db7e8f7727\" src=\"\/sites\/default\/files\/inline-images\/photo-1460518451285-97b6aa326961.jpeg\" \/>\r\n<h1>Publications<\/h1>\r\n<\/div>\r\n",
+            "format": "full_html",
             "summary": "",
             "lang": "en"
         },
         {
-            "value": "<p>PUBLICA\u00c7\u00d5ES<\/p>\r\n",
-            "format": "basic_html",
+            "value": "<div class=\"top-banner\"><img alt=\"top-banner-image\" data-entity-type=\"file\" data-entity-uuid=\"36bb648a-9588-4da2-8ee4-33db7e8f7727\" src=\"\/sites\/default\/files\/inline-images\/photo-1460518451285-97b6aa326961.jpeg\" \/>\r\n<h1>Publica\u00e7\u00f5es<\/h1>\r\n<\/div>\r\n",
+            "format": "full_html",
             "summary": "",
             "lang": "pt-pt"
         }

@@ -30,9 +30,6 @@ targetEntityType: user
 bundle: user
 mode: small_image
 content:
-  masquerade:
-    weight: 50
-    region: content
   user_picture:
     type: image
     weight: 0
@@ -58,4 +55,5 @@ hidden:
   field_scopus_id: true
   field_website: true
   langcode: true
+  masquerade: true
   member_for: true

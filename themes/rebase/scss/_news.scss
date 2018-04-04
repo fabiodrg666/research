@@ -1,20 +1,133 @@
-body.page-node-type-news{
+//** News style:
+
+// Mobile first.
+body.path-center{
+  // Projets.
+  .block-views-blockslideshow-block-2{
+    background-color: #F4F8F9;
+    position: relative;
+    padding: 50px 0;
+    .view-id-slideshow{
+      .view-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;  
+      }
+      .views-row{
+        flex-basis: 100%;
+        padding: 25px;
+        margin-bottom: 15px;
+        position: relative;
+        text-align: center;
+      }
+      .views-field-nid-1{
+        transition: all 0.3s;
+        overflow: hidden;
+        img{
+          width: 100%;
+          opacity: 1;
+          transform: scale(1);
+          transition: all 0.3s;
+          float: none;
+          margin: 0 auto;
+        }
+        &:hover{
+          img{
+            opacity: 0.75;
+            transform: scale(1.02);
+          }
+        }
+      }
+      .views-field-body{
+        margin-bottom: 15px;
+      }
+      .read-more{
+        @include readmore;
+      }
+    }
+  }
+  .block-views-blockslideshow-block-2::before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #F4F8F9;
+  }
+  .block-views-blockslideshow-block-2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F8F9;
+  }
+}
+
+// News node pages.
+body.page-node-type-news .main-container{
+  border-top: 1px solid $grayBackground;
+  .view-display-id-block_3{
+    .field-content{
+      margin: 0;
+      .top-banner {
+        background-color: $darkgray;
+        img{
+          opacity: 0.75;
+        }
+      }
+    }
+  }
   .block-region-first-above {
     padding-bottom: 40px;
   }
-  .view-author{
-    .views-field{
-      display: inline-block;
-      margin-right: 15px;
-      img {
-        width: 60px;
-        border-radius: 30px;
+  section .region-content .layout{
+    margin: 60px auto;
+    .block-entity-fieldnodebody{
+      padding: 10px 25px;
+      h1, h2, h3, h4, p{
+        color: $darkgray;
+      }
+    }
+    .block-views-blocknode-summary-block-1{
+      padding: 10px 25px;
+      @include textsubtitle;
+      color: $dark;
+      margin-bottom: 15px;
+    }
+    .block-entity-fieldnodefield-news-url{
+      padding: 10px 25px;
+      width: 100%;
+      float: none;
+      margin-bottom: 30px;
+      h2.block-title{
+        @include textlarge;
+        color: $dark;
+        text-align: left;
+        border-top: 1px solid $dark; 
+        display: block;
+        padding-top: 5px;      
       }
     }
   }
 }
-body.page-node-type-event{
-  .block-region-first-above {
-    padding-bottom: 40px;
+
+// Media query > 992, for sm, md and lg devices.
+@media screen and (min-width: 768px){
+  body.path-center{
+    .block-views-blockslideshow-block-2{
+      .view-id-slideshow{
+        .view-content {
+          .views-row{
+            flex-basis: 50%;
+            text-align: left;
+          }
+        }
+      } 
+    }
   }
 }

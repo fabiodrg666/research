@@ -1,59 +1,225 @@
-//View publications
+//** Publications content styles:
 
-.view-publications{
-  .views-row{
-    padding-bottom: 20px;
-    .views-field-author-target-id{
-      ul{
-        list-style: none;
-        padding-left: 0;
-        margin-bottom: 0;
+// Mobile first.
+body.path-publications .view-publications{
+  @include wide;
+  margin: 30px auto;
+  padding: 0 15px;
+  text-align: center;
+  // Publications filters.
+  .view-filters{
+    margin: 70px 0 25px 0;
+    text-align: center;
+    .form-type-select{
+      position: relative;
+      .select-wrapper:after{
+        display: none;
+      }
+      label{
+        @include textsmall;
+        text-transform: uppercase;
+        text-align: left;
+        position: absolute;
+        top: -20px;
+        left: auto;
+      }
+      .select-wrapper{
+        width: 100%;
+      }
+      .chosen-container-single{
+        padding: 0;
+      }
+      .chosen-container-single{
+        width: 100%;
+        border-radius: 0;
+        height: 30px; 
+        margin-bottom: 20px;
+        a.chosen-single{
+          border: none;
+          background: none;
+          box-shadow: none;
+          height: 30px;
+          width: 100%;
+          @include textnormal;
+          line-height: 30px;
+          text-align: left;
+          div b{
+            background-position: 0px 5px;
+          }
+        }
+        .chosen-drop{
+          text-align: left;
+        }
+      }
+    }
+    .form-type-textfield{
+      padding: 0;
+      position: relative;
+      label{
+        @include textsmall;
+        text-transform: uppercase;
+        text-align: left;
+        position: absolute;
+        top: -20px;
+        left: auto;
+      }
+      input,
+      .input-group-addon{
+        height: 30px;
+        border-radius: 0;
+      }
+    }
+    .form-actions{
+      text-align: center;
+      button{
+        margin: 0;
+        border-radius: 0;
+        border-left: 1px solid white;
+      }
+    }
+  }
+  // Publications view content.
+  > .view-content{
+    margin-top: 0;
+    .views-row{
+      text-align: left;
+      padding: 25px;
+      border-top: 1px solid $dark;
+      .views-field-title h3{
+        margin-top: 0;
+      }
+      // Sub-title and year.
+      .views-field-bibcite-secondary-title,
+      .views-field-bibcite-year{
+        @include textlarge;
+      }
+      // Authors.
+      .view-id-contributors{
+        margin-top: 10px;
+        .view-content{
+          padding-left: 0;
+          margin-bottom: 0;
+          > div {
+            display: inline-block;
+            a > p, .field-content > p{
+              display: inline-block;
+              padding: 5px 10px;
+              margin: 0 5px 5px 0;
+              border-radius: 5px;
+              background-color: $links;
+              @include textsmall;
+              color: white;
+              line-height: 20px;
+              &:hover{
+                text-decoration: none;
+                background-color: $linksOver;
+              }
+            }
+            .field-content > p{
+              &:hover{
+                background-color: $links;
+              }
+            }
+          }
+        }
+      } 
+    }
+  } 
+}
 
-        li{
-          padding: 0 5px 5px 5px;
-          background-color: $light;
-          border-radius: 10px;
+// Publication node pages.
+body.path-bibcite{
+  .view-node-publication{
+    .views-row{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .views-field-title{
+      .top-banner{
+        background-color: $darkgray;
+        img{
+          opacity: 0.75;
+        }
+        h1{
+          padding: 40px;
+        }
+      }  
+    }
+    .views-field-bibcite-secondary-title h3{
+      color: $darkest;
+    }
+    .views-field-bibcite-secondary-title,
+    .views-field-type,
+    .views-field-bibcite-abst-e,
+    .views-field-view{
+      flex-basis: 100%;
+      padding: 0 25px;
+    }
+    .views-field-nothing,
+    .views-field-nothing-1,
+    .views-field-nothing-2,
+    .views-field-nothing-3{
+      border-top: 1px solid $darkest;
+      flex-basis: 100%;
+      padding: 25px;
+      margin-top: 50px;
+      h3{
+        margin-top: 0;
+        color: $darkest;
+      }
+    }
+    .view-contributors .view-content{
+      margin-top: 20px;
+      > div{
+        display: inline-block;
+        .views-field-last-name{
           display: inline-block;
-          margin: 6px 6px 0 0;
-
-          a{
-            font-size: 12px;
+          a > p, .field-content > p{
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0 5px 5px 0;
+            border-radius: 5px;
+            background-color: $links;
+            @include textsmall;
+            color: white;
+            line-height: 20px;
+            &:hover{
+              text-decoration: none;
+              background-color: $linksOver;
+            }
+          }
+          .field-content > p{
+            &:hover{
+              background-color: $links;
+            }
           }
         }
       }
-    } // End authors
-    .views-field-title{
-      a{
-        font-size: 18px;
-        color: $darkest;
-      }
-    } // End title
-    .views-field-bibcite-secondary-title {
-    color: $graytext;
-    padding: 10px;
     }
-  }// End row
+  }
 }
 
-
-// Publications details
-body.path-bibcite{
-  h1{
-    @include center600;
-    color: $darkest;
-    font-size: 20px;
-  }
-  .bibcite-reference-table{
-    @include center600;
-
-    tr{
-      &.odd{
-      background-color: white;
-      }
-      td:first-child {
+// Media query > 768, for sm, md and lg devices.
+@media screen and (min-width: 768px){
+  body.path-publications .view-publications{
+    // Publications filters.
+    .view-filters{
       text-align: right;
-      color: $graytext;
+      .form-type-select{
+        .chosen-container-single{
+          margin-bottom: 0px;
+        }
       }
     }
-  } // End table
+  }
+  body.path-bibcite{
+    .view-node-publication{
+      .views-field-nothing,
+      .views-field-nothing-1,
+      .views-field-nothing-2,
+      .views-field-nothing-3{
+        flex-basis: 50%;
+      }
+    }
+  }
 }

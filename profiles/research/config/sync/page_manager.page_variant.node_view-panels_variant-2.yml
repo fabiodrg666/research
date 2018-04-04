@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - page_manager.page.node_view
-    - views.view.research_groups
+    - views.view.publications
   module:
     - ctools
     - ctools_block
@@ -15,45 +15,11 @@ label: 'Grupos de Investigação'
 variant: panels_variant
 variant_settings:
   blocks:
-    3fd28aea-df01-497a-aa29-9e747408e480:
-      id: 'entity_field:node:field_image_media'
-      label: 'Imagem Media'
-      provider: ctools_block
-      label_display: '0'
-      formatter:
-        label: hidden
-        type: entity_reference_entity_view
-        settings:
-          view_mode: embed
-        third_party_settings: {  }
-        weight: 0
-      region: content
-      weight: 1
-      uuid: 3fd28aea-df01-497a-aa29-9e747408e480
-      context_mapping:
-        entity: node
-    7a00339d-8176-493c-9866-4536083b6d7d:
-      id: 'entity_field:node:title'
-      label: Título
-      provider: ctools_block
-      label_display: '0'
-      formatter:
-        label: hidden
-        type: string
-        settings:
-          link_to_entity: false
-        third_party_settings: {  }
-        weight: 0
-      region: content
-      weight: 2
-      uuid: 7a00339d-8176-493c-9866-4536083b6d7d
-      context_mapping:
-        entity: node
     322ecf9d-1cfc-46f7-aef7-a7b4ab44e814:
       id: 'entity_field:node:body'
-      label: Descrição
+      label: About
       provider: ctools_block
-      label_display: '0'
+      label_display: visible
       formatter:
         label: hidden
         type: text_default
@@ -61,13 +27,13 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: content
-      weight: 3
+      weight: 1
       uuid: 322ecf9d-1cfc-46f7-aef7-a7b4ab44e814
       context_mapping:
         entity: node
     10db466f-5df8-4e88-bb39-20650933eebb:
       id: 'entity_field:node:field_group_leader'
-      label: 'Group Leader'
+      label: Coordinator
       provider: ctools_block
       label_display: visible
       formatter:
@@ -78,7 +44,7 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: content
-      weight: 4
+      weight: 2
       uuid: 10db466f-5df8-4e88-bb39-20650933eebb
       context_mapping:
         entity: node
@@ -91,96 +57,97 @@ variant_settings:
         label: hidden
         type: entity_reference_entity_view
         settings:
-          view_mode: user_card
+          view_mode: small_image
         third_party_settings: {  }
         weight: 0
       region: content
-      weight: 6
+      weight: 4
       uuid: 44b835ee-0f4b-4a78-b471-7f3eaea4d506
       context_mapping:
         entity: node
     79bf2ef3-3fe7-4992-9fc4-28ac7f259b39:
       id: 'entity_field:node:field_external_group_leader'
-      label: 'External Group Leader'
+      label: 'External Coordinator'
       provider: ctools_block
       label_display: visible
       formatter:
-        label: above
-        type: entity_reference_label
+        label: hidden
+        type: entity_reference_entity_view
         settings:
-          link: true
+          view_mode: user_card
         third_party_settings: {  }
         weight: 0
+      region: content
+      weight: 3
       context_mapping:
         entity: node
-      region: content
       uuid: 79bf2ef3-3fe7-4992-9fc4-28ac7f259b39
-      weight: 5
     bf9e9175-a164-4c65-a6bf-826767e6c29a:
       id: 'entity_field:node:field_external_group_member'
-      label: 'External Member'
+      label: 'External Members'
       provider: ctools_block
       label_display: visible
       formatter:
-        label: above
-        type: entity_reference_label
+        label: hidden
+        type: entity_reference_entity_view
         settings:
-          link: true
+          view_mode: small_image
         third_party_settings: {  }
         weight: 0
+      region: content
+      weight: 5
       context_mapping:
         entity: node
-      region: content
       uuid: bf9e9175-a164-4c65-a6bf-826767e6c29a
-      weight: 7
     18f51921-1f01-4e8e-a174-3bab39fb2936:
       id: 'entity_field:node:field_usefu'
-      label: 'Usefull Links'
+      label: 'Useful Links'
       provider: ctools_block
       label_display: visible
       formatter:
-        label: above
+        label: hidden
         type: link
         settings:
           trim_length: 80
           url_only: false
           url_plain: false
           rel: '0'
-          target: '0'
+          target: _blank
         third_party_settings: {  }
         weight: 0
+      region: content
+      weight: 6
       context_mapping:
         entity: node
-      region: content
       uuid: 18f51921-1f01-4e8e-a174-3bab39fb2936
-      weight: 8
     546204ba-73e2-42d7-9684-a71ccb5857f3:
       id: 'entity_field:node:field_usefull_files'
-      label: 'Usefull Files'
+      label: 'Useful Files'
       provider: ctools_block
       label_display: visible
       formatter:
-        label: above
+        label: hidden
         type: file_default
-        settings: {  }
+        settings:
+          use_description_as_link_text: true
         third_party_settings: {  }
         weight: 0
+      region: content
+      weight: 7
       context_mapping:
         entity: node
-      region: content
       uuid: 546204ba-73e2-42d7-9684-a71ccb5857f3
-      weight: 9
-    5729a297-accd-46b7-b8ec-e94a4d57f279:
-      id: 'views_block:research_groups-block_3'
+    074b497f-4e96-4ce7-9511-1aa39376479f:
+      id: 'views_block:publications-block_1'
       label: ''
       provider: views
-      label_display: '0'
+      label_display: visible
       views_label: ''
       items_per_page: none
       context_mapping: {  }
       region: content
-      uuid: 5729a297-accd-46b7-b8ec-e94a4d57f279
-      weight: 10
+      uuid: 074b497f-4e96-4ce7-9511-1aa39376479f
+      weight: 8
   id: panels_variant
   uuid: e53c242f-66c8-4a36-947c-6e9551688e3f
   label: ''

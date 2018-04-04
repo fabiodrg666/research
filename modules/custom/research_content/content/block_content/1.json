@@ -65,9 +65,27 @@
     "metatag": [
         {
             "value": {
-                "title": "| InED",
+                "title": "| Research",
                 "canonical_url": "http:\/\/default\/%3Cnone%3E"
             }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_status": [
+        {
+            "value": true,
+            "lang": "en"
         }
     ],
     "body": [

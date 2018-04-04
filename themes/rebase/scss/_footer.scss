@@ -1,68 +1,70 @@
+//** Footer style:
+
+// Mobile first.
 footer.container{
   background-color: $darkgray;
   width: 100%;
   color: white;
   padding:0;
-
-
   .region-footer{
     @include wide;
     display: flex;
-    justify-content:space-evenly;
-    align-items: flex-start;
-    .block, nav{
-
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: stretch;
+    h2.block-title, h2#block-rebase-footer-menu{
+      @include texttitle;
+      color: $grayBackground;
+      margin: 30px 0;
     }
-    h2.block-title{
-      text-align: left;
-      color: #CCC;
-      font-weight: lighter;
-      margin-bottom: 30px;
-      margin-top: 30px;
-      padding-top: 0;
-    }
+    // Contacts.
     #block-contacts{
-      width: 30vw;
+      flex-basis: 100%;
+      padding: 0 25px 15px 25px;
+      h2.block-title{
+        color: $graytext;
+      }
       p {
+        @include textsmall;
         display: inline-block;
         padding-right: 40px;
         line-height: 20px;
+        color: white;
       }
     }
+    // Partners.
+    #block-partnersfunding{
+      flex-basis: 100%;
+      padding: 0 25px 15px 25px;
+      background-color: $grayBackground;
+      h2.block-title{
+        color: $darkest;
+      }
+    }
+    // Stay in touch.
     #block-rebase-footer{
+      flex-basis: 100%;
       background-color: $darkest;
-      padding: 0 60px;
-      height: 100%;
-
-      h2{
-        margin: 30px 0;
+      padding: 0 25px 100px 25px;
+      h2#block-rebase-footer-menu{
+        color: $dark;
       }
-      .nav.footer{
-      padding: 0;
-      margin-top: 0;
-      border: 0;
-        li{
-          a{
-            padding: 0;
-            color: white;
-            line-height: 20px;
-          }
-        }
-      }
-      .block-title{
-        color: $normal;
-      }
-    }
-    .social{
+      // Social media icons.
       ul.menu {
         display: flex;
-        margin-bottom: 40px;
-
         li{
-          width:40px;
-          height:40px;
-          margin-right:15px;
-          overflow:hidden;
+          width: 40px;
+          height: 40px;
+          margin-right: 15px;
+          overflow: hidden;
+          a{
+            padding: 0;
+            font-size: 0;
+            line-height: 40px;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+          }
           &:nth-child(1){
             background: url(/themes/rebase/images/social.png) no-repeat -124px -72px;
             background-size: auto 110px;
@@ -87,9 +89,21 @@ footer.container{
             background-size: auto 110px;
             }
           }
-          a{padding: 40px;}
         }
       }
     }
-  }// End region footer
-} // End footer container
+  }
+}
+
+// Media query > 992, for sm, md and lg devices.
+@media screen and (min-width: 768px){
+  footer.container .region-footer{
+    #block-contacts,
+    #block-partnersfunding,
+    #block-rebase-footer{
+      flex-basis: 33.333%;
+      padding: 0 25px 85px 25px;
+    }
+  }
+}
+

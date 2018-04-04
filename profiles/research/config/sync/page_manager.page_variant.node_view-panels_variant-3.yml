@@ -1,0 +1,66 @@
+uuid: b28e9101-31c3-4517-bed7-22424f59abc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - views.view.external_person
+  module:
+    - ctools
+    - ctools_block
+    - panels
+    - views
+id: node_view-panels_variant-3
+label: 'External Person'
+variant: panels_variant
+variant_settings:
+  blocks:
+    d332b2c3-a423-4ad9-a718-9124a209417a:
+      id: 'views_block:external_person-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      context_mapping: {  }
+      region: second
+      uuid: d332b2c3-a423-4ad9-a718-9124a209417a
+      weight: 1
+    459f612a-0468-45a5-8dd7-3d523b3464cb:
+      id: 'entity_field:node:body'
+      label: Description
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: text_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      context_mapping:
+        entity: node
+      region: second
+      uuid: 459f612a-0468-45a5-8dd7-3d523b3464cb
+      weight: 2
+  id: panels_variant
+  uuid: 6e7dc64e-cc6c-44bc-9c41-5d52e5548157
+  label: null
+  weight: 0
+  layout: layout_threecol_25_50_25
+  layout_settings: {  }
+  page_title: 'External Person'
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-3
+  builder: ipe
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      external_person: external_person
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

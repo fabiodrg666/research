@@ -1,16 +1,16 @@
 //** Global styles:
 
-// Global font
-body{font-family: $font}
+// Mobile first.
 
 // Generic structure.
 html{
 	height: 100%;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font: 400 14px/20px 'Titillium Web', sans-serif;
   color: $darkgray;
   margin-top: 0;
   border: none;
@@ -20,11 +20,16 @@ body {
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  font-weight: 300;
   font-family: $font;
   width: 100%;
   overflow-x: hidden;
+  .dialog-off-canvas-main-canvas {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
   .main-container {
+    flex: 1;
     width: 100%;
     section .region-content .layout{
       @include wide;
@@ -40,18 +45,64 @@ body {
       }
     }
   }
+  h1.page-header{
+    display: none;
+  }
   .col-sm-12 {
     padding-left: 0;
     padding-right: 0;
   }
-  #block-bannerhomepage .top-banner{
-    align-items: start;
+}
+.page-node-type-about,
+.page-node-type-funding-entity,
+.page-node-type-finantial-support,
+.page-node-type-file,
+.page-node-type-private-file,
+.page-node-type-external-person,
+.page-node-type-external-organization,
+.page-node-type-page{
+  .main-container {
+    border-top: 1px solid $grayBackground;
+    width: 100%;
+    .region-content{
+      @include wide;
+      margin: 30px auto;
+      padding: 0 15px;
+      h1{
+        color: $darkest;
+      }
+    }
+  }
+}
+
+// Top banner of main pages.
+.top-banner{
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grayBackground;
+  position: relative;
+  text-align: center;
+  > img{
+    width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+  }
+  h1{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    font: 300 36px/40px 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
   }
 }
 
 // Text styles.
-h1{
-}
+h1{}
 h2{
   @include texttitle;
 }
@@ -59,19 +110,20 @@ h3{
   @include textsubtitle;
 }
 h4{
+  @include textlarge;
 }
 p{
-  @include textlarge;
+  @include textnormal;
 }
 a, li a{
   text-decoration: none;
   color: $links;
-  &:hover{
+  &:hover, &:focus{
     text-decoration: none;
     color: $linksOver;
   }
   &:visited{
-    color: $links;
+    text-decoration: none;
   }
 }
 
@@ -81,6 +133,32 @@ select{
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
   border-radius: 0;
+}
+button[type="submit"]{
+  width: auto;
+  min-width: 100px;
+  height: 30px;
+  background: none;
+  background-color: $dark;
+  @include textnormal;
+  color: white;
+  border: none;
+  transition: all 0.3s;
+  line-height: 16px;
+  &:hover, &:active, &:focus, &:disabled{
+    color: white;
+    border: none;
+    background: none;
+    background-color: $darkest;
+    transition: all 0.3s;
+  }
+}
+.btn-primary[disabled]:hover{
+  color: white;
+  border: none;
+  background: none;
+  background-color: $darkest;
+  transition: all 0.3s;
 }
 
 // Alert.
@@ -100,10 +178,10 @@ select{
 // Tabs.
 .nav-tabs {
   position: fixed;
-  bottom: 5%;
-  right: 5%;
+  bottom: 100px;
+  right: 15px;
   border: 1px solid lightgray;
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 10px;
   background: white;
   z-index: 100;
@@ -111,6 +189,9 @@ select{
   li.active a, li.active a:hover,
   li.active>a:focus{
     border:0;
+  }
+  > li > a{
+    padding: 5px;
   }
 }
 .navbar-default .navbar-nav>.active>a,
@@ -122,14 +203,29 @@ select{
 }
 
 // Private area.
-body.path-restricted-area{
+body.path-restricted-area .main-container{
+  border-top: 1px solid $grayBackground;
+  .view-restricted-area{    
+    @include wide;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    .views-field-field-private-file span{
+      color: $dark;
+      &:hover{
+        color: $darkest;
+      }
+    }
+  }
   div#edit-field-folder-target-id{
-     .form-group {
+    .form-group {
       padding:10px;
       margin:5px;
-      background-color:$light;
+      background-color:$darkest;
       border-radius:2px;
-      a{color: $darkest;}
+      a{color: white;}
       &.bef-link-active{
         background-color: $dark;
         a{color: white;}
@@ -141,9 +237,84 @@ body.path-restricted-area{
   }
 }
 
+// Pager of views.
+.view nav{
+  .pager{
+    text-align: center;
+    margin-top: 50px;
+    a{
+      float: none;
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      border-radius: 20px;
+      background: none;
+      font: 400 normal 20px/24px 'Lato', sans-serif;
+      color: $dark;
+      border-color: $dark;
+      transition: all 0.3s;
+      &:hover{
+        background-color: rgba(161, 19, 24, 0.05);
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+// Fade effect of main-container when switching pages.
+body .main-container {
+  animation: fadein 0.5s;
+  -moz-animation: fadein 0.5s; /* Firefox */
+  -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+  -o-animation: fadein 0.5s; /* Opera */
+}
+@keyframes fadein {
+  from {opacity:0;} to {opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+  rom {opacity:0;} to {opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  rom {opacity:0;} to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+  rom {opacity:0;} to {opacity:1;}
+}
+
+// Bottom notice.
+#block-notice{
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.25);
+  h4, p{
+    padding: 0 30px;
+    text-align: center;
+  }
+  h4{
+    text-transform: uppercase;
+    color: $dark;
+    margin: 10px 0 0 0;
+  }
+  p{
+    margin: 0 0 10px 0;
+  }
+}
+
 // Media query > 992, for sm, md and lg devices.
 @media screen and (min-width: 768px){
   body {
-
+    .nav-tabs {
+      bottom: 80px;
+    }
+  }
+  .top-banner{
+    height: 320px;
+    h1{
+      font: 300 36px/40px 'Titillium Web', sans-serif;
+    }
   }
 }

@@ -1,0 +1,35 @@
+uuid: 1a085605-cdbf-4552-8660-cd9465d4fa6e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3d4e04f4-a343-48c1-a632-8191d63b78c5'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: bannercenter
+theme: rebase
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:3d4e04f4-a343-48c1-a632-8191d63b78c5'
+settings:
+  id: 'block_content:3d4e04f4-a343-48c1-a632-8191d63b78c5'
+  label: 'Banner Center'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/center\r\n/centro"
+    negate: false
+    context_mapping: {  }

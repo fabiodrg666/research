@@ -1,31 +1,25 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/4?_format=hal_json"
+            "href": "http:\/\/default\/block\/3?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
-        },
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
-                "lang": "en"
-            }
-        ]
+        }
     },
     "id": [
         {
-            "value": 4
+            "value": 3
         }
     ],
     "uuid": [
         {
-            "value": "ef2e5587-d65c-450e-a00e-c9041419e214"
+            "value": "13bbcbde-d156-49d9-b8d7-4381568f673f"
         }
     ],
     "revision_id": [
         {
-            "value": 4
+            "value": 3
         }
     ],
     "langcode": [
@@ -41,19 +35,19 @@
     ],
     "info": [
         {
-            "value": "Partners\/Funding",
+            "value": "Working Together To Improve Lives",
             "lang": "en"
         }
     ],
     "changed": [
         {
-            "value": 1517328725,
+            "value": 1516634292,
             "lang": "en"
         }
     ],
     "revision_created": [
         {
-            "value": 1517328725
+            "value": 1516631953
         }
     ],
     "default_langcode": [
@@ -71,7 +65,7 @@
     "metatag": [
         {
             "value": {
-                "title": "| res-dev",
+                "title": "| Research",
                 "canonical_url": "http:\/\/default\/%3Cnone%3E"
             }
         }
@@ -88,41 +82,15 @@
             "lang": "en"
         }
     ],
-    "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic\/content_translation_uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "ca08223e-f798-471e-ab6f-be722a6eb2a6"
-                    }
-                ],
-                "lang": "en"
-            }
-        ]
-    },
     "content_translation_status": [
         {
             "value": true,
             "lang": "en"
         }
     ],
-    "content_translation_created": [
-        {
-            "value": 1517328725,
-            "lang": "en"
-        }
-    ],
     "body": [
         {
-            "value": "<p>Partners Logos<\/p>\r\n",
+            "value": "<p>We're dedicated scientists, doctors and students that work at every level&nbsp;to provide novel insights on how the brain stimulates, controls and interacts with the rest of the body. As we unlock the secrets of the brain we have the potential to&nbsp;provide a brighter future for people and families affected by neurological disease.<\/p>\n",
             "format": "basic_html",
             "summary": "",
             "lang": "en"

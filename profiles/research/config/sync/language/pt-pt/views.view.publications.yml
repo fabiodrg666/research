@@ -17,3 +17,26 @@ display:
         type:
           expose:
             label: 'Tipo de referência'
+      fields:
+        title:
+          alter:
+            text: '<a href="/pt{{ view_bibcite_reference }}">{{ title }}</a>'
+      title: Publicações
+  block_1:
+    display_options:
+      title: 'Publicações Relacionadas'
+      fields:
+        title:
+          alter:
+            text: '<a href="/pt{{ view_bibcite_reference }}">{{ title }}</a>'
+  user_publications:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<p>Publications</p>\r\n"
+            format: basic_html
+      fields:
+        title:
+          alter:
+            text: '<a href="/pt{{ view_bibcite_reference }}">{{ title }}</a>'

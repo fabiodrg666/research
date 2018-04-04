@@ -2203,59 +2203,89 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media print { .hidden-print { display: none !important; } }
 /** Default Variables.  Modify this file to provide default Bootstrap Framework variables. The Bootstrap Framework will not override any variables defined here because it uses the `!default` flag which will only set their default if not already defined here.  You can copy existing variables directly from the following file: ./research/bootstrap/assets/stylesheets/bootstrap/_variables.scss */
-body { font-family: "Titillium Web", sans-serif; }
+html { height: 100%; overflow-x: hidden; }
 
-html { height: 100%; }
+body { margin: 0; padding: 0; font: 400 14px/20px 'Titillium Web', sans-serif; color: #474747; margin-top: 0; border: none; border-radius: 0; position: relative; padding: 0; min-height: 100vh; height: 100%; width: 100%; font-family: "Titillium Web", sans-serif; width: 100%; overflow-x: hidden; }
+body .dialog-off-canvas-main-canvas { display: flex; min-height: 100vh; flex-direction: column; }
+body .main-container { flex: 1; width: 100%; }
+body .main-container section .region-content .layout { width: 100%; max-width: 1170px; margin: 0px auto; float: none; margin: 30px auto; }
+body .main-container section .region-content .layout .layout__region { margin: 0 auto; padding: 0 15px; }
+body .main-container section .region-content .layout h2.block-title { text-align: center; color: #04686F; margin: 25px 0; }
+body h1.page-header { display: none; }
+body .col-sm-12 { padding-left: 0; padding-right: 0; }
 
-body { margin: 0; padding: 0; /* to avoid scrollbars */ display: flex; /* use the flex model */ min-height: 100%; flex-direction: column; }
+.page-node-type-about .main-container, .page-node-type-funding-entity .main-container, .page-node-type-finantial-support .main-container, .page-node-type-file .main-container, .page-node-type-private-file .main-container, .page-node-type-external-person .main-container, .page-node-type-external-organization .main-container, .page-node-type-page .main-container { border-top: 1px solid #E0E0E0; width: 100%; }
+.page-node-type-about .main-container .region-content, .page-node-type-funding-entity .main-container .region-content, .page-node-type-finantial-support .main-container .region-content, .page-node-type-file .main-container .region-content, .page-node-type-private-file .main-container .region-content, .page-node-type-external-person .main-container .region-content, .page-node-type-external-organization .main-container .region-content, .page-node-type-page .main-container .region-content { width: 100%; max-width: 1170px; margin: 0px auto; float: none; margin: 30px auto; padding: 0 15px; }
+.page-node-type-about .main-container .region-content h1, .page-node-type-funding-entity .main-container .region-content h1, .page-node-type-finantial-support .main-container .region-content h1, .page-node-type-file .main-container .region-content h1, .page-node-type-private-file .main-container .region-content h1, .page-node-type-external-person .main-container .region-content h1, .page-node-type-external-organization .main-container .region-content h1, .page-node-type-page .main-container .region-content h1 { color: #04686F; }
 
-.main-container { flex: 1; }
+.top-banner { height: 250px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #E0E0E0; position: relative; text-align: center; }
+.top-banner > img { width: 100%; max-width: 100%; min-height: 250px; }
+.top-banner h1 { margin: 0; position: absolute; width: 100%; font: 300 36px/40px 'Titillium Web', sans-serif; text-transform: uppercase; color: white; text-shadow: 1px 1px 2px grey; }
 
-section.col-sm-12.col-xs-12.col-md-12.col-lg-12 { padding: 0; }
+h2 { font: 300 30px/36px 'Titillium Web', sans-serif; color: #04686F; }
 
-.toolbar-horizontal #toolbar-administration { z-index: 1001; }
+h3 { font: 300 26px/32px 'Titillium Web', sans-serif; color: #00BBC8; }
 
-.col-sm-12 { padding-left: 0; padding-right: 0; }
+h4 { font: 300 18px/24px 'Titillium Web', sans-serif; color: gray; }
 
-h1 { font-family: "Titillium Web", sans-serif; font-size: 36px; color: #04686F; font-weight: 300; text-align: center; padding: 30px; }
-
-h2 { color: #00BBC8; font-size: 28px; line-height: 32px; font-weight: 300; font-family: "Titillium Web", sans-serif; }
-
-h3 { font-weight: 400; font-size: 23px; color: #00BBC8; }
-
-h4 { color: #2BEFFF; }
+p { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; }
 
 a, li a { text-decoration: none; color: #00BBC8; }
-a:hover, li a:hover { text-decoration: none; color: #04686F; }
-a:visited, li a:visited { color: #00BBC8; }
-
-.read-more a { font-size: 12px; text-transform: uppercase; }
+a:hover, a:focus, li a:hover, li a:focus { text-decoration: none; color: #04686F; }
+a:visited, li a:visited { text-decoration: none; }
 
 select { appearance: none; -webkit-appearance: none; -webkit-border-radius: 0px; border-radius: 0; }
 
+button[type="submit"] { width: auto; min-width: 100px; height: 30px; background: none; background-color: #00BBC8; font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; color: white; border: none; transition: all 0.3s; line-height: 16px; }
+button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]:focus, button[type="submit"]:disabled { color: white; border: none; background: none; background-color: #04686F; transition: all 0.3s; }
+
+.btn-primary[disabled]:hover { color: white; border: none; background: none; background-color: #04686F; transition: all 0.3s; }
+
 .alert { position: fixed; top: 30vh; left: 40vw; box-shadow: 0 0 6px rgba(0, 0, 0, 0.3333); padding: 30px 45px; }
-
-.main-container { padding-bottom: 400px; }
-.main-container .views-element-container h2.block-title, .main-container .block h2.block-title { color: #04686F; font-size: 36px; text-align: center; padding-top: 30px; margin-bottom: 20px; }
-
-.region.region-content { width: 100%; max-width: 1170px; margin: 0px auto; float: none; }
-.region.region-content h1.page-header { text-align: center; padding-top: 50px; border: 0; }
-
-.center600 { width: 95%; margin: 0 auto; max-width: 600px; }
 
 #toolbar-administration a { color: gray; }
 
-.nav-tabs { position: fixed; bottom: 5%; right: 5%; border: 1px solid lightgray; padding: 20px; border-radius: 10px; background: white; z-index: 100; box-shadow: 0 0 6px rgba(0, 0, 0, 0.3333); }
+.nav-tabs { position: fixed; bottom: 100px; right: 15px; border: 1px solid lightgray; padding: 10px 20px; border-radius: 10px; background: white; z-index: 100; box-shadow: 0 0 6px rgba(0, 0, 0, 0.3333); }
 .nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active > a:focus { border: 0; }
+.nav-tabs > li > a { padding: 5px; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .nav > li > a:hover, .nav > li > a:focus { background-color: initial; color: #2BEFFF; }
 
-body.path-restricted-area div#edit-field-folder-target-id .form-group { padding: 10px; margin: 5px; background-color: #e4f5ff; border-radius: 2px; }
-body.path-restricted-area div#edit-field-folder-target-id .form-group a { color: #04686F; }
-body.path-restricted-area div#edit-field-folder-target-id .form-group.bef-link-active { background-color: #00BBC8; }
-body.path-restricted-area div#edit-field-folder-target-id .form-group.bef-link-active a { color: white; }
-body.path-restricted-area div#edit-field-folder-target-id .form-group:first-child { display: none; }
+body.path-restricted-area .main-container { border-top: 1px solid #E0E0E0; }
+body.path-restricted-area .main-container .view-restricted-area { width: 100%; max-width: 1170px; margin: 0px auto; float: none; margin-top: 30px; margin-bottom: 30px; padding-left: 15px; padding-right: 15px; text-align: left; }
+body.path-restricted-area .main-container .view-restricted-area .views-field-field-private-file span { color: #00BBC8; }
+body.path-restricted-area .main-container .view-restricted-area .views-field-field-private-file span:hover { color: #04686F; }
+body.path-restricted-area .main-container div#edit-field-folder-target-id .form-group { padding: 10px; margin: 5px; background-color: #04686F; border-radius: 2px; }
+body.path-restricted-area .main-container div#edit-field-folder-target-id .form-group a { color: white; }
+body.path-restricted-area .main-container div#edit-field-folder-target-id .form-group.bef-link-active { background-color: #00BBC8; }
+body.path-restricted-area .main-container div#edit-field-folder-target-id .form-group.bef-link-active a { color: white; }
+body.path-restricted-area .main-container div#edit-field-folder-target-id .form-group:first-child { display: none; }
 
+.view nav .pager { text-align: center; margin-top: 50px; }
+.view nav .pager a { float: none; width: 40px; height: 40px; margin: 10px; border-radius: 20px; background: none; font: 400 normal 20px/24px 'Lato', sans-serif; color: #00BBC8; border-color: #00BBC8; transition: all 0.3s; }
+.view nav .pager a:hover { background-color: rgba(161, 19, 24, 0.05); transition: all 0.3s; }
+
+body .main-container { animation: fadein 0.5s; -moz-animation: fadein 0.5s; /* Firefox */ -webkit-animation: fadein 0.5s; /* Safari and Chrome */ -o-animation: fadein 0.5s; /* Opera */ }
+
+@keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+@-moz-keyframes fadein { /* Firefox */
+  rom { opacity: 0; }
+  to { opacity: 1; } }
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  rom { opacity: 0; }
+  to { opacity: 1; } }
+@-o-keyframes fadein { /* Opera */
+  rom { opacity: 0; }
+  to { opacity: 1; } }
+#block-notice { z-index: 100; position: fixed; bottom: 0; left: 0; width: 100%; background-color: white; box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.25); }
+#block-notice h4, #block-notice p { padding: 0 30px; text-align: center; }
+#block-notice h4 { text-transform: uppercase; color: #00BBC8; margin: 10px 0 0 0; }
+#block-notice p { margin: 0 0 10px 0; }
+
+@media screen and (min-width: 768px) { body .nav-tabs { bottom: 80px; }
+  .top-banner { height: 320px; }
+  .top-banner h1 { font: 300 36px/40px 'Titillium Web', sans-serif; } }
 /** Alert styling. */
 .alert-sm { padding: 5px 10px; }
 
@@ -2458,26 +2488,26 @@ p:last-child, .form-group:last-child, .panel:last-child { margin-bottom: 0; }
 .help-block, .control-group .help-inline { color: #777777; font-size: 12px; margin: 5px 0 10px; padding: 0; }
 .help-block:first-child, .control-group .help-inline:first-child { margin-top: 0; }
 
-#navbar { background-color: white; border-radius: 0; margin: 0; padding: 0; border-top: 0; position: relative; width: 100%; max-width: none; z-index: 2; }
+#navbar { background-color: white; border-radius: 0; margin: 0; padding: 0; border: none; position: relative; width: 100%; max-width: none; z-index: 2; }
 #navbar #navbar-in { width: 100%; max-width: 1170px; margin: 0px auto; float: none; padding: 0; position: relative; }
 #navbar #navbar-in .navbar-header { width: 100%; }
 #navbar #navbar-in .navbar-header .region-navigation { background-color: #04686F; min-height: 60px; width: 100%; display: flex; align-items: left; }
 #navbar #navbar-in .navbar-header .region-navigation .logo { margin: 0; height: 100%; min-height: 60px; padding: 10px 15px; border-right: 10px solid white; width: 80px; background: url("../images/logo_small.svg") no-repeat center center; }
 #navbar #navbar-in .navbar-header .region-navigation .logo img { display: none; }
-#navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu, #navbar #navbar-in .navbar-header .region-navigation #block-rebase-views-block-user-block-avatar { position: absolute; top: 0; right: 0; }
-#navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu .view-display-id-block_avatar, #navbar #navbar-in .navbar-header .region-navigation #block-rebase-views-block-user-block-avatar .view-display-id-block_avatar { overflow: hidden; width: 40px; height: 40px; border-radius: 20px; margin: 15px 10px; padding: 0; }
+#navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu, #navbar #navbar-in .navbar-header .region-navigation #block-rebase-views-block-user-block-avatar { position: absolute; top: 0; }
+#navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu .view-display-id-block_avatar, #navbar #navbar-in .navbar-header .region-navigation #block-rebase-views-block-user-block-avatar .view-display-id-block_avatar { overflow: hidden; width: 40px; height: 40px; border-radius: 20px; margin: 10px; padding: 0; background-color: #E0E0E0; }
 #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu .view-display-id-block_avatar .views-field-user-picture, #navbar #navbar-in .navbar-header .region-navigation #block-rebase-views-block-user-block-avatar .view-display-id-block_avatar .views-field-user-picture { margin: 0; }
 #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu .view-display-id-block_avatar img, #navbar #navbar-in .navbar-header .region-navigation #block-rebase-views-block-user-block-avatar .view-display-id-block_avatar img { width: 40px; height: auto; }
 #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu .view-display-id-block_avatar a.profile, #navbar #navbar-in .navbar-header .region-navigation #block-rebase-views-block-user-block-avatar .view-display-id-block_avatar a.profile { text-transform: uppercase; font-size: 16px; }
-#navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu { max-width: 50px; margin: 0; right: 50px; }
+#navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu { width: 50px; margin: 0; right: 50px; }
 #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu .navbar-nav { margin: 3px -15px; }
 #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu a { display: inline-block; width: 100%; max-width: 50px; height: 100%; padding: 10px; font-size: 0; height: 53px; background: url("../images/login-icon.svg") no-repeat center center; background-size: 20px; }
-#navbar #navbar-in .navbar-header .region-navigation #block-rebase-views-block-user-block-avatar { padding: 0; }
+#navbar #navbar-in .navbar-header .region-navigation #block-rebase-views-block-user-block-avatar { width: 60px; margin: 0; right: 45px; padding: 0; }
 #navbar #navbar-in .navbar-header button.navbar-toggle { position: absolute; top: 0; right: 0; height: 60px; border: none; margin: 0; padding: 0 15px; }
 #navbar #navbar-in .navbar-header button.navbar-toggle .icon-bar { background-color: white; width: 30px; height: 2px; }
 #navbar #navbar-in .navbar-header button.navbar-toggle .icon-bar + .icon-bar { margin-top: 5px; }
 #navbar #navbar-in .navbar-header button.navbar-toggle:hover, #navbar #navbar-in .navbar-header button.navbar-toggle:focus { background: none; }
-#navbar #navbar-in .navbar-collapse #block-rebase-main-menu ul.menu--main li a { font: 400 normal 14px/20px 'Lato', sans-serif; color: gray; text-transform: uppercase; color: #00BBC8; }
+#navbar #navbar-in .navbar-collapse #block-rebase-main-menu ul.menu--main li a { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; text-transform: uppercase; color: #00BBC8; }
 #navbar #navbar-in .navbar-collapse #block-rebase-main-menu ul.menu--main li a:hover { color: #04686F; }
 #navbar #navbar-in .navbar-collapse #block-rebase-main-menu ul.menu--main li.active > a { background: none; color: gray; }
 #navbar #navbar-in .navbar-collapse #block-rebase-main-menu ul.menu--main ul.dropdown-menu { border: none; border-radius: 0; margin: 0; padding: 0; }
@@ -2487,7 +2517,8 @@ p:last-child, .form-group:last-child, .panel:last-child { margin-bottom: 0; }
 #navbar #navbar-in .navbar-collapse #block-languageswitcher ul.links li a { font-weight: 300; text-transform: none; text-decoration: none; padding: 5px; color: #00BBC8; }
 #navbar #navbar-in .navbar-collapse #block-languageswitcher ul.links li a.is-active { font-weight: 400; background-color: #00BBC8; color: white; }
 
-.navbar-static-top { z-index: 100; }
+body.user-logged-in #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu { right: 90px; }
+body.user-logged-in #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu a { width: 25px; height: 25px; margin: 15px 10px; border-radius: 15px; overflow: hidden; background: url("../images/logout-icon.svg") no-repeat center center; background-color: #04686F; background-size: 14px; }
 
 @media screen and (min-width: 768px) { body { margin-top: 0; }
   body #navbar #navbar-in { display: flex; }
@@ -2496,105 +2527,353 @@ p:last-child, .form-group:last-child, .panel:last-child { margin-bottom: 0; }
   body #navbar #navbar-in .navbar-header .region-navigation .logo { margin: 0 auto; padding: 10px; background: none; width: auto; border: none; }
   body #navbar #navbar-in .navbar-header .region-navigation .logo img { display: block; width: 160px; }
   body #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu .view-display-id-block_avatar, body #navbar #navbar-in .navbar-header .region-navigation #block-rebase-views-block-user-block-avatar .view-display-id-block_avatar { margin: 25px 10px; }
-  body #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu a { width: 40px; height: 40px; border-radius: 20px; margin: 25px 10px; background-size: 20px; background-color: #00BBC8; }
+  body #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu a { width: 40px; height: 40px; border-radius: 20px; margin: 22px 10px; background-size: 20px; background-color: #04686F; }
   body #navbar #navbar-in .navbar-collapse { width: 66.666%; }
   body #navbar #navbar-in .navbar-collapse .region-navigation-collapsible { display: flex; align-items: center; height: 100%; }
   body #navbar #navbar-in .navbar-collapse #block-rebase-main-menu { width: auto; }
-  body #navbar #navbar-in .navbar-collapse #block-rebase-main-menu li a { font: 400 normal 14px/20px 'Lato', sans-serif; color: gray; color: #00BBC8; padding: 5px 15px; }
+  body #navbar #navbar-in .navbar-collapse #block-rebase-main-menu li a { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; color: #00BBC8; padding: 5px 15px; }
   body #navbar #navbar-in .navbar-collapse #block-rebase-main-menu li a:hover { color: #04686F; }
   body #navbar #navbar-in .navbar-collapse #block-languageswitcher { width: auto; margin: 0; padding-right: 15px; margin-right: 15px; border-right: 1px solid gray; }
   body #navbar #navbar-in .navbar-collapse #block-languageswitcher ul.links { padding: 0; }
   body #navbar #navbar-in .navbar-collapse #block-languageswitcher ul.links li { margin-right: 0; }
-  body #navbar #navbar-in .navbar-collapse #block-languageswitcher ul.links li a { font: 400 normal 14px/20px 'Lato', sans-serif; color: gray; color: #00BBC8; padding: 10px; color: gray; }
-  body #navbar #navbar-in .navbar-collapse #block-languageswitcher ul.links li a.is-active { font-weight: 700; background: none; color: gray; } }
+  body #navbar #navbar-in .navbar-collapse #block-languageswitcher ul.links li a { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; color: #00BBC8; padding: 10px; color: gray; }
+  body #navbar #navbar-in .navbar-collapse #block-languageswitcher ul.links li a.is-active { font-weight: 700; background: none; color: gray; }
+  body.user-logged-in #navbar #navbar-in .navbar-header .region-navigation #block-useraccountmenu a { margin: 30px 10px; } }
 footer.container { background-color: #474747; width: 100%; color: white; padding: 0; }
-footer.container .region-footer { width: 100%; max-width: 1170px; margin: 0px auto; float: none; display: flex; justify-content: space-evenly; align-items: flex-start; }
-footer.container .region-footer h2.block-title { text-align: left; color: #CCC; font-weight: lighter; margin-bottom: 30px; margin-top: 30px; padding-top: 0; }
-footer.container .region-footer #block-contacts { width: 30vw; }
-footer.container .region-footer #block-contacts p { display: inline-block; padding-right: 40px; line-height: 20px; }
-footer.container .region-footer #block-rebase-footer { background-color: #04686F; padding: 0 60px; height: 100%; }
-footer.container .region-footer #block-rebase-footer h2 { margin: 30px 0; }
-footer.container .region-footer #block-rebase-footer .nav.footer { padding: 0; margin-top: 0; border: 0; }
-footer.container .region-footer #block-rebase-footer .nav.footer li a { padding: 0; color: white; line-height: 20px; }
-footer.container .region-footer #block-rebase-footer .block-title { color: "screen and (min-width: 992px)"; }
-footer.container .region-footer .social ul.menu { display: flex; margin-bottom: 40px; }
-footer.container .region-footer .social ul.menu li { width: 40px; height: 40px; margin-right: 15px; overflow: hidden; }
-footer.container .region-footer .social ul.menu li:nth-child(1) { background: url(/themes/rebase/images/social.png) no-repeat -124px -72px; background-size: auto 110px; }
-footer.container .region-footer .social ul.menu li:nth-child(1):hover { background: url(/themes/rebase/images/social.png) no-repeat -124px 2px; background-size: auto 110px; }
-footer.container .region-footer .social ul.menu li:nth-child(2) { background: url(/themes/rebase/images/social.png) no-repeat 0 -72px; background-size: auto 110px; }
-footer.container .region-footer .social ul.menu li:nth-child(2):hover { background: url(/themes/rebase/images/social.png) no-repeat 0 2px; background-size: auto 110px; }
-footer.container .region-footer .social ul.menu li:nth-child(3) { background: url(/themes/rebase/images/social.png) no-repeat -246px -70px; background-size: auto 110px; }
-footer.container .region-footer .social ul.menu li:nth-child(3):hover { background: url(/themes/rebase/images/social.png) no-repeat -246px 4px; background-size: auto 110px; }
-footer.container .region-footer .social ul.menu li a { padding: 40px; }
+footer.container .region-footer { width: 100%; max-width: 1170px; margin: 0px auto; float: none; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: stretch; }
+footer.container .region-footer h2.block-title, footer.container .region-footer h2#block-rebase-footer-menu { font: 300 30px/36px 'Titillium Web', sans-serif; color: #04686F; color: #E0E0E0; margin: 30px 0; }
+footer.container .region-footer #block-contacts { flex-basis: 100%; padding: 0 25px 15px 25px; }
+footer.container .region-footer #block-contacts h2.block-title { color: gray; }
+footer.container .region-footer #block-contacts p { font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; display: inline-block; padding-right: 40px; line-height: 20px; color: white; }
+footer.container .region-footer #block-partnersfunding { flex-basis: 100%; padding: 0 25px 15px 25px; background-color: #E0E0E0; }
+footer.container .region-footer #block-partnersfunding h2.block-title { color: #04686F; }
+footer.container .region-footer #block-rebase-footer { flex-basis: 100%; background-color: #04686F; padding: 0 25px 100px 25px; }
+footer.container .region-footer #block-rebase-footer h2#block-rebase-footer-menu { color: #00BBC8; }
+footer.container .region-footer #block-rebase-footer ul.menu { display: flex; }
+footer.container .region-footer #block-rebase-footer ul.menu li { width: 40px; height: 40px; margin-right: 15px; overflow: hidden; }
+footer.container .region-footer #block-rebase-footer ul.menu li a { padding: 0; font-size: 0; line-height: 40px; display: inline-block; width: 100%; height: 100%; }
+footer.container .region-footer #block-rebase-footer ul.menu li:nth-child(1) { background: url(/themes/rebase/images/social.png) no-repeat -124px -72px; background-size: auto 110px; }
+footer.container .region-footer #block-rebase-footer ul.menu li:nth-child(1):hover { background: url(/themes/rebase/images/social.png) no-repeat -124px 2px; background-size: auto 110px; }
+footer.container .region-footer #block-rebase-footer ul.menu li:nth-child(2) { background: url(/themes/rebase/images/social.png) no-repeat 0 -72px; background-size: auto 110px; }
+footer.container .region-footer #block-rebase-footer ul.menu li:nth-child(2):hover { background: url(/themes/rebase/images/social.png) no-repeat 0 2px; background-size: auto 110px; }
+footer.container .region-footer #block-rebase-footer ul.menu li:nth-child(3) { background: url(/themes/rebase/images/social.png) no-repeat -246px -70px; background-size: auto 110px; }
+footer.container .region-footer #block-rebase-footer ul.menu li:nth-child(3):hover { background: url(/themes/rebase/images/social.png) no-repeat -246px 4px; background-size: auto 110px; }
 
+@media screen and (min-width: 768px) { footer.container .region-footer #block-contacts, footer.container .region-footer #block-partnersfunding, footer.container .region-footer #block-rebase-footer { flex-basis: 33.333%; padding: 0 25px 85px 25px; } }
 body.path-frontpage .region-content { width: 100%; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide { position: relative; min-height: 140px; background-color: #E0E0E0; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-title { position: absolute; right: 100px; bottom: 30px; background: rgba(255, 255, 255, 0.8); width: 40%; padding: 20px; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-title h2 a { color: #04686F; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-view-node { position: absolute; right: 0px; bottom: 30px; width: 100px; background: #04686F; height: 40px; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-view-node a { color: white; font-size: 12px; line-height: 40px; padding-left: 10px; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-view-node a:visited { color: white; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots { position: absolute; bottom: 30px; left: 100px; list-style: none; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots li { width: 12px; height: 12px; border-radius: 6px; overflow: hidden; margin-right: 30px; display: inline-block; border: 2px solid #04686F; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots li button { background: white; border: 0; padding: 12px; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots li.slick-active { border: 2px solid white; }
-body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots li.slick-active button { background: #04686F; }
-body.path-frontpage .region-content .view-id-research_groups .view-content, body.path-frontpage .region-content .view-id-events .view-content, body.path-frontpage .region-content .view-id-projects .view-content { display: flex; flex-wrap: wrap; justify-content: center; }
-body.path-frontpage .region-content .view-id-research_groups .views-row, body.path-frontpage .region-content .view-id-events .views-row, body.path-frontpage .region-content .view-id-projects .views-row { width: 100%; max-width: 520px; text-align: center; padding: 30px; margin-bottom: 40px; }
-body.path-frontpage .region-content .view-id-events { padding: 40px 0; }
-body.path-frontpage .region-content .view-id-events .view-content { justify-content: inherit; }
-body.path-frontpage .region-content .view-id-events .view-content .views-row { text-align: left; max-width: 340px; padding: 0 30px; border-right: 1px solid "screen and (min-width: 992px)"; }
-body.path-frontpage .region-content .view-id-events .view-content .views-row .views-field-field-venue { color: "screen and (min-width: 992px)"; }
-body.path-frontpage .region-content .view-id-events .view-content .views-row h3 { margin-top: 8px; }
-body.path-frontpage .region-content .view-id-projects { padding-top: 20px; }
-body.path-frontpage .region-content .view-id-projects .views-row { text-align: left; padding: 20px; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide { position: relative; min-height: 140px; height: 250px; overflow: hidden; background-color: #E0E0E0; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-title, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-title { position: absolute; left: 15px; bottom: 50px; background: rgba(255, 255, 255, 0.8); width: calc(100% - 30px); padding: 20px; z-index: 1; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-title h2, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-title h2 { margin: 0; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-title h2 a, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-title h2 a { color: #04686F; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-title p, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-title p { display: none; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-field-image-media .field--type-image img, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-field-image-media .field--type-image img { height: 250px; max-width: unset; width: unset; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-nid, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-nid { position: absolute; right: 0px; bottom: 10px; width: 100px; background: #04686F; height: 40px; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-nid a, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-nid a { color: white; font-size: 12px; line-height: 40px; padding-left: 10px; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-nid a:visited, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-nid a:visited { color: white; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 ul.slick-dots { position: absolute; bottom: 0px; left: 0px; list-style: none; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots li, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 ul.slick-dots li { width: 12px; height: 12px; border-radius: 6px; overflow: hidden; margin-right: 30px; display: inline-block; border: 2px solid #04686F; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots li button, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 ul.slick-dots li button { background: white; border: 0; padding: 12px; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots li.slick-active, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 ul.slick-dots li.slick-active { border: 2px solid white; }
+body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots li.slick-active button, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 ul.slick-dots li.slick-active button { background: #04686F; }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1, body.path-frontpage .region-content .block-views-blockprojects-block-2 { padding: 50px 0; }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-events .view-content, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups .view-content, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-projects .view-content, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-events .view-content, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-research_groups .view-content, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-projects .view-content { display: flex; flex-wrap: wrap; justify-content: space-around; }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-events .views-row, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups .views-row, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-projects .views-row, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-events .views-row, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-research_groups .views-row, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-projects .views-row { flex-basis: 100%; padding: 25px; margin-bottom: 30px; }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-events .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-projects .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-events .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-research_groups .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-projects .views-field-field-image-media { transition: all 0.3s; overflow: hidden; }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-events .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-projects .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-events .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-research_groups .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-projects .views-field-field-image-media img { opacity: 1; transform: scale(1); transition: all 0.3s; }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-events .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-projects .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-events .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-research_groups .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-projects .views-field-field-image-media:hover img { opacity: 0.75; transform: scale(1.02); }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 { background-color: #F4F8F9; position: relative; }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups { text-align: center; }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups .views-field-field-image-media img { width: 100%; }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1::before { content: ''; display: block; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background-color: #F4F8F9; }
+body.path-frontpage .region-content .block-views-blockresearch-groups-block-1::after { content: ''; display: block; position: absolute; top: 0; left: 100%; width: 100%; height: 100%; background-color: #F4F8F9; }
+body.path-frontpage .region-content .view-id-projects .views-row { position: relative; text-align: center; }
+body.path-frontpage .region-content .view-id-projects .views-row .views-field-field-image-media img { float: none; margin: 0 auto; }
+body.path-frontpage .region-content .view-id-projects .views-row .views-field-nid { font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; text-transform: uppercase; color: #00BBC8; margin-top: 20px; }
+body.path-frontpage .region-content .view-id-projects .views-row .views-field-nid:hover { color: #04686F; }
 
-body.path-user #navbar { border-bottom: 1px solid lightgray; }
-body.path-user .main-container .highlighted { display: none; }
-body.path-user button#edit-submit { width: 100%; height: 50px; margin-top: 16px; background-color: #04686F; border: 0; text-transform: uppercase; }
-body.path-user form#user-login-form, body.path-user form#user-pass { width: 95%; margin: 0 auto; max-width: 600px; padding: 12vh 0; }
-body.path-user form#user-register-form { width: 100%; max-width: 1170px; margin: 0px auto; float: none; }
-body.path-user form#user-register-form .layout__region--first, body.path-user form#user-register-form .layout__region--second { padding: 60px 30px 40px 0px; }
-body.path-user form#user-register-form div#edit-field-bio-0-format { display: none; }
-body.path-user .logo.user-register-form { width: 95%; margin: 0 auto; max-width: 600px; overflow: auto; }
-body.path-user .logo.user-register-form img { background-color: #04686F; padding: 30px; }
-body.path-user form#user-form { background: red; }
-@media screen and (min-width: 40em) { body.path-user form#user-form .layout--twocol-bricks .layout__region--first-above, body.path-user form#user-form .layout--twocol-bricks .layout__region--second-above, body.path-user form#user-form .layout--twocol-bricks .layout__region--first-below, body.path-user form#user-form .layout--twocol-bricks .layout__region--second-below { flex: 0 1 45%; background-color: red; }
-  body.path-user form#user-form .layout--twocol-bricks .layout__region--first-above .layout__region, body.path-user form#user-form .layout--twocol-bricks .layout__region--second-above .layout__region, body.path-user form#user-form .layout--twocol-bricks .layout__region--first-below .layout__region, body.path-user form#user-form .layout--twocol-bricks .layout__region--second-below .layout__region { margin-right: 5%; } }
-body.path-user .region-content { width: 100%; }
-body.path-user .region-content .views-field-user-picture { border-radius: 50px; width: 100px; height: 100px; overflow: hidden; margin: 50px auto -50px; }
-body.path-user .region-content .views-field-user-picture img { width: 100%; height: 100%; }
-body.path-user .region-content .userHeader { background-color: #e4f5ff; padding: 20px; text-align: center; padding-top: 60px; }
-body.path-user .region-content .userLink { width: 95%; margin: 0 auto; max-width: 600px; text-align: center; padding: 10px 0; }
-body.path-user .region-content .userLink a { display: inline-block; text-align: center; padding: 3px; }
-body.path-user .region-content section.block { width: 95%; margin: 0 auto; max-width: 600px; margin-bottom: 30px; }
+@media screen and (min-width: 768px) { body.path-frontpage .region-content { width: 100%; }
+  body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide { height: 320px; overflow: hidden; }
+  body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-title, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-title { position: absolute; left: unset; right: 100px; bottom: 30px; width: 50%; }
+  body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-title p, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-title p { display: block; }
+  body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-field-image-media .field--type-image img, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-field-image-media .field--type-image img { height: auto; max-width: 100%; width: 100%; }
+  body.path-frontpage .region-content #slick-views-slideshow-block-1-1 .slick__slide .views-field-nid, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 .slick__slide .views-field-nid { bottom: 30px; }
+  body.path-frontpage .region-content #slick-views-slideshow-block-1-1 ul.slick-dots, body.path-frontpage .region-content #slick-views-slideshow-block-1-2 ul.slick-dots { bottom: 30px; left: 100px; }
+  body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-events .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-projects .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-events .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-research_groups .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-projects .views-field-field-image-media { transition: all 0.3s; overflow: hidden; }
+  body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-events .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-projects .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-events .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-research_groups .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-projects .views-field-field-image-media img { opacity: 1; transform: scale(1); transition: all 0.3s; }
+  body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-events .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-projects .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-events .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-research_groups .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-projects .views-field-field-image-media:hover img { opacity: 0.75; transform: scale(1.02); }
+  body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-research_groups .view-content .views-row, body.path-frontpage .region-content .block-views-blockresearch-groups-block-1 .view-id-projects .view-content .views-row, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-research_groups .view-content .views-row, body.path-frontpage .region-content .block-views-blockprojects-block-2 .view-id-projects .view-content .views-row { flex-basis: 50%; }
+  body.path-frontpage .region-content .view-id-projects .view-content .views-row { text-align: left; }
+  body.path-frontpage .region-content .view-id-projects .view-content .views-row .views-field-field-image-media { float: left; margin-right: 25px; } }
+body.path-projects .view-projects .view-filters { margin: 40px 0 25px 0; text-align: center; }
+body.path-projects .view-projects .view-filters .form-type-select { position: relative; }
+body.path-projects .view-projects .view-filters .form-type-select .select-wrapper:after { display: none; }
+body.path-projects .view-projects .view-filters .form-type-select label { font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; text-transform: uppercase; text-align: left; position: absolute; top: -20px; left: auto; }
+body.path-projects .view-projects .view-filters .form-type-select .select-wrapper { width: 100%; }
+body.path-projects .view-projects .view-filters .form-type-select .chosen-container-single { padding: 0; }
+body.path-projects .view-projects .view-filters .form-type-select .chosen-container-single, body.path-projects .view-projects .view-filters .form-type-select #edit-field-status-target-id, body.path-projects .view-projects .view-filters .form-type-select #edit-research-group-filter { width: 100%; border-radius: 0; height: 30px; margin-bottom: 20px; }
+body.path-projects .view-projects .view-filters .form-type-select .chosen-container-single a.chosen-single, body.path-projects .view-projects .view-filters .form-type-select #edit-field-status-target-id a.chosen-single, body.path-projects .view-projects .view-filters .form-type-select #edit-research-group-filter a.chosen-single { border: none; background: none; box-shadow: none; height: 30px; width: 100%; font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; line-height: 30px; text-align: left; }
+body.path-projects .view-projects .view-filters .form-type-select .chosen-container-single a.chosen-single div b, body.path-projects .view-projects .view-filters .form-type-select #edit-field-status-target-id a.chosen-single div b, body.path-projects .view-projects .view-filters .form-type-select #edit-research-group-filter a.chosen-single div b { background-position: 0px 5px; }
+body.path-projects .view-projects .view-filters .form-type-select .chosen-container-single .chosen-drop, body.path-projects .view-projects .view-filters .form-type-select #edit-field-status-target-id .chosen-drop, body.path-projects .view-projects .view-filters .form-type-select #edit-research-group-filter .chosen-drop { text-align: left; }
+body.path-projects .view-projects .view-filters .form-item-research-group-filter { margin-left: 0px; }
+body.path-projects .view-projects .view-filters .form-actions { text-align: center; }
+body.path-projects .view-projects .view-filters .form-actions button { margin: 0; border-radius: 0; border-left: 1px solid white; }
+body.path-projects .view-projects > .view-content { display: flex; flex-wrap: wrap; justify-content: space-around; }
+body.path-projects .view-projects > .view-content .views-row { flex-basis: 100%; text-align: left; padding: 25px; border-top: 1px solid #00BBC8; }
+body.path-projects .view-projects > .view-content .views-row .views-field-field-status { text-align: left; margin-top: 15px; }
+body.path-projects .view-projects > .view-content .views-row .views-field-field-status p.field-content { display: inline-block; padding: 5px 10px; font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; text-transform: uppercase; background-color: #04686F; color: white; border-radius: 5px; }
+body.path-projects .view-projects > .view-content .views-row .views-field-title h3 { margin: 10px 0; }
+body.path-projects .view-projects > .view-content .views-row .views-field-body { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; }
+body.path-projects .view-projects > .view-content .views-row .views-field-field-internal-coordinator { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; }
+body.path-projects .view-projects > .view-content .views-row .views-field-nid { font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; text-transform: uppercase; color: #00BBC8; margin-top: 20px; }
+body.path-projects .view-projects > .view-content .views-row .views-field-nid:hover { color: #04686F; }
 
-.view-publications .views-row { padding-bottom: 20px; }
-.view-publications .views-row .views-field-author-target-id ul { list-style: none; padding-left: 0; margin-bottom: 0; }
-.view-publications .views-row .views-field-author-target-id ul li { padding: 0 5px 5px 5px; background-color: #e4f5ff; border-radius: 10px; display: inline-block; margin: 6px 6px 0 0; }
-.view-publications .views-row .views-field-author-target-id ul li a { font-size: 12px; }
-.view-publications .views-row .views-field-title a { font-size: 18px; color: #04686F; }
-.view-publications .views-row .views-field-bibcite-secondary-title { color: gray; padding: 10px; }
+body.page-node-type-project .main-container section .region-content .layout h2.block-title { font: 300 26px/32px 'Titillium Web', sans-serif; color: #00BBC8; color: #04686F; text-align: left; margin-top: 0; }
+body.page-node-type-project .block-region-content { position: relative; }
+body.page-node-type-project .block-entity-fieldnodefield-status { position: absolute; top: 0; right: 0; padding: 25px; }
+body.page-node-type-project .block-entity-fieldnodefield-status .field--name-field-status { display: inline-block; padding: 5px 10px; font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; text-transform: uppercase; background-color: #04686F; color: white; border-radius: 5px; }
+body.page-node-type-project .block-entity-fieldnodebody { padding: 25px 25px 5px 25px; text-align: left; }
+body.page-node-type-project .block-entity-fieldnodefield-internal-coordinator, body.page-node-type-project .block-entity-fieldnodefield-member, body.page-node-type-project .block-entity-fieldnodefield-partner-name, body.page-node-type-project .block-entity-fieldnodefield-project-funding-entity, body.page-node-type-project .block-entity-fieldnodefield-project-url, body.page-node-type-project .block-entity-fieldnodefield-file { flex-basis: 100%; padding: 25px; margin-bottom: 10px; border-top: 1px solid #04686F; }
+body.page-node-type-project .block-entity-fieldnodefield-research-group, body.page-node-type-project .block-entity-fieldnodefield-start-date, body.page-node-type-project .block-entity-fieldnodefield-end-date { padding: 5px 25px; }
+body.page-node-type-project .block-entity-fieldnodefield-end-date { padding: 5px 25px 35px 25px; }
+body.page-node-type-project .block-entity-fieldnodefield-internal-coordinator { text-align: left; }
+body.page-node-type-project .block-entity-fieldnodefield-internal-coordinator .field--name-user-picture { width: 100px; height: 100px; margin: 0 auto; border-radius: 50px; overflow: hidden; background-color: #E0E0E0; border: 1px solid white; transition: all 0.3s; box-sizing: border-box; margin: 10px 25px 10px 10px; display: inline-block; float: left; }
+body.page-node-type-project .block-entity-fieldnodefield-internal-coordinator .field--name-user-picture:hover { border: 1px solid #00BBC8; transition: all 0.3s; }
+body.page-node-type-project .block-entity-fieldnodefield-internal-coordinator .field--name-field-name { padding-top: 25px; }
+body.page-node-type-project .field--name-field-member { display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 15px; }
+body.page-node-type-project .field--name-field-member .field--item img { width: 50px; height: 50px; margin: 10px; border-radius: 25px; overflow: hidden; background-color: #E0E0E0; border: 1px solid white; transition: all 0.3s; box-sizing: border-box; }
+body.page-node-type-project .field--name-field-member .field--item img:hover { border: 1px solid #00BBC8; transition: all 0.3s; }
+body.page-node-type-project .block-entity-fieldnodefield-file .field--name-field-file .file-link, body.page-node-type-project .block-entity-fieldnodefield-file .field--name-field-file .file-size { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; color: #00BBC8; border: none; }
+body.page-node-type-project .block-entity-fieldnodefield-file .field--name-field-file .file-link:hover, body.page-node-type-project .block-entity-fieldnodefield-file .field--name-field-file .file-size:hover { color: #04686F; }
+body.page-node-type-project .block-entity-fieldnodefield-file .field--name-field-file .file-icon { display: none; }
 
-body.path-bibcite h1 { width: 95%; margin: 0 auto; max-width: 600px; color: #04686F; font-size: 20px; }
-body.path-bibcite .bibcite-reference-table { width: 95%; margin: 0 auto; max-width: 600px; }
-body.path-bibcite .bibcite-reference-table tr.odd { background-color: white; }
-body.path-bibcite .bibcite-reference-table tr td:first-child { text-align: right; color: gray; }
+@media screen and (min-width: 768px) { body.path-projects .view-projects .view-filters { text-align: right; }
+  body.path-projects .view-projects .view-filters .form-type-select .chosen-container-single, body.path-projects .view-projects .view-filters .form-type-select #edit-field-status-target-id, body.path-projects .view-projects .view-filters .form-type-select #edit-research-group-filter { margin-bottom: 0px; }
+  body.path-projects .view-projects > .view-content .views-row .views-field-field-status { margin-top: 0px; }
+  body.path-projects .view-projects > .view-content .views-row .views-field-field-image-media { float: left; margin-right: 25px; transition: all 0.3s; overflow: hidden; }
+  body.path-projects .view-projects > .view-content .views-row .views-field-field-image-media img { opacity: 1; transform: scale(1); transition: all 0.3s; }
+  body.path-projects .view-projects > .view-content .views-row .views-field-field-image-media:hover img { opacity: 0.75; transform: scale(1.02); }
+  body.page-node-type-project .block-region-content { display: flex; flex-wrap: wrap; }
+  body.page-node-type-project .block-entity-fieldnodebody { text-align: justify; }
+  body.page-node-type-project .block-entity-fieldnodebody, body.page-node-type-project .block-entity-fieldnodefield-research-group, body.page-node-type-project .block-entity-fieldnodefield-start-date, body.page-node-type-project .block-entity-fieldnodefield-end-date { flex-basis: 100%; }
+  body.page-node-type-project .block-entity-fieldnodefield-internal-coordinator, body.page-node-type-project .block-entity-fieldnodefield-member, body.page-node-type-project .block-entity-fieldnodefield-project-url, body.page-node-type-project .block-entity-fieldnodefield-file, body.page-node-type-project .block-entity-fieldnodefield-partner-name, body.page-node-type-project .block-entity-fieldnodefield-project-funding-entity { flex-basis: 50%; }
+  body.page-node-type-project .field--name-field-member { justify-content: start; } }
+body.path-research-groups .view-research-groups > .view-content { display: flex; flex-wrap: wrap; }
+body.path-research-groups .view-research-groups > .view-content > .views-row { flex-basis: 100%; text-align: left; padding: 25px; border-bottom: 1px solid #00BBC8; }
+body.path-research-groups .view-research-groups > .view-content > .views-row .views-field-title h3 { margin: 10px 0; }
+body.path-research-groups .view-research-groups > .view-content > .views-row .view-research-people .view-content { display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 15px; }
+body.path-research-groups .view-research-groups > .view-content > .views-row .view-research-people .view-content .views-row { width: 50px; height: 50px; margin: 10px; border-radius: 25px; overflow: hidden; background-color: #E0E0E0; border: 1px solid white; transition: all 0.3s; box-sizing: border-box; }
+body.path-research-groups .view-research-groups > .view-content > .views-row .view-research-people .view-content .views-row:hover { border: 1px solid #00BBC8; transition: all 0.3s; }
+body.path-research-groups .view-research-groups > .view-content > .views-row .views-field-view-node .field-content { display: block; width: 50px; height: 50px; margin: 0 auto; border-radius: 25px; overflow: hidden; background-color: white; border: 1px solid #00BBC8; transition: all 0.3s; box-sizing: border-box; }
+body.path-research-groups .view-research-groups > .view-content > .views-row .views-field-view-node .field-content a { display: inline-block; width: 100%; height: 100%; font: 300 26px/32px 'Titillium Web', sans-serif; color: #00BBC8; color: #00BBC8; text-align: center; line-height: 42px; transition: all 0.3s; }
+body.path-research-groups .view-research-groups > .view-content > .views-row .views-field-view-node .field-content:hover { background-color: #00BBC8; transition: all 0.3s; }
+body.path-research-groups .view-research-groups > .view-content > .views-row .views-field-view-node .field-content:hover a { color: white; transition: all 0.3s; }
 
-body.page-node-type-news .block-region-first-above { padding-bottom: 40px; }
-body.page-node-type-news .view-author .views-field { display: inline-block; margin-right: 15px; }
-body.page-node-type-news .view-author .views-field img { width: 60px; border-radius: 30px; }
+body.page-node-type-research-group .main-container section .region-content .layout h2.block-title { font: 300 26px/32px 'Titillium Web', sans-serif; color: #00BBC8; color: #04686F; text-align: left; margin-top: 0; }
+body.page-node-type-research-group .block-entity-fieldnodebody { padding: 25px; margin-bottom: 10px; text-align: left; }
+body.page-node-type-research-group .block-entity-fieldnodefield-group-leader, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader, body.page-node-type-research-group .block-entity-fieldnodefield-internal-group-member, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-member, body.page-node-type-research-group .block-entity-fieldnodefield-usefu, body.page-node-type-research-group .block-entity-fieldnodefield-usefull-files, body.page-node-type-research-group .block-views-blockpublications-block-1 { padding: 25px; margin-bottom: 10px; border-top: 1px solid #04686F; width: 100%; }
+body.page-node-type-research-group .block-entity-fieldnodefield-group-leader, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader { text-align: left; }
+body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article { position: relative; margin-bottom: 40px; }
+body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .field--name-field-name, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .field--name-field-member-level, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .field--name-field-position, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article h2, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .content, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .field--name-field-name, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .field--name-field-member-level, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .field--name-field-position, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article h2, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .content { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; margin: 0 0 0 135px; }
+body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .field--name-field-name h1, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .field--name-field-member-level h1, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .field--name-field-position h1, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article h2 h1, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .content h1, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .field--name-field-name h1, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .field--name-field-member-level h1, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .field--name-field-position h1, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article h2 h1, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .content h1 { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; color: #00BBC8; margin: 0; }
+body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .field--name-field-name h1:hover, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .field--name-field-member-level h1:hover, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .field--name-field-position h1:hover, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article h2 h1:hover, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .content h1:hover, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .field--name-field-name h1:hover, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .field--name-field-member-level h1:hover, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .field--name-field-position h1:hover, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article h2 h1:hover, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .content h1:hover { color: #04686F; }
+body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article .field--name-field-name, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--item article h2, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article .field--name-field-name, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--item article h2 { padding-top: 25px; }
+body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--name-user-picture, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--name-field-photo, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--name-user-picture, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--name-field-photo { width: 100px; height: 100px; margin: 0 auto; border-radius: 50px; overflow: hidden; background-color: #E0E0E0; border: 1px solid white; transition: all 0.3s; box-sizing: border-box; margin: 10px 25px 10px 10px; position: absolute; top: 0; left: 0; }
+body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--name-user-picture:hover, body.page-node-type-research-group .block-entity-fieldnodefield-group-leader .field--name-field-photo:hover, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--name-user-picture:hover, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader .field--name-field-photo:hover { border: 1px solid #00BBC8; transition: all 0.3s; }
+body.page-node-type-research-group .field--name-field-internal-group-member, body.page-node-type-research-group .field--name-field-external-group-member { display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 15px; }
+body.page-node-type-research-group .field--name-field-internal-group-member .field--item h1, body.page-node-type-research-group .field--name-field-internal-group-member .field--item h2, body.page-node-type-research-group .field--name-field-external-group-member .field--item h1, body.page-node-type-research-group .field--name-field-external-group-member .field--item h2 { display: none; }
+body.page-node-type-research-group .field--name-field-internal-group-member .field--item img, body.page-node-type-research-group .field--name-field-external-group-member .field--item img { width: 50px; height: 50px; margin: 10px; border-radius: 25px; overflow: hidden; background-color: #E0E0E0; border: 1px solid white; transition: all 0.3s; box-sizing: border-box; }
+body.page-node-type-research-group .field--name-field-internal-group-member .field--item img:hover, body.page-node-type-research-group .field--name-field-external-group-member .field--item img:hover { border: 1px solid #00BBC8; transition: all 0.3s; }
+body.page-node-type-research-group .block-entity-fieldnodefield-usefull-files .field--name-field-usefull-files .file-link, body.page-node-type-research-group .block-entity-fieldnodefield-usefull-files .field--name-field-usefull-files .file-size { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; color: #00BBC8; border: none; }
+body.page-node-type-research-group .block-entity-fieldnodefield-usefull-files .field--name-field-usefull-files .file-link:hover, body.page-node-type-research-group .block-entity-fieldnodefield-usefull-files .field--name-field-usefull-files .file-size:hover { color: #04686F; }
+body.page-node-type-research-group .block-entity-fieldnodefield-usefull-files .field--name-field-usefull-files .file-icon { display: none; }
+body.page-node-type-research-group .block-views-blockpublications-block-1 .views-field-title h3 { display: block; margin-top: 0; font: 300 18px/24px 'Titillium Web', sans-serif; color: gray; color: #00BBC8; }
+body.page-node-type-research-group .block-views-blockpublications-block-1 .view-publications .views-row { padding: 25px; border-bottom: 1px solid #00BBC8; }
+body.page-node-type-research-group .block-views-blockpublications-block-1 .view-contributors .view-content { margin-top: 15px; }
+body.page-node-type-research-group .block-views-blockpublications-block-1 .view-contributors .view-content > div { display: inline-block; }
+body.page-node-type-research-group .block-views-blockpublications-block-1 .view-contributors .view-content > div .views-field-last-name { display: inline-block; }
+body.page-node-type-research-group .block-views-blockpublications-block-1 .view-contributors .view-content > div .views-field-last-name a > p, body.page-node-type-research-group .block-views-blockpublications-block-1 .view-contributors .view-content > div .views-field-last-name .field-content > p { display: inline-block; padding: 5px 10px; margin: 0 5px 5px 0; border-radius: 5px; background-color: #00BBC8; font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; color: white; line-height: 20px; }
+body.page-node-type-research-group .block-views-blockpublications-block-1 .view-contributors .view-content > div .views-field-last-name a > p:hover, body.page-node-type-research-group .block-views-blockpublications-block-1 .view-contributors .view-content > div .views-field-last-name .field-content > p:hover { text-decoration: none; background-color: #04686F; }
+body.page-node-type-research-group .block-views-blockpublications-block-1 .view-contributors .view-content > div .views-field-last-name .field-content > p:hover { background-color: #00BBC8; }
 
-body.page-node-type-event .block-region-first-above { padding-bottom: 40px; }
+@media screen and (min-width: 768px) { body.path-research-groups .view-research-groups > .view-content .views-row .views-field-field-image-media { float: right; margin-left: 25px; transition: all 0.3s; overflow: hidden; }
+  body.path-research-groups .view-research-groups > .view-content .views-row .views-field-field-image-media img { opacity: 1; transform: scale(1); transition: all 0.3s; }
+  body.path-research-groups .view-research-groups > .view-content .views-row .views-field-field-image-media:hover img { opacity: 0.75; transform: scale(1.02); }
+  body.path-research-groups .view-research-groups > .view-content .views-row .views-field-view, body.path-research-groups .view-research-groups > .view-content .views-row .views-field-view-node { display: inline-block; }
+  body.path-research-groups .view-research-groups > .view-content .views-row .view-research-people .view-content { justify-content: flex-start; }
+  body.path-research-groups .view-research-groups > .view-content .views-row .views-field-view-node .field-content { margin: 0 10px; }
+  body.page-node-type-research-group .block-region-content { display: flex; flex-wrap: wrap; }
+  body.page-node-type-research-group .block-entity-fieldnodebody { text-align: justify; }
+  body.page-node-type-research-group .block-entity-fieldnodebody, body.page-node-type-research-group .block-views-blockresearch-groups-block-3 { flex-basis: 100%; }
+  body.page-node-type-research-group .block-entity-fieldnodefield-group-leader, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-leader, body.page-node-type-research-group .block-entity-fieldnodefield-internal-group-member, body.page-node-type-research-group .block-entity-fieldnodefield-external-group-member, body.page-node-type-research-group .block-entity-fieldnodefield-usefu, body.page-node-type-research-group .block-entity-fieldnodefield-usefull-files { flex-basis: 50%; }
+  body.page-node-type-research-group .field--name-field-internal-group-member, body.page-node-type-research-group .field--name-field-external-group-member { justify-content: start; } }
+body.path-members .view-display-id-people { width: 100%; max-width: 1170px; margin: 0px auto; float: none; margin: 30px auto; padding: 0 15px; text-align: center; }
+body.path-members .view-display-id-people .view-filters { margin: 55px 0 25px 0; text-align: center; }
+body.path-members .view-display-id-people .view-filters .form-type-entity-autocomplete { padding: 0; }
+body.path-members .view-display-id-people .view-filters .form-type-entity-autocomplete .input-group input, body.path-members .view-display-id-people .view-filters .form-type-entity-autocomplete .input-group .input-group-addon { height: 30px; border-radius: 0; }
+body.path-members .view-display-id-people .view-filters .form-actions button { margin: 0; margin-left: 5px; border-radius: 0; }
+body.path-members .view-display-id-people > .view-content .item-list > h3 { text-transform: uppercase; color: #04686F; font-weight: lighter; font-size: 25px; padding-top: 25px; border-top: 1px solid #04686F; }
+body.path-members .view-display-id-people > .view-content ul { margin: 0; padding: 0; list-style: none; }
+body.path-members .view-display-id-people > .view-content ul li { padding: 25px; width: 100%; display: inline-block; vertical-align: top; }
+body.path-members .view-display-id-people > .view-content ul li .views-field-user-picture img { width: 100px; height: 100px; margin: 0 auto; border-radius: 50px; overflow: hidden; background-color: #E0E0E0; border: 1px solid white; transition: all 0.3s; box-sizing: border-box; }
+body.path-members .view-display-id-people > .view-content ul li .views-field-user-picture img:hover { border: 1px solid #00BBC8; transition: all 0.3s; }
 
-.page-node-type-research-group .region-content { text-align: center; }
-.page-node-type-research-group .region-content .block-entity-fieldnodefield-group-leader { max-width: 300px; margin: 0 auto; }
-.page-node-type-research-group .region-content .field--name-field-group-leader, .page-node-type-research-group .region-content .field--name-field-internal-group-member { max-width: 300px; }
-.page-node-type-research-group .region-content .field--name-field-group-leader .field--name-user-picture, .page-node-type-research-group .region-content .field--name-field-internal-group-member .field--name-user-picture { width: 80px; border-radius: 40px; overflow: hidden; margin: 10px auto; }
-.page-node-type-research-group .region-content .field--name-field-group-leader .field--name-field-name, .page-node-type-research-group .region-content .field--name-field-internal-group-member .field--name-field-name { font-size: 20px; }
+body.path-user .main-container .view-user, body.path-user .main-container .view-id-external_person, body.page-node-type-external-person .main-container .view-user, body.page-node-type-external-person .main-container .view-id-external_person { margin: 30px auto 0 auto; padding: 0; text-align: center; }
+body.path-user .main-container .view-user .views-row, body.path-user .main-container .view-id-external_person .views-row, body.page-node-type-external-person .main-container .view-user .views-row, body.page-node-type-external-person .main-container .view-id-external_person .views-row { position: relative; }
+body.path-user .main-container .view-user .background-color, body.path-user .main-container .view-id-external_person .background-color, body.page-node-type-external-person .main-container .view-user .background-color, body.page-node-type-external-person .main-container .view-id-external_person .background-color { position: absolute; top: 0; left: 0; background: #EEFFFE; width: 100%; height: calc(100% - 50px); margin: 50px auto 0 auto; z-index: -1; }
+body.path-user .main-container .view-user .background-color.ep, body.path-user .main-container .view-id-external_person .background-color.ep, body.page-node-type-external-person .main-container .view-user .background-color.ep, body.page-node-type-external-person .main-container .view-id-external_person .background-color.ep { height: calc(100% - 35px); }
+body.path-user .main-container .view-user .views-field-user-picture, body.path-user .main-container .view-user .views-field-field-photo, body.path-user .main-container .view-id-external_person .views-field-user-picture, body.path-user .main-container .view-id-external_person .views-field-field-photo, body.page-node-type-external-person .main-container .view-user .views-field-user-picture, body.page-node-type-external-person .main-container .view-user .views-field-field-photo, body.page-node-type-external-person .main-container .view-id-external_person .views-field-user-picture, body.page-node-type-external-person .main-container .view-id-external_person .views-field-field-photo { width: 100px; height: 100px; margin: 0 auto; border-radius: 50px; overflow: hidden; background-color: #E0E0E0; border: 1px solid white; transition: all 0.3s; box-sizing: border-box; border: none; }
+body.path-user .main-container .view-user .views-field-user-picture:hover, body.path-user .main-container .view-user .views-field-field-photo:hover, body.path-user .main-container .view-id-external_person .views-field-user-picture:hover, body.path-user .main-container .view-id-external_person .views-field-field-photo:hover, body.page-node-type-external-person .main-container .view-user .views-field-user-picture:hover, body.page-node-type-external-person .main-container .view-user .views-field-field-photo:hover, body.page-node-type-external-person .main-container .view-id-external_person .views-field-user-picture:hover, body.page-node-type-external-person .main-container .view-id-external_person .views-field-field-photo:hover { border: 1px solid #00BBC8; transition: all 0.3s; }
+body.path-user .main-container .view-user .views-field-user-picture:hover, body.path-user .main-container .view-user .views-field-field-photo:hover, body.path-user .main-container .view-id-external_person .views-field-user-picture:hover, body.path-user .main-container .view-id-external_person .views-field-field-photo:hover, body.page-node-type-external-person .main-container .view-user .views-field-user-picture:hover, body.page-node-type-external-person .main-container .view-user .views-field-field-photo:hover, body.page-node-type-external-person .main-container .view-id-external_person .views-field-user-picture:hover, body.page-node-type-external-person .main-container .view-id-external_person .views-field-field-photo:hover { border: none; }
+body.path-user .main-container .view-user .views-field-field-name h3, body.path-user .main-container .view-id-external_person .views-field-field-name h3, body.page-node-type-external-person .main-container .view-user .views-field-field-name h3, body.page-node-type-external-person .main-container .view-id-external_person .views-field-field-name h3 { color: #04686F; }
+body.path-user .main-container .view-user .profile-links, body.path-user .main-container .view-id-external_person .profile-links, body.page-node-type-external-person .main-container .view-user .profile-links, body.page-node-type-external-person .main-container .view-id-external_person .profile-links { margin-top: 15px; padding: 10px; background-color: white; }
+body.path-user .main-container .view-user .profile-links span a, body.path-user .main-container .view-id-external_person .profile-links span a, body.page-node-type-external-person .main-container .view-user .profile-links span a, body.page-node-type-external-person .main-container .view-id-external_person .profile-links span a { display: inline-block; padding: 5px 10px; text-transform: uppercase; font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; color: #00BBC8; }
+body.path-user .main-container .view-user .profile-links span a:hover, body.path-user .main-container .view-id-external_person .profile-links span a:hover, body.page-node-type-external-person .main-container .view-user .profile-links span a:hover, body.page-node-type-external-person .main-container .view-id-external_person .profile-links span a:hover { color: #04686F; }
+body.path-user .main-container .field--name-field-bio, body.page-node-type-external-person .main-container .field--name-field-bio { text-align: center; padding: 10px 25px; }
+body.path-user .main-container .view-user-publications, body.page-node-type-external-person .main-container .view-user-publications { margin: 60px 0 30px 0; text-align: left; }
+body.path-user .main-container .view-user-publications .view-header, body.page-node-type-external-person .main-container .view-user-publications .view-header { margin: 10px 25px; text-transform: uppercase; }
+body.path-user .main-container .view-user-publications .view-content .views-row, body.page-node-type-external-person .main-container .view-user-publications .view-content .views-row { padding: 25px; border-top: 1px solid #00BBC8; }
+body.path-user .main-container .view-user-publications .views-field-title h3, body.page-node-type-external-person .main-container .view-user-publications .views-field-title h3 { display: block; margin-top: 0; font: 300 18px/24px 'Titillium Web', sans-serif; color: gray; color: #00BBC8; }
+body.path-user .main-container .view-user-publications .view-contributors .view-content, body.page-node-type-external-person .main-container .view-user-publications .view-contributors .view-content { margin-top: 15px; }
+body.path-user .main-container .view-user-publications .view-contributors .view-content > div, body.page-node-type-external-person .main-container .view-user-publications .view-contributors .view-content > div { display: inline-block; }
+body.path-user .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name, body.page-node-type-external-person .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name { display: inline-block; }
+body.path-user .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name a > p, body.path-user .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name .field-content > p, body.page-node-type-external-person .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name a > p, body.page-node-type-external-person .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name .field-content > p { display: inline-block; padding: 5px 10px; margin: 0 5px 5px 0; border-radius: 5px; background-color: #00BBC8; font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; color: white; line-height: 20px; }
+body.path-user .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name a > p:hover, body.path-user .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name .field-content > p:hover, body.page-node-type-external-person .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name a > p:hover, body.page-node-type-external-person .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name .field-content > p:hover { text-decoration: none; background-color: #04686F; }
+body.path-user .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name .field-content > p:hover, body.page-node-type-external-person .main-container .view-user-publications .view-contributors .view-content > div .views-field-last-name .field-content > p:hover { background-color: #00BBC8; }
 
-.view-display-id-people { text-align: center; }
-.view-display-id-people .item-list > h3 { text-transform: uppercase; color: #04686F; font-weight: lighter; font-size: 25px; padding-top: 30px; }
-.view-display-id-people ul { list-style: none; }
-.view-display-id-people ul li { padding: 20px; width: 22%; min-width: 300px; display: inline-block; vertical-align: top; }
-.view-display-id-people ul li .views-field-user-picture img { border-radius: 50px; overflow: hidden; margin: 0 auto; }
+@media screen and (min-width: 768px) { body.path-members .view-display-id-people .view-filters { text-align: right; }
+  body.path-members .view-display-id-people .view-filters .form-type-select .chosen-container-single, body.path-members .view-display-id-people .view-filters .form-type-select #edit-field-status-target-id, body.path-members .view-display-id-people .view-filters .form-type-select #edit-research-group-filter { margin-bottom: 0px; }
+  body.path-members .view-display-id-people > .view-content ul li { width: 24%; } }
+body.path-publications .view-publications { width: 100%; max-width: 1170px; margin: 0px auto; float: none; margin: 30px auto; padding: 0 15px; text-align: center; }
+body.path-publications .view-publications .view-filters { margin: 70px 0 25px 0; text-align: center; }
+body.path-publications .view-publications .view-filters .form-type-select { position: relative; }
+body.path-publications .view-publications .view-filters .form-type-select .select-wrapper:after { display: none; }
+body.path-publications .view-publications .view-filters .form-type-select label { font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; text-transform: uppercase; text-align: left; position: absolute; top: -20px; left: auto; }
+body.path-publications .view-publications .view-filters .form-type-select .select-wrapper { width: 100%; }
+body.path-publications .view-publications .view-filters .form-type-select .chosen-container-single { padding: 0; }
+body.path-publications .view-publications .view-filters .form-type-select .chosen-container-single { width: 100%; border-radius: 0; height: 30px; margin-bottom: 20px; }
+body.path-publications .view-publications .view-filters .form-type-select .chosen-container-single a.chosen-single { border: none; background: none; box-shadow: none; height: 30px; width: 100%; font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; line-height: 30px; text-align: left; }
+body.path-publications .view-publications .view-filters .form-type-select .chosen-container-single a.chosen-single div b { background-position: 0px 5px; }
+body.path-publications .view-publications .view-filters .form-type-select .chosen-container-single .chosen-drop { text-align: left; }
+body.path-publications .view-publications .view-filters .form-type-textfield { padding: 0; position: relative; }
+body.path-publications .view-publications .view-filters .form-type-textfield label { font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; text-transform: uppercase; text-align: left; position: absolute; top: -20px; left: auto; }
+body.path-publications .view-publications .view-filters .form-type-textfield input, body.path-publications .view-publications .view-filters .form-type-textfield .input-group-addon { height: 30px; border-radius: 0; }
+body.path-publications .view-publications .view-filters .form-actions { text-align: center; }
+body.path-publications .view-publications .view-filters .form-actions button { margin: 0; border-radius: 0; border-left: 1px solid white; }
+body.path-publications .view-publications > .view-content { margin-top: 0; }
+body.path-publications .view-publications > .view-content .views-row { text-align: left; padding: 25px; border-top: 1px solid #00BBC8; }
+body.path-publications .view-publications > .view-content .views-row .views-field-title h3 { margin-top: 0; }
+body.path-publications .view-publications > .view-content .views-row .views-field-bibcite-secondary-title, body.path-publications .view-publications > .view-content .views-row .views-field-bibcite-year { font: 300 18px/24px 'Titillium Web', sans-serif; color: gray; }
+body.path-publications .view-publications > .view-content .views-row .view-id-contributors { margin-top: 10px; }
+body.path-publications .view-publications > .view-content .views-row .view-id-contributors .view-content { padding-left: 0; margin-bottom: 0; }
+body.path-publications .view-publications > .view-content .views-row .view-id-contributors .view-content > div { display: inline-block; }
+body.path-publications .view-publications > .view-content .views-row .view-id-contributors .view-content > div a > p, body.path-publications .view-publications > .view-content .views-row .view-id-contributors .view-content > div .field-content > p { display: inline-block; padding: 5px 10px; margin: 0 5px 5px 0; border-radius: 5px; background-color: #00BBC8; font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; color: white; line-height: 20px; }
+body.path-publications .view-publications > .view-content .views-row .view-id-contributors .view-content > div a > p:hover, body.path-publications .view-publications > .view-content .views-row .view-id-contributors .view-content > div .field-content > p:hover { text-decoration: none; background-color: #04686F; }
+body.path-publications .view-publications > .view-content .views-row .view-id-contributors .view-content > div .field-content > p:hover { background-color: #00BBC8; }
+
+body.path-bibcite .view-node-publication .views-row { display: flex; flex-wrap: wrap; }
+body.path-bibcite .view-node-publication .views-field-title .top-banner { background-color: #474747; }
+body.path-bibcite .view-node-publication .views-field-title .top-banner img { opacity: 0.75; }
+body.path-bibcite .view-node-publication .views-field-title .top-banner h1 { padding: 40px; }
+body.path-bibcite .view-node-publication .views-field-bibcite-secondary-title h3 { color: #04686F; }
+body.path-bibcite .view-node-publication .views-field-bibcite-secondary-title, body.path-bibcite .view-node-publication .views-field-type, body.path-bibcite .view-node-publication .views-field-bibcite-abst-e, body.path-bibcite .view-node-publication .views-field-view { flex-basis: 100%; padding: 0 25px; }
+body.path-bibcite .view-node-publication .views-field-nothing, body.path-bibcite .view-node-publication .views-field-nothing-1, body.path-bibcite .view-node-publication .views-field-nothing-2, body.path-bibcite .view-node-publication .views-field-nothing-3 { border-top: 1px solid #04686F; flex-basis: 100%; padding: 25px; margin-top: 50px; }
+body.path-bibcite .view-node-publication .views-field-nothing h3, body.path-bibcite .view-node-publication .views-field-nothing-1 h3, body.path-bibcite .view-node-publication .views-field-nothing-2 h3, body.path-bibcite .view-node-publication .views-field-nothing-3 h3 { margin-top: 0; color: #04686F; }
+body.path-bibcite .view-node-publication .view-contributors .view-content { margin-top: 20px; }
+body.path-bibcite .view-node-publication .view-contributors .view-content > div { display: inline-block; }
+body.path-bibcite .view-node-publication .view-contributors .view-content > div .views-field-last-name { display: inline-block; }
+body.path-bibcite .view-node-publication .view-contributors .view-content > div .views-field-last-name a > p, body.path-bibcite .view-node-publication .view-contributors .view-content > div .views-field-last-name .field-content > p { display: inline-block; padding: 5px 10px; margin: 0 5px 5px 0; border-radius: 5px; background-color: #00BBC8; font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; color: white; line-height: 20px; }
+body.path-bibcite .view-node-publication .view-contributors .view-content > div .views-field-last-name a > p:hover, body.path-bibcite .view-node-publication .view-contributors .view-content > div .views-field-last-name .field-content > p:hover { text-decoration: none; background-color: #04686F; }
+body.path-bibcite .view-node-publication .view-contributors .view-content > div .views-field-last-name .field-content > p:hover { background-color: #00BBC8; }
+
+@media screen and (min-width: 768px) { body.path-publications .view-publications .view-filters { text-align: right; }
+  body.path-publications .view-publications .view-filters .form-type-select .chosen-container-single { margin-bottom: 0px; }
+  body.path-bibcite .view-node-publication .views-field-nothing, body.path-bibcite .view-node-publication .views-field-nothing-1, body.path-bibcite .view-node-publication .views-field-nothing-2, body.path-bibcite .view-node-publication .views-field-nothing-3 { flex-basis: 50%; } }
+body.path-center .view-id-about { padding: 25px 0 80px 0; }
+body.path-center .view-id-about .views-field-field-mission { margin-bottom: 30px; padding: 0 25px; }
+body.path-center .view-id-about .views-field-field-mission p { font: 300 18px/24px 'Titillium Web', sans-serif; color: gray; text-align: center; }
+body.path-center .view-id-about .views-field-field-mission .views-label { display: block; font: 300 26px/32px 'Titillium Web', sans-serif; color: #00BBC8; text-align: center; color: #04686F; margin: 25px 0; }
+body.path-center .view-id-about .views-field-field-direction-board .views-label { font: 300 26px/32px 'Titillium Web', sans-serif; color: #00BBC8; color: #04686F; text-align: center; margin: 30px 0 0 0; display: inline-block; width: 100%; }
+body.path-center .view-id-about .views-field-field-direction-board .field-content { display: flex; flex-wrap: wrap; justify-content: center; text-align: center; }
+body.path-center .view-id-about .views-field-field-direction-board .field-content article { padding: 30px; }
+body.path-center .view-id-about .views-field-field-direction-board .field-content article .field--name-user-picture img { width: 100px; height: 100px; margin: 0 auto; border-radius: 50px; overflow: hidden; background-color: #E0E0E0; border: 1px solid white; transition: all 0.3s; box-sizing: border-box; }
+body.path-center .view-id-about .views-field-field-direction-board .field-content article .field--name-user-picture img:hover { border: 1px solid #00BBC8; transition: all 0.3s; }
+body.path-center .view-id-about .views-field-field-direction-board .field-content article .field--name-field-name { font: 300 18px/24px 'Titillium Web', sans-serif; color: gray; margin: 15px 0 5px 0; }
+
+body.path-center .block-views-blockslideshow-block-2 { background-color: #F4F8F9; position: relative; padding: 50px 0; }
+body.path-center .block-views-blockslideshow-block-2 .view-id-slideshow .view-content { display: flex; flex-wrap: wrap; justify-content: space-around; }
+body.path-center .block-views-blockslideshow-block-2 .view-id-slideshow .views-row { flex-basis: 100%; padding: 25px; margin-bottom: 15px; position: relative; text-align: center; }
+body.path-center .block-views-blockslideshow-block-2 .view-id-slideshow .views-field-nid-1 { transition: all 0.3s; overflow: hidden; }
+body.path-center .block-views-blockslideshow-block-2 .view-id-slideshow .views-field-nid-1 img { width: 100%; opacity: 1; transform: scale(1); transition: all 0.3s; float: none; margin: 0 auto; }
+body.path-center .block-views-blockslideshow-block-2 .view-id-slideshow .views-field-nid-1:hover img { opacity: 0.75; transform: scale(1.02); }
+body.path-center .block-views-blockslideshow-block-2 .view-id-slideshow .views-field-body { margin-bottom: 15px; }
+body.path-center .block-views-blockslideshow-block-2 .view-id-slideshow .read-more { font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; text-transform: uppercase; color: #00BBC8; }
+body.path-center .block-views-blockslideshow-block-2 .view-id-slideshow .read-more:hover { color: #04686F; }
+body.path-center .block-views-blockslideshow-block-2::before { content: ''; display: block; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background-color: #F4F8F9; }
+body.path-center .block-views-blockslideshow-block-2::after { content: ''; display: block; position: absolute; top: 0; left: 100%; width: 100%; height: 100%; background-color: #F4F8F9; }
+
+body.page-node-type-news .main-container { border-top: 1px solid #E0E0E0; }
+body.page-node-type-news .main-container .view-display-id-block_3 .field-content { margin: 0; }
+body.page-node-type-news .main-container .view-display-id-block_3 .field-content .top-banner { background-color: #474747; }
+body.page-node-type-news .main-container .view-display-id-block_3 .field-content .top-banner img { opacity: 0.75; }
+body.page-node-type-news .main-container .block-region-first-above { padding-bottom: 40px; }
+body.page-node-type-news .main-container section .region-content .layout { margin: 60px auto; }
+body.page-node-type-news .main-container section .region-content .layout .block-entity-fieldnodebody { padding: 10px 25px; }
+body.page-node-type-news .main-container section .region-content .layout .block-entity-fieldnodebody h1, body.page-node-type-news .main-container section .region-content .layout .block-entity-fieldnodebody h2, body.page-node-type-news .main-container section .region-content .layout .block-entity-fieldnodebody h3, body.page-node-type-news .main-container section .region-content .layout .block-entity-fieldnodebody h4, body.page-node-type-news .main-container section .region-content .layout .block-entity-fieldnodebody p { color: #474747; }
+body.page-node-type-news .main-container section .region-content .layout .block-views-blocknode-summary-block-1 { padding: 10px 25px; font: 300 26px/32px 'Titillium Web', sans-serif; color: #00BBC8; color: #00BBC8; margin-bottom: 15px; }
+body.page-node-type-news .main-container section .region-content .layout .block-entity-fieldnodefield-news-url { padding: 10px 25px; width: 100%; float: none; margin-bottom: 30px; }
+body.page-node-type-news .main-container section .region-content .layout .block-entity-fieldnodefield-news-url h2.block-title { font: 300 18px/24px 'Titillium Web', sans-serif; color: gray; color: #00BBC8; text-align: left; border-top: 1px solid #00BBC8; display: block; padding-top: 5px; }
+
+@media screen and (min-width: 768px) { body.path-center .block-views-blockslideshow-block-2 .view-id-slideshow .view-content .views-row { flex-basis: 50%; text-align: left; } }
+body.path-frontpage .region-content .block-views-blockevents-block-events, body.path-frontpage .region-content .block-views-blockevents-block-1, body.path-center .region-content .block-views-blockevents-block-events, body.path-center .region-content .block-views-blockevents-block-1 { padding: 50px 0; }
+body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-events .view-content, body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-research_groups .view-content, body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-projects .view-content, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-events .view-content, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-research_groups .view-content, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-projects .view-content, body.path-center .region-content .block-views-blockevents-block-events .view-id-events .view-content, body.path-center .region-content .block-views-blockevents-block-events .view-id-research_groups .view-content, body.path-center .region-content .block-views-blockevents-block-events .view-id-projects .view-content, body.path-center .region-content .block-views-blockevents-block-1 .view-id-events .view-content, body.path-center .region-content .block-views-blockevents-block-1 .view-id-research_groups .view-content, body.path-center .region-content .block-views-blockevents-block-1 .view-id-projects .view-content { display: flex; flex-wrap: wrap; justify-content: space-around; }
+body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-events .views-row, body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-research_groups .views-row, body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-projects .views-row, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-events .views-row, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-research_groups .views-row, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-projects .views-row, body.path-center .region-content .block-views-blockevents-block-events .view-id-events .views-row, body.path-center .region-content .block-views-blockevents-block-events .view-id-research_groups .views-row, body.path-center .region-content .block-views-blockevents-block-events .view-id-projects .views-row, body.path-center .region-content .block-views-blockevents-block-1 .view-id-events .views-row, body.path-center .region-content .block-views-blockevents-block-1 .view-id-research_groups .views-row, body.path-center .region-content .block-views-blockevents-block-1 .view-id-projects .views-row { flex-basis: 100%; padding: 25px; margin-bottom: 30px; }
+body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-events .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-research_groups .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-projects .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-events .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-research_groups .views-field-field-image-media, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-projects .views-field-field-image-media, body.path-center .region-content .block-views-blockevents-block-events .view-id-events .views-field-field-image-media, body.path-center .region-content .block-views-blockevents-block-events .view-id-research_groups .views-field-field-image-media, body.path-center .region-content .block-views-blockevents-block-events .view-id-projects .views-field-field-image-media, body.path-center .region-content .block-views-blockevents-block-1 .view-id-events .views-field-field-image-media, body.path-center .region-content .block-views-blockevents-block-1 .view-id-research_groups .views-field-field-image-media, body.path-center .region-content .block-views-blockevents-block-1 .view-id-projects .views-field-field-image-media { transition: all 0.3s; overflow: hidden; }
+body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-events .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-research_groups .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-projects .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-events .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-research_groups .views-field-field-image-media img, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-projects .views-field-field-image-media img, body.path-center .region-content .block-views-blockevents-block-events .view-id-events .views-field-field-image-media img, body.path-center .region-content .block-views-blockevents-block-events .view-id-research_groups .views-field-field-image-media img, body.path-center .region-content .block-views-blockevents-block-events .view-id-projects .views-field-field-image-media img, body.path-center .region-content .block-views-blockevents-block-1 .view-id-events .views-field-field-image-media img, body.path-center .region-content .block-views-blockevents-block-1 .view-id-research_groups .views-field-field-image-media img, body.path-center .region-content .block-views-blockevents-block-1 .view-id-projects .views-field-field-image-media img { opacity: 1; transform: scale(1); transition: all 0.3s; }
+body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-events .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-research_groups .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockevents-block-events .view-id-projects .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-events .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-research_groups .views-field-field-image-media:hover img, body.path-frontpage .region-content .block-views-blockevents-block-1 .view-id-projects .views-field-field-image-media:hover img, body.path-center .region-content .block-views-blockevents-block-events .view-id-events .views-field-field-image-media:hover img, body.path-center .region-content .block-views-blockevents-block-events .view-id-research_groups .views-field-field-image-media:hover img, body.path-center .region-content .block-views-blockevents-block-events .view-id-projects .views-field-field-image-media:hover img, body.path-center .region-content .block-views-blockevents-block-1 .view-id-events .views-field-field-image-media:hover img, body.path-center .region-content .block-views-blockevents-block-1 .view-id-research_groups .views-field-field-image-media:hover img, body.path-center .region-content .block-views-blockevents-block-1 .view-id-projects .views-field-field-image-media:hover img { opacity: 0.75; transform: scale(1.02); }
+body.path-frontpage .region-content .view-id-events, body.path-center .region-content .view-id-events { padding: 40px 0; }
+body.path-frontpage .region-content .view-id-events .view-content .views-row, body.path-center .region-content .view-id-events .view-content .views-row { position: relative; text-align: left; border-top: 1px solid #00BBC8; border-left: none; }
+body.path-frontpage .region-content .view-id-events .view-content .views-row .views-field-field-venue, body.path-center .region-content .view-id-events .view-content .views-row .views-field-field-venue { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; color: #2BEFFF; }
+body.path-frontpage .region-content .view-id-events .view-content .views-row .views-field-title h3, body.path-center .region-content .view-id-events .view-content .views-row .views-field-title h3 { margin: 5px 0 10px 0; }
+body.path-frontpage .region-content .view-id-events .view-content .views-row .views-field-body, body.path-center .region-content .view-id-events .view-content .views-row .views-field-body { font: 400 14px/20px 'Titillium Web', sans-serif; color: gray; margin-bottom: 15px; }
+body.path-frontpage .region-content .view-id-events .view-content .views-row .read-more, body.path-center .region-content .view-id-events .view-content .views-row .read-more { position: absolute; bottom: 0; font: 400 12px/16px 'Titillium Web', sans-serif; color: gray; text-transform: uppercase; color: #00BBC8; }
+body.path-frontpage .region-content .view-id-events .view-content .views-row .read-more:hover, body.path-center .region-content .view-id-events .view-content .views-row .read-more:hover { color: #04686F; }
+
+body.page-node-type-event .main-container { border-top: 1px solid #E0E0E0; }
+body.page-node-type-event .main-container .block-views-blockevents-block-2 .field-content { margin: 0; }
+body.page-node-type-event .main-container .block-views-blockevents-block-2 .field-content .top-banner { background-color: #474747; }
+body.page-node-type-event .main-container .block-views-blockevents-block-2 .field-content .top-banner .events-text { margin: 0; position: absolute; width: 100%; }
+body.page-node-type-event .main-container .block-views-blockevents-block-2 .field-content .top-banner .events-text h1 { position: relative; font: 300 36px/40px 'Titillium Web', sans-serif; text-transform: uppercase; color: white; text-shadow: 1px 1px 2px grey; }
+body.page-node-type-event .main-container .block-views-blockevents-block-2 .field-content .top-banner .events-text h3 { font: 300 26px/32px 'Titillium Web', sans-serif; color: #00BBC8; color: white; text-shadow: 1px 1px 2px grey; }
+body.page-node-type-event .main-container .block-views-blockevents-block-2 .field-content .top-banner img { opacity: 0.75; }
+body.page-node-type-event .main-container section .region-content .layout { margin: 60px auto; }
+body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodefield-image-media { margin-bottom: 30px; }
+body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodebody, body.page-node-type-event .main-container section .region-content .layout .block-views-blocknode-summary-block-1, body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodefield-fundin { padding: 10px 25px; }
+body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodebody h1, body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodebody h2, body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodebody h3, body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodebody h4, body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodebody p { color: #474747; }
+body.page-node-type-event .main-container section .region-content .layout .block-views-blocknode-summary-block-1 { font: 300 26px/32px 'Titillium Web', sans-serif; color: #00BBC8; color: #00BBC8; margin-bottom: 15px; }
+body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodefield-fundin { width: 100%; float: none; margin-bottom: 30px; }
+body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodefield-fundin h2.block-title { font: 300 18px/24px 'Titillium Web', sans-serif; color: gray; color: #00BBC8; text-align: left; border-top: 1px solid #00BBC8; display: block; padding-top: 5px; }
+body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodefield-fundin .field--type-entity-reference { display: flex; flex-wrap: wrap; }
+body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodefield-fundin .field--type-entity-reference .field--item { flex-basis: 100%; }
+body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodefield-fundin .field--type-entity-reference .field--item article > h2 { display: none; }
+body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodefield-fundin .field--type-entity-reference .field--item .field--name-field-entity-logo { padding: 15px; }
+
+@media screen and (min-width: 768px) { body.path-frontpage .region-content .view-id-events .view-content .views-row, body.path-center .region-content .view-id-events .view-content .views-row { flex-basis: 25%; border-top: none; border-left: 1px solid #00BBC8; }
+  body.page-node-type-event .main-container section .region-content .layout .block-entity-fieldnodefield-fundin .field--type-entity-reference .field--item { flex-basis: 33%; } }
+body.path-user #navbar { border-bottom: 1px solid #E0E0E0; }
+body.path-user .user-forms, body.path-user .links, body.path-user .user-form, body.path-user .contact-message-personal-form { width: 100%; padding: 15px; }
+body.path-user .user-forms #edit-submit, body.path-user .links #edit-submit, body.path-user .user-form #edit-submit, body.path-user .contact-message-personal-form #edit-submit { width: 100%; overflow: hidden; height: 50px; margin-top: 16px; background-color: #04686F; border: 0; text-transform: uppercase; }
+body.path-user .user-forms { margin: 60px auto 0 auto; }
+body.path-user .user-forms .logo.user-register-form { overflow: auto; }
+body.path-user .user-forms .logo.user-register-form img { background-color: #04686F; padding: 30px; }
+body.path-user .user-forms .user-login-form { padding: 60px 0 30px 0; }
+body.path-user .links { margin: 0 auto 60px auto; }
+body.path-user .main-container .user-form { margin: 60px auto; }
+body.path-user .main-container .user-form .chosen-container-single { width: 100% !important; }
+body.path-user .main-container .user-form .chosen-container-single a.chosen-single { border: none; background: none; box-shadow: none; height: 30px; width: 100%; padding: 0; }
+body.path-user .main-container .user-form .chosen-container-single a.chosen-single div b { display: none; }
+body.path-user .main-container .user-form .chosen-container-single .chosen-drop { text-align: left; left: 0; }
+body.path-user .main-container .user-form .field--name-field-bio { padding: 0; text-align: left; }
+body.path-user .contact-message-personal-form { margin: 60px auto; }
+body.path-user .contact-message-personal-form #edit-preview { display: none; }
+
+@media screen and (min-width: 768px) { body.path-user .user-forms, body.path-user .links, body.path-user .user-form, body.path-user .contact-message-personal-form { width: 50%; overflow: hidden; } }

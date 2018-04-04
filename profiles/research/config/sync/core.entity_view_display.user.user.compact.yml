@@ -19,7 +19,7 @@ dependencies:
     - field.field.user.user.field_scopus_id
     - field.field.user.user.field_website
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.scale_and_crop_100x100
   module:
     - image
     - user
@@ -38,7 +38,7 @@ content:
     weight: 0
     region: content
     settings:
-      image_style: thumbnail
+      image_style: scale_and_crop_100x100
       image_link: content
     third_party_settings: {  }
     label: hidden

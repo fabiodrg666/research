@@ -1,26 +1,260 @@
-.page-node-type-research-group{
+//** Research Groups content styles:
 
-  .region-content{
-    text-align: center;
-
-      .block-entity-fieldnodefield-group-leader{
-        max-width:  300px;
-        margin: 0 auto;
-      }
-
-      .field--name-field-group-leader, .field--name-field-internal-group-member {
-        max-width:  300px;
-
-        .field--name-user-picture {
-          width:  80px;
-          border-radius: 40px;
-          overflow:  hidden;
-          margin:  10px auto;
+// Mobile first.
+body.path-research-groups .view-research-groups{
+  // Research Groups view content.
+  > .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    > .views-row{
+      flex-basis: 100%;
+      text-align: left;
+      padding: 25px;
+      border-bottom: 1px solid $dark;
+      .views-field-title h3{
+        margin: 10px 0;
+      }      
+      // Members view.
+      .view-research-people{
+        .view-content{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin-top: 15px;
+          .views-row{
+            @include smallprofilepic;
+          }
         }
+      }
+      // + link.
+      .views-field-view-node{
+        .field-content{
+          display: block;
+          width: 50px;
+          height: 50px;
+          margin: 0 auto;
+          border-radius: 25px;
+          overflow: hidden;
+          background-color: white;
+          border: 1px solid $dark; 
+          transition: all 0.3s;
+          box-sizing: border-box;
+          a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            @include textsubtitle;
+            color: $dark;
+            text-align: center;
+            line-height: 42px;
+            transition: all 0.3s;
+          }
+          &:hover{
+            background-color: $dark;
+            transition: all 0.3s;
+            a{
+              color: white;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }   
+    }
+  }
+}
 
-        .field--name-field-name {
-          font-size: 20px;
+// Research Group node pages.
+body.page-node-type-research-group{
+  .main-container section .region-content .layout h2.block-title{
+    @include textsubtitle;
+    color: $darkest;
+    text-align: left;
+    margin-top: 0;
+  }
+  .block-entity-fieldnodebody{
+    padding: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .block-entity-fieldnodefield-group-leader,
+  .block-entity-fieldnodefield-external-group-leader,
+  .block-entity-fieldnodefield-internal-group-member,
+  .block-entity-fieldnodefield-external-group-member,
+  .block-entity-fieldnodefield-usefu,
+  .block-entity-fieldnodefield-usefull-files,
+  .block-views-blockpublications-block-1{
+    padding: 25px;
+    margin-bottom: 10px;
+    border-top: 1px solid $darkest;
+    width: 100%;
+  }
+  .block-entity-fieldnodefield-group-leader,
+  .block-entity-fieldnodefield-external-group-leader{
+    text-align: left;
+    .field--item article{
+      position: relative;
+      margin-bottom: 40px;
+      .field--name-field-name,
+      .field--name-field-member-level,
+      .field--name-field-position,
+      h2, .content{
+        @include textnormal;
+        margin: 0 0 0 135px;
+        h1{
+          @include textnormal;
+          color: $dark;
+          margin: 0;
+          &:hover{
+            color: $darkest
+          }
         }
       }
+      .field--name-field-name, h2{
+        padding-top: 25px;
+      }
+    }
+    .field--name-user-picture,
+    .field--name-field-photo{
+      @include largeprofilepic;
+      margin: 10px 25px 10px 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .field--name-field-internal-group-member,
+  .field--name-field-external-group-member{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    .field--item {
+      h1, h2{
+        display: none;
+      }
+      img{
+        @include smallprofilepic;
+      }
+    }
+  }
+  .block-entity-fieldnodefield-usefull-files{
+    .field--name-field-usefull-files{
+      .file-link, .file-size{
+        @include textnormal;
+        color: $dark;
+        border: none;  
+        &:hover{
+          color: $darkest;
+        }
+      }
+      .file-icon{
+        display: none;
+      }
+    }
+  }
+  .block-views-blockpublications-block-1{
+    .views-field-title h3{
+      display: block;
+      margin-top: 0; 
+      @include textlarge;
+      color: $dark;
+    }
+    .view-publications{
+      .views-row{
+        padding: 25px;
+        border-bottom: 1px solid $dark;
+      }
+    }
+    .view-contributors .view-content{
+      margin-top: 15px;
+      > div{
+        display: inline-block;
+        .views-field-last-name{
+          display: inline-block;
+          a > p, .field-content > p{
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0 5px 5px 0;
+            border-radius: 5px;
+            background-color: $links;
+            @include textsmall;
+            color: white;
+            line-height: 20px;
+            &:hover{
+              text-decoration: none;
+              background-color: $linksOver;
+            }
+          }
+          .field-content > p{
+            &:hover{
+              background-color: $links;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media query > 768, for sm, md and lg devices.
+@media screen and (min-width: 768px){
+  body.path-research-groups .view-research-groups{
+    // Research Groups view content.
+    > .view-content {
+      .views-row{
+        .views-field-field-image-media{
+          float: right;
+          margin-left: 25px;
+          transition: all 0.3s;
+          overflow: hidden;
+          img{
+            opacity: 1;
+            transform: scale(1);
+            transition: all 0.3s;
+          }
+          &:hover{
+            img{
+              opacity: 0.75;
+              transform: scale(1.02);
+            }
+          }
+        }
+        .views-field-view,
+        .views-field-view-node{
+          display: inline-block;
+        }
+        .view-research-people .view-content{
+          justify-content: flex-start;
+        } 
+        .views-field-view-node .field-content{
+          margin: 0 10px;
+        }
+      }
+    } 
+  }
+  body.page-node-type-research-group{
+    .block-region-content{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .block-entity-fieldnodebody{
+      text-align: justify;
+    }
+    .block-entity-fieldnodebody,
+    .block-views-blockresearch-groups-block-3{
+      flex-basis: 100%;
+    }
+    .block-entity-fieldnodefield-group-leader,
+    .block-entity-fieldnodefield-external-group-leader,
+    .block-entity-fieldnodefield-internal-group-member,
+    .block-entity-fieldnodefield-external-group-member,
+    .block-entity-fieldnodefield-usefu,
+    .block-entity-fieldnodefield-usefull-files{
+      flex-basis: 50%;
+    }
+    .field--name-field-internal-group-member,
+    .field--name-field-external-group-member{
+      justify-content: start;
+    }
   }
 }

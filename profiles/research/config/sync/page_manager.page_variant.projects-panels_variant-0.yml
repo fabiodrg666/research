@@ -5,10 +5,7 @@ dependencies:
   config:
     - page_manager.page.projects
     - views.view.projects
-  content:
-    - 'block_content:basic:56e98245-ead8-4cd7-b33f-ffbee79a452b'
   module:
-    - block_content
     - panels
     - views
 id: projects-panels_variant-0
@@ -26,18 +23,6 @@ variant_settings:
       context_mapping: {  }
       region: content
       uuid: 8277c612-0e21-496e-9a2e-301246ac5f3b
-      weight: 2
-    5500ca80-d3a8-4cd4-887a-8ef9d312478a:
-      id: 'block_content:56e98245-ead8-4cd7-b33f-ffbee79a452b'
-      label: 'Banner Projects'
-      provider: block_content
-      label_display: '0'
-      status: true
-      info: ''
-      view_mode: full
-      context_mapping: {  }
-      region: content
-      uuid: 5500ca80-d3a8-4cd4-887a-8ef9d312478a
       weight: 1
   id: panels_variant
   uuid: 56330ccc-04e5-44a8-a71d-a39d7c5a3ce8

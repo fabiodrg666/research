@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/9?_format=hal_json"
+            "href": "http:\/\/default\/block\/8?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
@@ -19,17 +19,17 @@
     },
     "id": [
         {
-            "value": 9
+            "value": 8
         }
     ],
     "uuid": [
         {
-            "value": "20ff6a87-4e07-4bbb-b62b-5bd6faed6eac"
+            "value": "3d4e04f4-a343-48c1-a632-8191d63b78c5"
         }
     ],
     "revision_id": [
         {
-            "value": 9
+            "value": 8
         }
     ],
     "langcode": [
@@ -49,27 +49,27 @@
     ],
     "info": [
         {
-            "value": "Banner Members",
+            "value": "Banner Center",
             "lang": "en"
         },
         {
-            "value": "Banner Members",
+            "value": "Banner Center",
             "lang": "pt-pt"
         }
     ],
     "changed": [
         {
-            "value": 1517395054,
+            "value": 1520506153,
             "lang": "en"
         },
         {
-            "value": 1517395084,
+            "value": 1520506100,
             "lang": "pt-pt"
         }
     ],
     "revision_created": [
         {
-            "value": 1517395054
+            "value": 1517394849
         }
     ],
     "default_langcode": [
@@ -95,7 +95,7 @@
     "metatag": [
         {
             "value": {
-                "title": "| res-dev",
+                "title": "| Research",
                 "canonical_url": "http:\/\/default\/%3Cnone%3E"
             }
         }
@@ -168,24 +168,24 @@
     ],
     "content_translation_created": [
         {
-            "value": 1517395054,
+            "value": 1517394849,
             "lang": "en"
         },
         {
-            "value": 1517395084,
+            "value": 1517394882,
             "lang": "pt-pt"
         }
     ],
     "body": [
         {
-            "value": "<p>MEMBERS<\/p>\r\n",
-            "format": "basic_html",
+            "value": "<div class=\"top-banner\"><img alt=\"top-banner-image\" data-entity-type=\"file\" data-entity-uuid=\"36bb648a-9588-4da2-8ee4-33db7e8f7727\" src=\"\/sites\/default\/files\/inline-images\/photo-1460518451285-97b6aa326961.jpeg\" \/>\r\n<h1>Center<\/h1>\r\n<\/div>\r\n",
+            "format": "full_html",
             "summary": "",
             "lang": "en"
         },
         {
-            "value": "<p>MEMBROS<\/p>\r\n",
-            "format": "basic_html",
+            "value": "<div class=\"top-banner\"><img alt=\"top-banner-image\" data-entity-type=\"file\" data-entity-uuid=\"36bb648a-9588-4da2-8ee4-33db7e8f7727\" src=\"\/sites\/default\/files\/inline-images\/photo-1460518451285-97b6aa326961.jpeg\" \/>\r\n<h1>Centro<\/h1>\r\n<\/div>\r\n",
+            "format": "full_html",
             "summary": "",
             "lang": "pt-pt"
         }

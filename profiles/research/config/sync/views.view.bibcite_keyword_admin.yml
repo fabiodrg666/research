@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - bibcite_entity
-    - system
     - user
 _core:
   default_config_hash: mY5z13h5UojRvS8SZsmZHBI9yMJu47mnY1uKb_qiGWE
@@ -26,7 +25,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer keyword entities'
+          perm: 'administer bibcite_keyword'
       cache:
         type: tag
         options: {  }
@@ -302,6 +301,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''

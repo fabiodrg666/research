@@ -41,7 +41,7 @@ variant_settings:
       id: 'views_block:projects-block_2'
       label: ''
       provider: views
-      label_display: '0'
+      label_display: visible
       views_label: ''
       items_per_page: none
       context_mapping: {  }

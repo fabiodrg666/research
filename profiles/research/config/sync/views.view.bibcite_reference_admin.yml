@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - bibcite_entity
-    - system
     - user
 _core:
   default_config_hash: LG5ezLJp8WhZvYdGusYra3U0FHh3HeYk_3n4HhsuW1o
@@ -26,7 +25,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer bibcite_reference entities'
+          perm: 'administer bibcite_reference'
       cache:
         type: tag
         options: {  }
@@ -523,6 +522,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''

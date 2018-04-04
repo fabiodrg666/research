@@ -5,13 +5,43 @@ display:
       title: Notícias
       block_description: Notícias
       fields:
-        view_node:
-          text: 'Ver mais'
+        title:
+          alter:
+            text: "<h2>{{ title }}</h2>\r\n{{ body }}"
+        nid:
+          alter:
+            text: 'Saiba mais'
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Seguinte ›'
+          expose:
+            items_per_page_label: 'Items por página'
+            items_per_page_options_all_label: '- Todos -'
   block_1:
     display_options:
       fields:
-        view_node:
-          text: 'Ver mais'
+        title:
           alter:
-            text: '<a href="{{ path }}">Ver mais</a>'
+            text: "<h2>{{ title }}</h2>\r\n<p>{{ body }}</p>"
+        nid:
+          alter:
+            text: 'Saiba mais'
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pesquisar
+          reset_button_label: Limpar
+          exposed_sorts_label: 'Ordenar por'
+      fields:
+        view_node:
+          text: 'Saiba mais'
+  block_3:
+    display_options:
+      fields:
+        title:
+          alter:
+            text: "<div class=\"top-banner\">\r\n{{ field_image_media }}\r\n<h1>{{ title__value }}</h1>\r\n</div>"
 label: Notícias

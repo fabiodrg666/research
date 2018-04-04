@@ -1,9 +1,14 @@
 cdn_provider: ''
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
+  mimetype: image/png
+  path: 'public://favicon-32x32_3.png'
   url: 'http://research.dev/themes/bootstrap/favicon.ico'
-  use_default: true
+  use_default: false
+schemas:
+  bootstrap: 8000
+  rebase: 8000
+_core:
+  default_config_hash: iz18mZjTO4UgtVWZSzorNYJL8lGXLgCcXIKUOOY48ng
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -13,8 +18,5 @@ logo:
   path: ''
   url: ''
   use_default: true
-schemas:
-  bootstrap: 8000
-  rebase: 8000
-_core:
-  default_config_hash: iz18mZjTO4UgtVWZSzorNYJL8lGXLgCcXIKUOOY48ng
+table_responsive: '-1'
+table: ''

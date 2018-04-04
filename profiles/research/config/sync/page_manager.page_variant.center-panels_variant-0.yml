@@ -7,10 +7,7 @@ dependencies:
     - views.view.about
     - views.view.events
     - views.view.slideshow
-  content:
-    - 'block_content:basic:3d4e04f4-a343-48c1-a632-8191d63b78c5'
   module:
-    - block_content
     - panels
     - views
 id: center-panels_variant-0
@@ -18,18 +15,6 @@ label: Center
 variant: panels_variant
 variant_settings:
   blocks:
-    31882524-916e-4a54-839e-0f90c2bf5692:
-      id: 'block_content:3d4e04f4-a343-48c1-a632-8191d63b78c5'
-      label: 'Banner Center'
-      provider: block_content
-      label_display: '0'
-      status: true
-      info: ''
-      view_mode: full
-      context_mapping: {  }
-      region: content
-      uuid: 31882524-916e-4a54-839e-0f90c2bf5692
-      weight: 1
     44360bca-a47f-4399-8bf2-84d8138679c2:
       id: 'views_block:about-block_1'
       label: ''
@@ -40,7 +25,7 @@ variant_settings:
       context_mapping: {  }
       region: content
       uuid: 44360bca-a47f-4399-8bf2-84d8138679c2
-      weight: 2
+      weight: 1
     9f59274b-c801-49d3-81e2-bfe7fd2b23c9:
       id: 'views_block:slideshow-block_2'
       label: ''
@@ -51,18 +36,18 @@ variant_settings:
       context_mapping: {  }
       region: content
       uuid: 9f59274b-c801-49d3-81e2-bfe7fd2b23c9
-      weight: 3
-    94b206c2-102c-428f-83c7-d0f0cbce113a:
-      id: 'views_block:events-block_events'
+      weight: 2
+    a379ebb9-f509-4c7a-ae00-125096943d53:
+      id: 'views_block:events-block_1'
       label: ''
       provider: views
-      label_display: '0'
+      label_display: visible
       views_label: ''
       items_per_page: none
       context_mapping: {  }
       region: content
-      uuid: 94b206c2-102c-428f-83c7-d0f0cbce113a
-      weight: 4
+      uuid: a379ebb9-f509-4c7a-ae00-125096943d53
+      weight: 3
   id: panels_variant
   uuid: 1fc193cb-0661-4052-91bd-3fac74359509
   label: null

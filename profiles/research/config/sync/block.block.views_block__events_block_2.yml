@@ -1,0 +1,35 @@
+uuid: bfb1488f-6dd5-428b-92d1-fdc62a088e5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__events_block_2
+theme: rebase
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:events-block_2'
+settings:
+  id: 'views_block:events-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/events/*\r\n/eventos/*"
+    negate: false
+    context_mapping: {  }

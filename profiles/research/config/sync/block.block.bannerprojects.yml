@@ -1,0 +1,35 @@
+uuid: 17cb2458-b1f9-473f-b779-527467731d23
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:56e98245-ead8-4cd7-b33f-ffbee79a452b'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: bannerprojects
+theme: rebase
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:56e98245-ead8-4cd7-b33f-ffbee79a452b'
+settings:
+  id: 'block_content:56e98245-ead8-4cd7-b33f-ffbee79a452b'
+  label: 'Banner Projects'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/projects\r\n/projetos"
+    negate: false
+    context_mapping: {  }

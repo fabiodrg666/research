@@ -1,0 +1,54 @@
+uuid: ec6e66b6-e556-4aa0-83ce-d8e0e38abfab
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.user_card
+    - field.field.node.external_person.body
+    - field.field.node.external_person.field_function
+    - field.field.node.external_person.field_institution
+    - field.field.node.external_person.field_institution_url
+    - field.field.node.external_person.field_photo
+    - image.style.scale_and_crop_100x100
+    - node.type.external_person
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: jj3svydG_J7iF3dUn2HfyidWng-HYfxvgJCPkr5sEL4
+id: node.external_person.user_card
+targetEntityType: node
+bundle: external_person
+mode: user_card
+content:
+  field_function:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_institution:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: scale_and_crop_100x100
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_institution_url: true
+  langcode: true
+  links: true

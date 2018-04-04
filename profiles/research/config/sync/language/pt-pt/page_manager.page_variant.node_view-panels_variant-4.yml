@@ -1,0 +1,29 @@
+variant_settings:
+  blocks:
+    68474e83-bf92-415b-aec8-811c5309dac4:
+      label: 'Grupo de Investigação:'
+    e64917b2-8f9d-4d92-a983-b97ee225ff3c:
+      label: 'Data de Fim: '
+    6a2482c7-161b-4b8a-abc9-51cd72a2ddac:
+      label: 'Data de Início: '
+    d14780ff-9407-4147-86ff-c380f10b68c4:
+      label: Sobre
+    91b711ae-7c4b-439a-b092-340c811bb1e6:
+      label: 'Coordenador Interno'
+    64c21b1b-8695-4b5f-bef0-7bad27cb803d:
+      label: 'Coordenador Externo'
+    d550c7e9-b32d-4d34-bfe9-6164ef1c2f9e:
+      label: 'Membros Internos'
+    3fe52ebd-cc6e-4a28-8a01-a0274dba189a:
+      label: 'Membros Externos'
+    c56d5229-1bb1-4fae-984a-f1a40ab206b0:
+      label: Parceiros
+    ca7e18ef-3313-44a0-a35c-02f476633b9c:
+      label: Links
+    8634aa57-2355-4661-8288-3203258fe036:
+      label: Ficheiros
+    507dec15-ff2c-4e4f-9aa4-1bcbfe0b975d:
+      label: Estado
+    5ed0dae0-f69b-40de-8aef-1f3cbe3f9578:
+      label: 'Apoio Financeiro'
+  label: ''

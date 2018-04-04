@@ -1,0 +1,33 @@
+uuid: 5a851105-fd10-461b-a1be-8841df316c95
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: external_person_pt
+label: 'External Person PT'
+type: 'canonical_entities:node'
+pattern: '/membro-externo/[node:title]'
+selection_criteria:
+  30645f0c-f213-42c9-ad0e-175bb8906424:
+    id: node_type
+    bundles:
+      external_person: external_person
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 30645f0c-f213-42c9-ad0e-175bb8906424
+  5ebcdc52-f29d-44d9-85f5-753ff2651bff:
+    id: language
+    langcodes:
+      pt-pt: pt-pt
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 5ebcdc52-f29d-44d9-85f5-753ff2651bff
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

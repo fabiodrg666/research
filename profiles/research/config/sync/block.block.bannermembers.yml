@@ -16,7 +16,7 @@ third_party_settings:
 id: bannermembers
 theme: rebase
 region: content
-weight: -6
+weight: -8
 provider: null
 plugin: 'block_content:20ff6a87-4e07-4bbb-b62b-5bd6faed6eac'
 settings:
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /members
+    pages: "/members\r\n/membros\r\n"
     negate: false
     context_mapping: {  }

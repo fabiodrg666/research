@@ -1,0 +1,18 @@
+label: Sobre
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pesquisar
+          reset_button_label: Limpar
+          exposed_sorts_label: 'Ordenar por'
+      fields:
+        field_mission:
+          label: Missão
+        field_goals:
+          label: Objectivos
+        field_direction_board:
+          label: 'Comissão Directiva'
+        field_files:
+          label: Ficheiros

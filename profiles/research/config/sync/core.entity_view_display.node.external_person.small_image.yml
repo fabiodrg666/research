@@ -1,0 +1,40 @@
+uuid: d1a122ed-9ec4-4bdc-b1d8-9541b6283ec3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.small_image
+    - field.field.node.external_person.body
+    - field.field.node.external_person.field_function
+    - field.field.node.external_person.field_institution
+    - field.field.node.external_person.field_institution_url
+    - field.field.node.external_person.field_photo
+    - image.style.scale_and_crop_100x100
+    - node.type.external_person
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: jj3svydG_J7iF3dUn2HfyidWng-HYfxvgJCPkr5sEL4
+id: node.external_person.small_image
+targetEntityType: node
+bundle: external_person
+mode: small_image
+content:
+  field_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: scale_and_crop_100x100
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_function: true
+  field_institution: true
+  field_institution_url: true
+  langcode: true
+  links: true

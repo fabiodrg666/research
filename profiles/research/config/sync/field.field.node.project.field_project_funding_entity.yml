@@ -12,7 +12,7 @@ id: node.project.field_project_funding_entity
 field_name: field_project_funding_entity
 entity_type: node
 bundle: project
-label: 'Funding Entity'
+label: 'Financial Support'
 description: 'Add sponsors or collaborators of the Project. Select from the existing list or add new ones.'
 required: false
 translatable: false

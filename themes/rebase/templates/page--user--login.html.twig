@@ -54,7 +54,7 @@
   {% endif %}
 
   <main role="main">
-    <div class="logo user-register-form" style="text-align:center;margin-top: 70px;margin-bottom: -20px;">
+    <div class="logo user-register-form">
       <a class="logo navbar-btn pull-left" style="text-align: left; width: 100%;" href="/pt" title="Home" rel="home">
           <img src="/themes/rebase/logo.svg" alt="Home" style="width:160px;">
       </a>
@@ -66,20 +66,19 @@
     </div>
 <!-- END OUTPUT from 'modules/contrib/social_auth/templates/login-with.html.twig' -->
 
-
   </section>
-
-
-
       </div>
       <div class="links" style="text-align:center;">
-        <div class="register">
+        <!--<div class="register">
         <p>Not registered? <a href="/user/register" style="color: #337ab7;" >Create a new account</a></p>
         </div>
         <div class="password">
         <p>Forgot your password? <a href="/user/password" style="color: #337ab7">Create a new password</a></p>
+        </div>-->
+        <div class="register">
+        {{ 'If you wish to have access to the backoffice and try the Members and Admin features, please send an e-mail to <a href="mailto:research@omibee.com">research@omibee.com</a> and we will send you login credentials.'|trans }}
         </div>
-      </div>
+        </div>
     </div>
   </main>{# /main #}
 </div>{# /.layout-container #}

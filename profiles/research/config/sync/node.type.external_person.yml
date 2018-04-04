@@ -17,4 +17,4 @@ description: 'Use <b>External Person</b> to reference people outside the institu
 help: ''
 new_revision: false
 preview_mode: 0
-display_submitted: true
+display_submitted: false

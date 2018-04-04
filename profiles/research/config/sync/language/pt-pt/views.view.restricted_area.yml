@@ -1,0 +1,28 @@
+label: 'Área Restrita'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pesquisar
+          reset_button_label: Limpar
+          exposed_sorts_label: 'Ordenar por'
+      fields:
+        title:
+          label: Título
+        body:
+          label: Descrição
+        field_private_file:
+          label: Ficheiro
+        uid:
+          label: 'Adicionado por'
+      filters:
+        field_folder_target_id:
+          expose:
+            label: Pasta
+      title: 'Área Restrita'
+  page_1:
+    display_title: 'Página Área Restrita'
+    display_options:
+      menu:
+        title: 'Área Restrita'

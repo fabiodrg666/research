@@ -1,27 +1,181 @@
-.view-display-id-people{
+//** Members content styles:
+
+// Mobile first.
+body.path-members .view-display-id-people{
+  @include wide;
+  margin: 30px auto;
+  padding: 0 15px;
   text-align: center;
-  .item-list > h3{
-    text-transform: uppercase;
-    color: $darkest;
-    font-weight: lighter;
-    font-size: 25px;
-    padding-top: 30px;
+  // Members filters.
+  .view-filters{
+    margin: 55px 0 25px 0;
+    text-align: center;
+    .form-type-entity-autocomplete{
+      padding: 0;
+      .input-group {
+        input,
+        .input-group-addon{
+          height: 30px;
+          border-radius: 0;
+        }
+      }
     }
-  ul{
-    list-style: none;
+    .form-actions {
+      button{
+        margin: 0;
+        margin-left: 5px;
+        border-radius: 0;
+      }
+    }
+  }
+  // Members view content.
+  > .view-content{
+    .item-list > h3{
+      text-transform: uppercase;
+      color: $darkest;
+      font-weight: lighter;
+      font-size: 25px;
+      padding-top: 25px;
+      border-top: 1px solid $darkest;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        padding: 25px;
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+        .views-field-user-picture img{
+          @include largeprofilepic;
+        }
+      }
+    }
+  }
+}
 
-    li {
-      padding: 20px;
-      width: 22%;
-      min-width: 300px;
-      display: inline-block;
-      vertical-align: top;
+// Members node pages.
+body.path-user .main-container,
+body.page-node-type-external-person .main-container{
+  .view-user,
+  .view-id-external_person{
+    margin: 30px auto 0 auto;
+    padding: 0;
+    text-align: center;
+    .views-row{
+      position: relative;
+    }
+    .background-color{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $lighter;
+      width: 100%;
+      height: calc(100% - 50px);
+      margin: 50px auto 0 auto;
+      z-index: -1;
+    }
+    .background-color.ep{
+      height: calc(100% - 35px);
+    }
+    .views-field-user-picture,
+    .views-field-field-photo{
+      @include largeprofilepic;
+      border: none;
+      &:hover{
+        border: none;
+      }
+    }
+    .views-field-field-name h3{
+      color: $darkest;
+    }
+    .profile-links{
+      margin-top: 15px;
+      padding: 10px;
+      background-color: white;
+      span a{
+        display: inline-block;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        @include textnormal;
+        color: $dark;
+        &:hover{
+          color: $darkest;
+        }
+      }
+    }
+  }
+  .field--name-field-bio{
+    text-align: center;
+    padding: 10px 25px;
+  }
+  .view-user-publications{
+    margin: 60px 0 30px 0;
+    text-align: left;
+    .view-header{
+      margin: 10px 25px;
+      text-transform: uppercase;
+    }
+    .view-content .views-row{
+      padding: 25px;
+      border-top: 1px solid $dark;
+    }
+    .views-field-title h3{
+      display: block;
+      margin-top: 0; 
+      @include textlarge;
+      color: $dark;
+    }
+    .view-contributors .view-content{
+      margin-top: 15px;
+      > div{
+        display: inline-block;
+        .views-field-last-name{
+          display: inline-block;
+          a > p, .field-content > p{
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0 5px 5px 0;
+            border-radius: 5px;
+            background-color: $links;
+            @include textsmall;
+            color: white;
+            line-height: 20px;
+            &:hover{
+              text-decoration: none;
+              background-color: $linksOver;
+            }
+          }
+          .field-content > p{
+            &:hover{
+              background-color: $links;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
-      .views-field-user-picture{
-        img {
-          border-radius: 50px;
-          overflow: hidden;
-          margin: 0 auto;
+// Media query > 768, for sm, md and lg devices.
+@media screen and (min-width: 768px){
+  body.path-members .view-display-id-people{
+    // Projects filters.
+    .view-filters{
+      text-align: right;
+      .form-type-select{
+        .chosen-container-single,
+        #edit-field-status-target-id,
+        #edit-research-group-filter{
+          margin-bottom: 0px;
+        }
+      }
+    }
+    > .view-content{
+      ul{
+        li {
+          width: 24%;
         }
       }
     }

@@ -2,7 +2,40 @@ label: Eventos
 display:
   default:
     display_options:
-      title: 'Próximos eventos'
+      title: 'Próximos Eventos'
       fields:
         view_node:
-          text: 'Ver mais'
+          text: 'Saiba mais'
+      exposed_form:
+        options:
+          submit_button: Pesquisar
+          reset_button_label: Limpar
+          exposed_sorts_label: 'Ordenar por'
+  block_1:
+    display_title: 'Eventos Página Centro '
+    display_options:
+      block_description: Eventos
+      title: Eventos
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items por página'
+      fields:
+        nid:
+          alter:
+            text: 'Saiba mais'
+  block_events:
+    display_title: 'Eventos Homepage'
+    display_options:
+      block_description: Eventos
+      fields:
+        nid:
+          alter:
+            text: 'Saiba mais'
+      title: 'Próximos Eventos'
+  block_2:
+    display_options:
+      fields:
+        title:
+          alter:
+            text: "<div class=\"top-banner\">\r\n{{ field_image_media }}\r\n<div class=\"events-text\">\r\n<h1>{{ title__value }}</h1>\r\n<h3>{{ field_venue }} | {{ field_event_start_date }} </h3>\r\n</div>\r\n</div>"

@@ -61,7 +61,7 @@ content:
     label: hidden
     settings:
       image_style: scale_and_crop_100x100
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
 hidden:
   field_author: true

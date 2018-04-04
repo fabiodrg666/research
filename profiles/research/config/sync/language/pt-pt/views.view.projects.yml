@@ -7,18 +7,54 @@ display:
           alter:
             text: "<h2>{{ title }}</h2>\r\n<p>{{ body }}</p>\r\n<div class=\"read-more\">{{ view_node }}</div>"
         view_node:
-          text: 'Ver mais'
+          text: 'Saiba mais'
       title: 'Projetos em Destaque'
       exposed_form:
         options:
-          submit_button: Pesquisar
+          submit_button: Aplicar
           exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Limpar
   block_1:
     display_options:
       filters:
-        title:
-          expose:
-            label: Pesquisa
         field_status_target_id:
           expose:
             label: 'Status do Projeto'
+        eref_node_titles:
+          expose:
+            label: 'Grupo de Investigação'
+      fields:
+        field_internal_coordinator:
+          alter:
+            text: '<p>Coordenador Interno: {{ field_internal_coordinator }}</p>'
+        nid:
+          alter:
+            text: 'Saiba mais'
+    display_title: 'Página Projetos'
+  block_2:
+    display_title: 'Homepage Projectos'
+    display_options:
+      title: 'Projectos em Destaque'
+      fields:
+        nid:
+          alter:
+            text: 'Saiba mais'
+  block_3:
+    display_options:
+      fields:
+        title:
+          alter:
+            text: "<div class=\"top-banner\">\r\n{{ field_image_media }}\r\n<h1>{{ title__value }}</h1>\r\n</div>"
+      arguments:
+        nid:
+          exception:
+            title: Todos
+  projects_block:
+    display_options:
+      fields:
+        view_node:
+          text: 'Saiba mais'
+        nothing:
+          alter:
+            text: "<h2>{{ title }}</h2>\r\n<p>{{ body }}</p>\r\n<div class=\"read-more\">{{ view_node }}</div>"
+      block_description: 'Projetos block'

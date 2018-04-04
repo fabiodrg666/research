@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.external_organization.field_entity_logo
     - field.field.node.external_organization.field_url
-    - image.style.thumbnail
+    - image.style.scale_and_crop_100x100
     - node.type.external_organization
   module:
     - field_group
@@ -55,7 +55,7 @@ content:
     weight: 1
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: scale_and_crop_100x100
     third_party_settings: {  }
     type: image_image
     region: content

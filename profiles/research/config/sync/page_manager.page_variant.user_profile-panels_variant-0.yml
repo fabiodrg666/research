@@ -22,19 +22,19 @@ variant_settings:
       label_display: '0'
       views_label: ''
       items_per_page: none
-      region: content
-      weight: -1
+      region: second
+      weight: 1
       uuid: e234ca82-d897-4983-a4a5-1e4a1d6ba718
       context_mapping: {  }
     ada01d2a-b8e9-4d9a-9a66-c6664dbd8ec7:
       id: 'views_block:publications-user_publications'
       label: ''
       provider: views
-      label_display: visible
+      label_display: '0'
       views_label: ''
       items_per_page: none
-      region: content
-      weight: 1
+      region: second
+      weight: 3
       uuid: ada01d2a-b8e9-4d9a-9a66-c6664dbd8ec7
       context_mapping: {  }
     10111245-c3b6-4afb-8981-10eea86639aa:
@@ -48,8 +48,8 @@ variant_settings:
         settings: {  }
         third_party_settings: {  }
         weight: 0
-      region: content
-      weight: 0
+      region: second
+      weight: 2
       uuid: 10111245-c3b6-4afb-8981-10eea86639aa
       context_mapping:
         entity: user
@@ -57,7 +57,7 @@ variant_settings:
   uuid: 6812a972-c260-4e63-990d-7e6f237408e2
   label: null
   weight: 0
-  layout: layout_onecol
+  layout: layout_threecol_25_50_25
   layout_settings: {  }
   page_title: 'User Profle'
   storage_type: page_manager

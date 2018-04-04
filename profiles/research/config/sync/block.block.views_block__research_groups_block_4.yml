@@ -1,0 +1,45 @@
+uuid: 6b817387-468d-4f92-9aae-2c7d72a81d41
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.research_groups
+  module:
+    - block_class
+    - ctools
+    - node
+    - views
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__research_groups_block_4
+theme: rebase
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:research_groups-block_4'
+settings:
+  id: 'views_block:research_groups-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      research_group: research_group
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      research_group: research_group
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,12 @@
+uuid: c73ec557-141e-45fe-960f-70cbc31f2bec
+langcode: en
+status: true
+dependencies: {  }
+id: publications
+label: Publications
+description: ''
+use_admin_theme: false
+path: /bibcite/reference/%
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -1,0 +1,258 @@
+//** Projects content styles:
+
+// Mobile first.
+body.path-projects .view-projects{
+  // Projects filters.
+  .view-filters{
+    margin: 40px 0 25px 0;
+    text-align: center;
+    .form-type-select{
+      position: relative;
+      .select-wrapper:after{
+        display: none;
+      }
+      label{
+        @include textsmall;
+        text-transform: uppercase;
+        text-align: left;
+        position: absolute;
+        top: -20px;
+        left: auto;
+      }
+      .select-wrapper{
+        width: 100%;
+      }
+      .chosen-container-single{
+        padding: 0;
+      }
+      .chosen-container-single,
+      #edit-field-status-target-id,
+      #edit-research-group-filter{
+        width: 100%;
+        border-radius: 0;
+        height: 30px; 
+        margin-bottom: 20px;
+        a.chosen-single{
+          border: none;
+          background: none;
+          box-shadow: none;
+          height: 30px;
+          width: 100%;
+          @include textnormal;
+          line-height: 30px;
+          text-align: left;
+          div b{
+            background-position: 0px 5px;
+          }
+        }
+        .chosen-drop{
+          text-align: left;
+        }
+      }
+    }
+    .form-item-research-group-filter{
+      margin-left: 0px;
+    }
+    .form-actions{
+      text-align: center;
+      button{
+        margin: 0;
+        border-radius: 0;
+        border-left: 1px solid white;
+      }
+    }
+  }
+  // Projects view content.
+  > .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    .views-row{
+      flex-basis: 100%;
+      text-align: left;
+      padding: 25px;
+      border-top: 1px solid $dark;
+      .views-field-field-status{
+        text-align: left;
+        margin-top: 15px;
+        p.field-content{
+          display: inline-block;
+          padding: 5px 10px;
+          @include textsmall;
+          text-transform: uppercase;
+          background-color: $darkest;
+          color: white;
+          border-radius: 5px;
+        }
+      }
+      .views-field-title h3{
+        margin: 10px 0;
+      }
+      .views-field-body{
+        @include textnormal;
+      }
+      .views-field-field-internal-coordinator{
+        @include textnormal; 
+      }
+      .views-field-nid{
+        @include readmore;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+// Project node pages.
+body.page-node-type-project{
+  .main-container section .region-content .layout h2.block-title{
+    @include textsubtitle;
+    color: $darkest;
+    text-align: left;
+    margin-top: 0;
+  }
+  .block-region-content{
+    position: relative;
+  }
+  .block-entity-fieldnodefield-status{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px;
+    .field--name-field-status{
+      display: inline-block;
+      padding: 5px 10px;
+      @include textsmall;
+      text-transform: uppercase;
+      background-color: $darkest;
+      color: white;
+      border-radius: 5px;
+    }
+  }
+  .block-entity-fieldnodebody{
+    padding: 25px 25px 5px 25px;
+    text-align: left;   
+  }
+  .block-entity-fieldnodefield-internal-coordinator,
+  .block-entity-fieldnodefield-member,
+  .block-entity-fieldnodefield-partner-name,
+  .block-entity-fieldnodefield-project-funding-entity,
+  .block-entity-fieldnodefield-project-url,
+  .block-entity-fieldnodefield-file{
+    flex-basis: 100%;
+    padding: 25px;
+    margin-bottom: 10px;
+    border-top: 1px solid $darkest;
+  }
+  .block-entity-fieldnodefield-research-group,
+  .block-entity-fieldnodefield-start-date,
+  .block-entity-fieldnodefield-end-date{
+    padding: 5px 25px;   
+  }
+  .block-entity-fieldnodefield-end-date{
+    padding: 5px 25px 35px 25px;
+  }
+  .block-entity-fieldnodefield-internal-coordinator{
+    text-align: left;
+    .field--name-user-picture{
+      @include largeprofilepic;
+      margin: 10px 25px 10px 10px;
+      display: inline-block;
+      float: left;
+    }
+    .field--name-field-name{
+      padding-top: 25px;
+    }
+  } 
+  .field--name-field-member{
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-evenly;
+    margin-top: 15px;
+    .field--item img{
+      @include smallprofilepic;
+    }
+  }
+  .block-entity-fieldnodefield-file{
+    .field--name-field-file{
+      .file-link, .file-size{
+        @include textnormal;
+        color: $dark;
+        border: none;  
+        &:hover{
+          color: $darkest;
+        }
+      }
+      .file-icon{
+        display: none;
+      }
+    }
+  }
+}
+
+// Media query > 768, for sm, md and lg devices.
+@media screen and (min-width: 768px){
+  body.path-projects .view-projects{
+    // Projects filters.
+    .view-filters{
+      text-align: right;
+      .form-type-select{
+        .chosen-container-single,
+        #edit-field-status-target-id,
+        #edit-research-group-filter{
+          margin-bottom: 0px;
+        }
+      }
+    }
+    // Projects view content.
+    > .view-content{
+      .views-row{
+        .views-field-field-status{
+          margin-top:  0px;
+        }
+        .views-field-field-image-media{
+          float: left;
+          margin-right: 25px;
+          transition: all 0.3s;
+          overflow: hidden;
+          img{
+            opacity: 1;
+            transform: scale(1);
+            transition: all 0.3s;
+          }
+          &:hover{
+            img{
+              opacity: 0.75;
+              transform: scale(1.02);
+            }
+          }
+        }
+      }
+    } 
+  }
+  body.page-node-type-project{
+    .block-region-content{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .block-entity-fieldnodebody{
+      text-align: justify;   
+    }
+    .block-entity-fieldnodebody,
+    .block-entity-fieldnodefield-research-group,
+    .block-entity-fieldnodefield-start-date,
+    .block-entity-fieldnodefield-end-date{
+      flex-basis: 100%;
+    }
+    .block-entity-fieldnodefield-internal-coordinator,
+    .block-entity-fieldnodefield-member,
+    .block-entity-fieldnodefield-project-url,
+    .block-entity-fieldnodefield-file,
+    .block-entity-fieldnodefield-partner-name,
+    .block-entity-fieldnodefield-project-funding-entity{
+      flex-basis: 50%;
+    }
+    .field--name-field-member{
+      justify-content: start;
+    }
+  }
+}

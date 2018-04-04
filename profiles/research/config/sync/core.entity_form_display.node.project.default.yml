@@ -89,11 +89,12 @@ third_party_settings:
       weight: 6
       format_type: details
       format_settings:
+        label: 'Financial Support'
+        required_fields: true
         id: ''
         classes: ''
         open: false
-        required_fields: true
-      label: 'Funding Entities'
+      label: 'Financial Support'
     group_links:
       children:
         - field_project_url
@@ -156,7 +157,6 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
-      empty_mode: ''
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
@@ -172,7 +172,6 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
-      empty_mode: ''
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: _none
@@ -233,7 +232,6 @@ content:
       label_plural: 'funding entities'
       allow_new: true
       allow_existing: true
-      empty_mode: ''
       match_operator: CONTAINS
     third_party_settings:
       entity_browser_entity_form:

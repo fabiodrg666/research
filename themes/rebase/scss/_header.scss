@@ -1,11 +1,12 @@
 //** Header style:
 
+// Mobile first.
 #navbar{
   background-color: white;
   border-radius:0;
   margin: 0;
   padding: 0;
-  border-top: 0;
+  border: none;
   position: relative;
   @include fullwidth;
   z-index: 2;
@@ -46,6 +47,7 @@
             border-radius: 20px;
             margin: 10px;
             padding: 0;
+            background-color: $grayBackground;
             .views-field-user-picture{
               margin: 0;
             }
@@ -64,7 +66,7 @@
           margin: 0;
           right: 50px;
           .navbar-nav {
-              margin: 3px -15px;
+            margin: 3px -15px;
           }
           a{
             display: inline-block;

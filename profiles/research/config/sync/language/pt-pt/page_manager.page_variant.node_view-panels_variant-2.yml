@@ -1,14 +1,16 @@
-label: 'Grupos de Investigação'
 variant_settings:
   blocks:
-    3fd28aea-df01-497a-aa29-9e747408e480:
-      label: 'Imagem Media'
-    7a00339d-8176-493c-9866-4536083b6d7d:
-      label: Título
+    546204ba-73e2-42d7-9684-a71ccb5857f3:
+      label: Ficheiros
     322ecf9d-1cfc-46f7-aef7-a7b4ab44e814:
-      label: Descrição
+      label: Sobre
     10db466f-5df8-4e88-bb39-20650933eebb:
       label: Coordenador
     44b835ee-0f4b-4a78-b471-7f3eaea4d506:
       label: 'Membros Internos'
-  label: ''
+    79bf2ef3-3fe7-4992-9fc4-28ac7f259b39:
+      label: 'Coordenador Externo'
+    bf9e9175-a164-4c65-a6bf-826767e6c29a:
+      label: 'Membros Externos'
+    18f51921-1f01-4e8e-a174-3bab39fb2936:
+      label: Links

@@ -1,0 +1,10 @@
+uuid: 95d48a0f-c28d-42fa-8200-178efb4fa6e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.small_image
+label: 'Small image'
+targetEntityType: node
+cache: true

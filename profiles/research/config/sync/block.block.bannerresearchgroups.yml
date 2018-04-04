@@ -1,0 +1,35 @@
+uuid: ca4207c0-08dc-4035-be80-6dffc03561e4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:adb4131f-ade1-4161-944d-cf240622f487'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - rebase
+third_party_settings:
+  block_class:
+    classes: ''
+id: bannerresearchgroups
+theme: rebase
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:adb4131f-ade1-4161-944d-cf240622f487'
+settings:
+  id: 'block_content:adb4131f-ade1-4161-944d-cf240622f487'
+  label: 'Banner Research Groups'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/research-groups\r\n/grupos-de-investigacao"
+    negate: false
+    context_mapping: {  }
